@@ -1147,9 +1147,17 @@ typedef struct _LX_INIT_ADD_VIRTIOFS_SHARE_RESPONSE_MESSAGE
     int Result;
     unsigned int TagOffset;
     unsigned int SourceOffset;
+    //
+    // Offset of the per-share "subname" (child name within an aggregate
+    // virtio-fs root) inside Buffer. Empty for legacy direct-mount
+    // shares. Appended for wire compatibility: consumers MUST size-gate
+    //   Header.MessageSize >= offsetof(SubnameOffset) + sizeof(unsigned int)
+    // before reading this field.
+    //
+    unsigned int SubnameOffset;
     char Buffer[];
 
-    PRETTY_PRINT(FIELD(Header), FIELD(Result), STRING_FIELD(TagOffset), STRING_FIELD(SourceOffset));
+    PRETTY_PRINT(FIELD(Header), FIELD(Result), STRING_FIELD(TagOffset), STRING_FIELD(SourceOffset), STRING_FIELD(SubnameOffset));
 } LX_INIT_ADD_VIRTIOFS_SHARE_RESPONSE_MESSAGE, *PLX_INIT_ADD_VIRTIOFS_SHARE_RESPONSE_MESSAGE;
 
 typedef struct _LX_INIT_ADD_VIRTIOFS_SHARE_MESSAGE
@@ -1174,9 +1182,17 @@ typedef struct _LX_INIT_REMOUNT_VIRTIOFS_SHARE_MESSAGE
     MESSAGE_HEADER Header;
     bool Admin;
     unsigned int TagOffset;
+    //
+    // Offset of the original child "subname" inside Buffer. Empty when
+    // the share was a legacy direct-mount virtiofs. Appended for wire
+    // compatibility: consumers MUST size-gate
+    //   Header.MessageSize >= offsetof(SubnameOffset) + sizeof(unsigned int)
+    // before reading this field.
+    //
+    unsigned int SubnameOffset;
     char Buffer[];
 
-    PRETTY_PRINT(FIELD(Header), FIELD(Admin), STRING_FIELD(TagOffset));
+    PRETTY_PRINT(FIELD(Header), FIELD(Admin), STRING_FIELD(TagOffset), STRING_FIELD(SubnameOffset));
 } LX_INIT_REMOUNT_VIRTIOFS_SHARE_MESSAGE, *PLX_INIT_REMOUNT_VIRTIOFS_SHARE_MESSAGE;
 
 //
