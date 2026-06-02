@@ -1,0 +1,129 @@
+name: Build PrettyWSL
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      build_type:
+        description: 'Build configuration'
+        type: choice
+        default: 'Release'
+        options: [Debug, Release]
+
+permissions:
+  contents: read
+
+jobs:
+  build-windows:
+    name: Build Windows x64
+    runs-on: windows-latest
+    env:
+      BUILD_TYPE: ${{ inputs.build_type || 'Release' }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 1
+
+      - name: Setup VS2022
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: 17.11
+
+      - uses: seanmiddleditch/gha-setup-ninja@v5
+
+      - name: Install Visual Studio workloads
+        run: |
+          & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" modify `
+            --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" `
+            --add Microsoft.VisualStudio.Component.VC.Llvm.Clang `
+            --add Microsoft.VisualStudio.Component.VC.Llvm.ClangToolSet `
+            --quiet --norestart --wait
+        shell: powershell
+
+      - name: Setup NuGet cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.nuget/packages
+            ${{ github.workspace }}/build/_deps
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/nuget.config', '**/CMakeLists.txt', '**/cgmanifest.json') }}
+          restore-keys: ${{ runner.os }}-nuget-
+
+      - name: Configure CMake
+        run: |
+          cmake -B build `
+            -G Ninja `
+            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
+            -DTARGET_PLATFORM=x64 `
+            -DWSL_BUILD_WSL_SETTINGS=true `
+            -DSKIP_PACKAGE_SIGNING=true `
+            -DWSL_DEV_BINARY_PATH=""
+        shell: powershell
+
+      - name: Build
+        run: cmake --build build --config ${{ env.BUILD_TYPE }}
+        shell: powershell
+
+      - name: List build artifacts
+        run: Get-ChildItem -Recurse -LiteralPath "build/bin/x64/${{ env.BUILD_TYPE }}" | Select-Object FullName, Length
+        shell: powershell
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prettywsl-x64-${{ env.BUILD_TYPE }}
+          path: build/bin/x64/${{ env.BUILD_TYPE }}/
+          retention-days: 7
+
+  build-arm64:
+    name: Build Windows arm64
+    runs-on: windows-arm64
+    env:
+      BUILD_TYPE: Release
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 1
+
+      - name: Setup VS2022
+        uses: microsoft/setup-msbuild@v2
+        with:
+          vs-version: 17.11
+
+      - uses: seanmiddleditch/gha-setup-ninja@v5
+
+      - name: Install Visual Studio workloads
+        run: |
+          & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" modify `
+            --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" `
+            --add Microsoft.VisualStudio.Component.VC.Llvm.Clang `
+            --add Microsoft.VisualStudio.Component.VC.Llvm.ClangToolSet `
+            --quiet --norestart --wait
+        shell: powershell
+
+      - name: Configure CMake
+        run: |
+          cmake -B build `
+            -G Ninja `
+            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
+            -DTARGET_PLATFORM=arm64 `
+            -DWSL_BUILD_WSL_SETTINGS=true `
+            -DSKIP_PACKAGE_SIGNING=true `
+            -DWSL_DEV_BINARY_PATH=""
+        shell: powershell
+
+      - name: Build
+        run: cmake --build build --config ${{ env.BUILD_TYPE }}
+        shell: powershell
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prettywsl-arm64-${{ env.BUILD_TYPE }}
+          path: build/bin/arm64/${{ env.BUILD_TYPE }}/
+          retention-days: 7
