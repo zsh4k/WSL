@@ -55,16 +55,7 @@ jobs:
           restore-keys: ${{ runner.os }}-nuget-
 
       - name: Configure CMake
-        run: |
-          cmake -B build `
-            -G Ninja `
-            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
-            -DTARGET_PLATFORM=x64 `
-            -DWSL_BUILD_WSL_SETTINGS=true `
-            -DSKIP_PACKAGE_SIGNING=true `
-            -DWSL_DEV_BINARY_PATH="" `
-            -DPACKAGE_VERSION=2026.6.2.0 `
-            -DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001
+        run: cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} -DTARGET_PLATFORM=x64 -DWSL_BUILD_WSL_SETTINGS=true -DSKIP_PACKAGE_SIGNING=true "-DWSL_DEV_BINARY_PATH=" "-DPACKAGE_VERSION=2026.6.2.0" "-DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001"
         shell: powershell
 
       - name: Build
@@ -110,16 +101,7 @@ jobs:
         shell: powershell
 
       - name: Configure CMake
-        run: |
-          cmake -B build `
-            -G Ninja `
-            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
-            -DTARGET_PLATFORM=arm64 `
-            -DWSL_BUILD_WSL_SETTINGS=true `
-            -DSKIP_PACKAGE_SIGNING=true `
-            -DWSL_DEV_BINARY_PATH="" `
-            -DPACKAGE_VERSION=2026.6.2.0 `
-            -DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001
+        run: cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} -DTARGET_PLATFORM=arm64 -DWSL_BUILD_WSL_SETTINGS=true -DSKIP_PACKAGE_SIGNING=true "-DWSL_DEV_BINARY_PATH=" "-DPACKAGE_VERSION=2026.6.2.0" "-DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001"
         shell: powershell
 
       - name: Build
