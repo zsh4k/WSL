@@ -1,9 +1,9 @@
-if(TARGET Microsoft.WSL.Containers::SDK)
+if(TARGET PrettyWSL.Containers::SDK)
     return()
 endif()
 
 if(NOT WIN32)
-    message(FATAL_ERROR "Microsoft.WSL.Containers: This package only supports Windows.")
+    message(FATAL_ERROR "PrettyWSL.Containers: This package only supports Windows.")
 endif()
 
 # Determine target architecture
@@ -15,7 +15,7 @@ if(CMAKE_GENERATOR_PLATFORM)
         set(_wslcsdk_arch "arm64")
     else()
         message(FATAL_ERROR
-            "Microsoft.WSL.Containers: Unsupported platform '${CMAKE_GENERATOR_PLATFORM}'."
+            "PrettyWSL.Containers: Unsupported platform '${CMAKE_GENERATOR_PLATFORM}'."
             " Supported: x64, ARM64.")
     endif()
     unset(_wslcsdk_platform)
@@ -27,13 +27,13 @@ elseif(CMAKE_SYSTEM_PROCESSOR)
         set(_wslcsdk_arch "arm64")
     else()
         message(FATAL_ERROR
-            "Microsoft.WSL.Containers: Unsupported architecture '${CMAKE_SYSTEM_PROCESSOR}'."
+            "PrettyWSL.Containers: Unsupported architecture '${CMAKE_SYSTEM_PROCESSOR}'."
             " Supported: x64, ARM64.")
     endif()
     unset(_wslcsdk_platform)
 else()
     message(FATAL_ERROR
-        "Microsoft.WSL.Containers: Could not determine target architecture."
+        "PrettyWSL.Containers: Could not determine target architecture."
         " Set CMAKE_GENERATOR_PLATFORM or CMAKE_SYSTEM_PROCESSOR.")
 endif()
 
@@ -43,8 +43,8 @@ set(_wslcsdk_include_dir "${_wslcsdk_root}/include")
 set(_wslcsdk_lib_dir "${_wslcsdk_root}/runtimes/win-${_wslcsdk_arch}")
 
 # Create imported target
-add_library(Microsoft.WSL.Containers::SDK SHARED IMPORTED GLOBAL)
-set_target_properties(Microsoft.WSL.Containers::SDK PROPERTIES
+add_library(PrettyWSL.Containers::SDK SHARED IMPORTED GLOBAL)
+set_target_properties(PrettyWSL.Containers::SDK PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${_wslcsdk_include_dir}"
     IMPORTED_IMPLIB "${_wslcsdk_lib_dir}/wslcsdk.lib"
     IMPORTED_LOCATION "${_wslcsdk_lib_dir}/native/wslcsdk.dll"
@@ -64,7 +64,7 @@ unset(_wslcsdk_lib_dir)
 # build targets with incremental rebuild support.
 #
 # Usage:
-#   find_package(Microsoft.WSL.Containers REQUIRED)
+#   find_package(PrettyWSL.Containers REQUIRED)
 #
 #   wslc_add_image(my-server
 #       IMAGE        ghcr.io/myorg/my-server:latest

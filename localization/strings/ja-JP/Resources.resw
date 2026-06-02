@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -137,7 +137,7 @@
     <value>Linux 用 Windows サブシステム</value>
   </data>
   <data name="AppShortName" xml:space="preserve">
-    <value>WSL</value>
+    <value>PrettyWSL</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Linux 用 Windows サブシステムを使用すると、開発者は、ほとんどのコマンドライン ツール、ユーティリティ、アプリケーションを含む GNU/Linux 環境を、従来の仮想マシンやデュアル ブート セットアップのオーバーヘッドなしに、変更せずに Windows 上で直接実行できます。</value>
@@ -347,10 +347,10 @@ WSL1 を使用するには、"Linux 用 Windows サブシステム" オプショ
         MSAL プロキシ アプリケーションへのパスを表示します。
 
     --vm-id
-        WSL VM ID を表示します。
+        PrettyWSL VM ID を表示します。
 
     --version
-        WSL パッケージのバージョンを表示します。
+        PrettyWSL パッケージのバージョンを表示します。
 
     -n
         改行を出力しません。</value>
@@ -365,11 +365,11 @@ WSL1 を使用するには、"Linux 用 Windows サブシステム" オプショ
     -a
         結果を絶対パス形式に強制します。
     -u
-        Windows パスから WSL パスに変換します (既定)。
+        Windows パスから PrettyWSL パスに変換します (既定)。
     -w
-        WSL パスから Windows パスに変換します。
+        PrettyWSL パスから Windows パスに変換します。
     -m
-        WSL パスから Windows パスに変換します ('\\' ではなく '/' を使用)
+        PrettyWSL パスから Windows パスに変換します ('\\' ではなく '/' を使用)
 
 例: wslpath 'c:\\users'</value>
     <comment>{Locked="-a
@@ -631,7 +631,7 @@ Linux 用 Windows サブシステムでディストリビューションを管�
 "}{Locked="--quiet,"}{Locked="--verbose,"}{Locked="--online,"}{Locked="--install'"}{Locked="--set-default,"}{Locked="--set-version "}{Locked="--terminate,"}{Locked="--unregister "}Command line arguments, file names and string inserts should not be translated. {Locked="tar"}"tar" is a file archive format name and should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessagePackageVersions" xml:space="preserve">
-    <value>WSL バージョン: {}
+    <value>PrettyWSL バージョン: {}
 カーネル バージョン: {}
 WSLg バージョン: {}
 MSRDC バージョン: {}
@@ -821,7 +821,7 @@ Admin Protection の詳細については、https://aka.ms/apdevguide をご覧�
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageWarningDuringStartup" xml:space="preserve">
-    <value>WSL の起動中にエラーが発生しました</value>
+    <value>PrettyWSL の起動中にエラーが発生しました</value>
   </data>
   <data name="MessageSystemdUserSessionFailed" xml:space="preserve">
     <value>'{}' のシステム ユーザー セッションを開始できませんでした。詳細については journalctl を参照してください。</value>
@@ -928,23 +928,23 @@ NAT ネットワークにフォールバックしています。</value>
     <value>ミラー化されたネットワーク モードを使用している場合、wsl2.localhostForwarding 設定は無効です</value>
   </data>
   <data name="MessageHttpProxyChangeDetected" xml:space="preserve">
-    <value>HTTP プロキシの変更がホストで検出されました。変更を適用するには、WSL を再起動してください。</value>
+    <value>HTTP プロキシの変更がホストで検出されました。変更を適用するには、PrettyWSL を再起動してください。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLocalhostSettingsDropped" xml:space="preserve">
-    <value>ローカルホスト プロキシ構成が検出されましたが、WSL にミラーリングされませんでした。NAT モードの WSL は、ローカルホスト プロキシをサポートしません。</value>
+    <value>ローカルホスト プロキシ構成が検出されましたが、PrettyWSL にミラーリングされませんでした。NAT モードの PrettyWSL は、ローカルホスト プロキシをサポートしません。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyV6SettingsDropped" xml:space="preserve">
-    <value>IPv6 プロキシ構成が検出されましたが、WSL にミラーリングされませんでした。NAT モードの WSL は IPv6 をサポートしません。</value>
+    <value>IPv6 プロキシ構成が検出されましたが、PrettyWSL にミラーリングされませんでした。NAT モードの PrettyWSL は IPv6 をサポートしません。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLoopbackV6SettingsDropped" xml:space="preserve">
-    <value>ローカルホスト IPv6 プロキシ構成が検出されましたが、WSL にミラーリングされませんでした。WSL はローカルホスト IPv6 プロキシをサポートしません。</value>
+    <value>ローカルホスト IPv6 プロキシ構成が検出されましたが、PrettyWSL にミラーリングされませんでした。PrettyWSL はローカルホスト IPv6 プロキシをサポートしません。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyUnexpectedSettingsDropped" xml:space="preserve">
-    <value>プロキシ設定を解決しようとしたときに予期しないエラーが発生しました。プロキシ設定は WSL にミラーリングされませんでした。</value>
+    <value>プロキシ設定を解決しようとしたときに予期しないエラーが発生しました。プロキシ設定は PrettyWSL にミラーリングされませんでした。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageRegistryError" xml:space="preserve">
@@ -976,7 +976,7 @@ NAT ネットワークにフォールバックしています。</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessagePluginRequiresUpdate" xml:space="preserve">
-    <value>プラグイン '{}' には、新しいバージョンの WSL が必要です。次を実行してください: wsl.exe --update</value>
+    <value>プラグイン '{}' には、新しいバージョンの PrettyWSL が必要です。次を実行してください: wsl.exe --update</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--update"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSettingOverriddenByPolicy" xml:space="preserve">
@@ -994,7 +994,7 @@ NAT ネットワークにフォールバックしています。</value>
     <value>WSL1 はコンピューター ポリシーによって無効にされています。</value>
   </data>
   <data name="MessageWSLContainerDisabled" xml:space="preserve">
-    <value>WSL コンテナーは、コンピューター ポリシーによって無効になっています。</value>
+    <value>PrettyWSL コンテナーは、コンピューター ポリシーによって無効になっています。</value>
   </data>
   <data name="MessageRegistryBlockedByPolicy" xml:space="preserve">
     <value>コンテナー イメージ レジストリ '{}' はコンピューター ポリシーによってブロックされています。</value>
@@ -1008,7 +1008,7 @@ NAT ネットワークにフォールバックしています。</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--set-version "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageFinishMsiInstallation" xml:space="preserve">
-    <value>WSL はアップグレードを終了しています...</value>
+    <value>PrettyWSL はアップグレードを終了しています...</value>
   </data>
   <data name="MessageUpdateFailed" xml:space="preserve">
     <value>更新に失敗しました (終了コード: {})。</value>
@@ -1035,7 +1035,7 @@ NAT ネットワークにフォールバックしています。</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageMissingOptionalComponents" xml:space="preserve">
-    <value>WSL の実行に必要なオプション コンポーネントがインストールされていません。</value>
+    <value>PrettyWSL の実行に必要なオプション コンポーネントがインストールされていません。</value>
   </data>
   <data name="MessageInstallMissingOptionalComponents" xml:space="preserve">
     <value>不足コンポーネントをインストールする</value>
@@ -1060,7 +1060,7 @@ NAT ネットワークにフォールバックしています。</value>
     <value>ドキュメントを表示</value>
   </data>
   <data name="MessageVhdInUse" xml:space="preserve">
-    <value>VHD が現在使用中のため、操作を完了できませんでした。WSL の使用を強制的に停止するには: wsl.exe --shutdown</value>
+    <value>VHD が現在使用中のため、操作を完了できませんでした。PrettyWSL の使用を強制的に停止するには: wsl.exe --shutdown</value>
     <comment>{Locked="--shutdown"}Command line arguments, file names and string inserts should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="MessageInvalidBoolean" xml:space="preserve">
@@ -1072,7 +1072,7 @@ NAT ネットワークにフォールバックしています。</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessageLocalSystemNotSupported" xml:space="preserve">
-    <value>ローカル システムとして WSL を実行することはサポートされていません。</value>
+    <value>ローカル システムとして PrettyWSL を実行することはサポートされていません。</value>
   </data>
   <data name="MessagePerformanceTip" xml:space="preserve">
     <value>パフォーマンスのヒント:</value>
@@ -1137,12 +1137,12 @@ Web ダウンロード... を試行しています</value>
     <comment>{Locked="wsl2.virtio"}{Locked="VirtioProxy"}{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSwiotlbKernelUnsupported" xml:space="preserve">
-    <value>実行中のカーネルには、virtio デバイスのパフォーマンスを大幅に向上させるパッチがありません。この最適化を有効にするには、より新しい WSL カーネルに更新してください。</value>
+    <value>実行中のカーネルには、virtio デバイスのパフォーマンスを大幅に向上させるパッチがありません。この最適化を有効にするには、より新しい PrettyWSL カーネルに更新してください。</value>
     <comment>{Locked="virtio"}</comment>
   </data>
   <data name="MessageInstallationCorrupted" xml:space="preserve">
-    <value>WSL インストールが壊れている可能性があります (エラー コード: {})。
-WSL を修復するには任意のキーを押すか、取り消すには CTRL-C。
+    <value>PrettyWSL インストールが壊れている可能性があります (エラー コード: {})。
+PrettyWSL を修復するには任意のキーを押すか、取り消すには CTRL-C。
 このプロンプトは 60 秒後にタイムアウトします。</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -1236,7 +1236,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxy.Description" xml:space="preserve">
-    <value>WSL で Windows の HTTP プロキシ情報を使用できるようにします。</value>
+    <value>PrettyWSL で Windows の HTTP プロキシ情報を使用できるようにします。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1244,7 +1244,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL で Windows の HTTP プロキシ情報を使用できるようにします。</value>
+    <value>PrettyWSL で Windows の HTTP プロキシ情報を使用できるようにします。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_BestEffortDNS.Header" xml:space="preserve">
@@ -1302,7 +1302,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>ディストリビューションの参照</value>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.Text" xml:space="preserve">
-    <value>カスタム システム ディストリビューションとして読み込む VHD へのパスを指定します。このパスは、主に WSL の GUI アプリを強化するために使用されます。[システム ディストリビューションの詳細については、こちらを参照してください]。</value>
+    <value>カスタム システム ディストリビューションとして読み込む VHD へのパスを指定します。このパスは、主に PrettyWSL の GUI アプリを強化するために使用されます。[システム ディストリビューションの詳細については、こちらを参照してください]。</value>
     <comment>{Locked="["}{Locked="]"}{Locked="VHD"}The text in between the delimiters [ ] is made into a hyperlink in code, and the delimiters are removed. "VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.NavigateUri" xml:space="preserve">
@@ -1313,7 +1313,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>カスタム システム ディストリビューション</value>
   </data>
   <data name="Settings_CustomSystemDistroPathTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>カスタム システム ディストリビューションとして読み込む VHD へのパスを指定します。このパスは、主に WSL の GUI アプリを強化するために使用されます。</value>
+    <value>カスタム システム ディストリビューションとして読み込む VHD へのパスを指定します。このパスは、主に PrettyWSL の GUI アプリを強化するために使用されます。</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DebugConsole.Header" xml:space="preserve">
@@ -1333,7 +1333,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSize.Description" xml:space="preserve">
-    <value>新しく作成されたディストリビューションのみの展開可能な WSL 仮想ハード ディスク (VHD) の既定の最大サイズです。</value>
+    <value>新しく作成されたディストリビューションのみの展開可能な PrettyWSL 仮想ハード ディスク (VHD) の既定の最大サイズです。</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeResetButton.Content" xml:space="preserve">
@@ -1344,7 +1344,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>新しく作成されたディストリビューションに対してのみ展開可能な WSL 仮想ハード ディスク (VHD) の既定の最大サイズ (MB 単位) です。</value>
+    <value>新しく作成されたディストリビューションに対してのみ展開可能な PrettyWSL 仮想ハード ディスク (VHD) の既定の最大サイズ (MB 単位) です。</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DeveloperPageTitle.Text" xml:space="preserve">
@@ -1355,20 +1355,20 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
   </data>
   <data name="Settings_DocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to Microsoft WSL documentation</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL documentation</comment>
   </data>
   <data name="Settings_DrvFSMode.Header" xml:space="preserve">
     <value>DrvFS モードの変更</value>
   </data>
   <data name="Settings_DrvFSMode.Description" xml:space="preserve">
-    <value>WSL での OS 間のファイル アクセスの実装を変更します。</value>
+    <value>PrettyWSL での OS 間のファイル アクセスの実装を変更します。</value>
   </data>
   <data name="Settings_DNSProxy.Header" xml:space="preserve">
     <value>DNS プロキシが有効</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxy.Description" xml:space="preserve">
-    <value>wsl2.networkingMode が NAT に設定されている場合にのみ適用されます。Linux の DNS サーバーをホスト上の NAT に構成するよう WSL に通知するブール値です。false に設定すると、DNS サーバーが Windows から Linux にミラーされます。</value>
+    <value>wsl2.networkingMode が NAT に設定されている場合にのみ適用されます。Linux の DNS サーバーをホスト上の NAT に構成するよう PrettyWSL に通知するブール値です。false に設定すると、DNS サーバーが Windows から Linux にミラーされます。</value>
     <comment>{Locked="wsl2.networkingMode"}{Locked="DNS"}.wslconfig property key names should not be translated. "DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1376,7 +1376,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>wsl2.networkingMode が NAT に設定されている場合にのみ適用されます。Linux の DNS サーバーをホスト上の NAT に構成するよう WSL に通知するブール値です。false に設定すると、DNS サーバーが Windows から Linux にミラーされます。</value>
+    <value>wsl2.networkingMode が NAT に設定されている場合にのみ適用されます。Linux の DNS サーバーをホスト上の NAT に構成するよう PrettyWSL に通知するブール値です。false に設定すると、DNS サーバーが Windows から Linux にミラーされます。</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Header" xml:space="preserve">
@@ -1384,7 +1384,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Description" xml:space="preserve">
-    <value>DNS 要求を WSL から Windows にプロキシする方法を変更します。</value>
+    <value>DNS 要求を PrettyWSL から Windows にプロキシする方法を変更します。</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1392,7 +1392,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>DNS 要求を WSL から Windows にプロキシする方法を変更します。</value>
+    <value>DNS 要求を PrettyWSL から Windows にプロキシする方法を変更します。</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_FileSystemPageTitle.Text" xml:space="preserve">
@@ -1402,7 +1402,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>GUI アプリケーションを有効にする</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.Text" xml:space="preserve">
-    <value>WSL での GUI アプリケーション ([WSLg]) のサポートを有効または無効にするブール値。</value>
+    <value>PrettyWSL での GUI アプリケーション ([WSLg]) のサポートを有効または無効にするブール値。</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgproject</value>
@@ -1412,7 +1412,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>GUI アプリケーションを有効にします。</value>
   </data>
   <data name="Settings_GUIApplicationsToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL での GUI アプリケーション (WSL g と呼ばれる) のサポートを有効または無効にするブール値。</value>
+    <value>PrettyWSL での GUI アプリケーション (PrettyWSL g と呼ばれる) のサポートを有効または無効にするブール値。</value>
   </data>
   <data name="Settings_HWPerfCounters.Header" xml:space="preserve">
     <value>ハードウェア パフォーマンス カウンターを有効にする</value>
@@ -1430,13 +1430,13 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>Hyper-V ファイアウォールが有効</value>
   </data>
   <data name="Settings_HyperVFirewall.Description" xml:space="preserve">
-    <value>Windows ファイアウォール規則および Hyper-V トラフィックに固有の規則を許可して WSL ネットワーク トラフィックをフィルター処理できるようにする Hyper-V ファイアウォールを有効にします。</value>
+    <value>Windows ファイアウォール規則および Hyper-V トラフィックに固有の規則を許可して PrettyWSL ネットワーク トラフィックをフィルター処理できるようにする Hyper-V ファイアウォールを有効にします。</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.Name" xml:space="preserve">
     <value>Hyper-V ファイアウォールが有効です。</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Windows ファイアウォール規則および Hyper-V トラフィックに固有の規則を許可して WSL ネットワーク トラフィックをフィルター処理できるようにする Hyper-V ファイアウォールを有効にします。</value>
+    <value>Windows ファイアウォール規則および Hyper-V トラフィックに固有の規則を許可して PrettyWSL ネットワーク トラフィックをフィルター処理できるようにする Hyper-V ファイアウォールを有効にします。</value>
   </data>
   <data name="Settings_HostAddressLoopback.Header" xml:space="preserve">
     <value>ホスト アドレスのループバック</value>
@@ -1472,7 +1472,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeout.Description" xml:space="preserve">
-    <value>wsl2.autoProxy が true に設定されている場合にのみ適用されます。WSL コンテナーの開始時に WSL が HTTP プロキシ情報の取得を待機する時間 (ミリ秒) を構成します。この時間が経過した後にプロキシ設定が解決された場合、取得したプロキシ設定を使用するには、WSL インスタンスを再起動する必要があります。</value>
+    <value>wsl2.autoProxy が true に設定されている場合にのみ適用されます。PrettyWSL コンテナーの開始時に PrettyWSL が HTTP プロキシ情報の取得を待機する時間 (ミリ秒) を構成します。この時間が経過した後にプロキシ設定が解決された場合、取得したプロキシ設定を使用するには、PrettyWSL インスタンスを再起動する必要があります。</value>
     <comment>{Locked="wsl2.autoProxy"}.wslconfig property key names should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutResetButton.Content" xml:space="preserve">
@@ -1483,7 +1483,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>wsl2.autoProxy が true に設定されている場合にのみ適用されます。WSL コンテナーの開始時に WSL が HTTP プロキシ情報の取得を待機する時間をミリ秒単位で構成します。この時間が経過した後にプロキシ設定が解決された場合、取得したプロキシ設定を使用するには、WSL インスタンスを再起動する必要があります。</value>
+    <value>wsl2.autoProxy が true に設定されている場合にのみ適用されます。PrettyWSL コンテナーの開始時に PrettyWSL が HTTP プロキシ情報の取得を待機する時間をミリ秒単位で構成します。この時間が経過した後にプロキシ設定が解決された場合、取得したプロキシ設定を使用するには、PrettyWSL インスタンスを再起動する必要があります。</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_KernelCommandLine.Header" xml:space="preserve">
@@ -1544,13 +1544,13 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>ネットワーク モード</value>
   </data>
   <data name="Settings_NetworkingMode.Description" xml:space="preserve">
-    <value>WSL のネットワーク モードを指定します。</value>
+    <value>PrettyWSL のネットワーク モードを指定します。</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.Name" xml:space="preserve">
     <value>ネットワーク モード。</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL のネットワーク モードを指定します。</value>
+    <value>PrettyWSL のネットワーク モードを指定します。</value>
   </data>
   <data name="Settings_NetworkingPageTitle.Text" xml:space="preserve">
     <value>ネットワーク</value>
@@ -1577,10 +1577,10 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <comment>{Locked="\\wsl.localhost\"}Url addresses should not be translated.</comment>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLTitle.Text" xml:space="preserve">
-    <value>WSL から Windows ファイルとプログラムを起動する</value>
+    <value>PrettyWSL から Windows ファイルとプログラムを起動する</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLSample.Text" xml:space="preserve">
-    <value>WSL を使用している間でも、Bash から直接 Windows 実行可能ファイルを実行できます。以下を試してみましょう: 
+    <value>PrettyWSL を使用している間でも、Bash から直接 Windows 実行可能ファイルを実行できます。以下を試してみましょう: 
 'powershell.exe /c start .' を実行すると、現在のフォルダーでエクスプローラーを開きます。</value>
     <comment>{Locked="/c start ."}Command line arguments and file names should not be translated</comment>
   </data>
@@ -1599,7 +1599,7 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>ミラー モード ネットワーク</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_MirroredModeNetworkingSample.Text" xml:space="preserve">
-    <value>WSL には、ミラー モードと呼ばれる新しいネットワーク モードも含まれており、IPv6 サポートやローカル エリア ネットワーク内のネットワーク アプリケーションにアクセスする機能などの高度な機能が追加されています。</value>
+    <value>PrettyWSL には、ミラー モードと呼ばれる新しいネットワーク モードも含まれており、IPv6 サポートやローカル エリア ネットワーク内のネットワーク アプリケーションにアクセスする機能などの高度な機能が追加されています。</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccessLink.Content" xml:space="preserve">
     <value>クロス OS ファイル アクセスに関する詳細情報</value>
@@ -1612,73 +1612,73 @@ wsl.exe --manage &lt;DistributionName&gt; --set-sparse true --allow-unsafe</valu
     <value>Linux 用 Windows サブシステムにようこそ</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Description" xml:space="preserve">
-   <value>WSL は、さまざまな Linux ディストリビューションを試す優れた方法です。</value>
+   <value>PrettyWSL は、さまざまな Linux ディストリビューションを試す優れた方法です。</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Title" xml:space="preserve">
     <value>ディストリビューションの管理</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.Content" xml:space="preserve">
-    <value>基本的な WSL コマンドに関する詳細情報</value>
+    <value>基本的な PrettyWSL コマンドに関する詳細情報</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcommands</value>
-    <comment>{Locked}Uri to the basic WSL commands documentation</comment>
+    <comment>{Locked}Uri to the basic PrettyWSL commands documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.Content" xml:space="preserve">
     <value>Linux ディストリビューションのインポートに関する詳細情報</value>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcustomdistro</value>
-    <comment>{Locked}Uri to the import any linux distribution to use with WSL documentation</comment>
+    <comment>{Locked}Uri to the import any linux distribution to use with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosTitle.Text" xml:space="preserve">
-    <value>インストール可能な WSL Distros コマンドの一覧表示</value>
+    <value>インストール可能な PrettyWSL Distros コマンドの一覧表示</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe -l -o'</value>
     <comment>{Locked="-l -o"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosTitle.Text" xml:space="preserve">
-    <value>名前付き WSL Distro コマンドのインストール</value>
+    <value>名前付き PrettyWSL Distro コマンドのインストール</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe --install &lt;DistroName&gt;'</value>
     <comment>{Locked="--install "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosTitle.Text" xml:space="preserve">
-    <value>使用可能な WSL Distros コマンドの一覧表示</value>
+    <value>使用可能な PrettyWSL Distros コマンドの一覧表示</value>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe -l'</value>
     <comment>{Locked="-l"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Description" xml:space="preserve">
-    <value>Docker デスクトップは WSL と連携して、Linux コンテナーでの開発に役立ちます。
+    <value>Docker デスクトップは PrettyWSL と連携して、Linux コンテナーでの開発に役立ちます。
 
-WSL で Docker デスクトップを使用するいくつかの利点を以下に示します: 
+PrettyWSL で Docker デスクトップを使用するいくつかの利点を以下に示します: 
 
-• 同じ Docker デーモンとイメージを使用して、WSL または Windows で Docker コマンドを実行できます。
-• WSL での Windows ドライブの自動マウントを使用して、Windows と Linux の間でファイルとフォルダーをシームレスに共有できます。
-• WSL の相互運用性のおかげで、好みの Windows ツールとエディターを使用して Linux のコードとファイルを操作できます。また、その逆も可能です。</value>
+• 同じ Docker デーモンとイメージを使用して、PrettyWSL または Windows で Docker コマンドを実行できます。
+• PrettyWSL での Windows ドライブの自動マウントを使用して、Windows と Linux の間でファイルとフォルダーをシームレスに共有できます。
+• PrettyWSL の相互運用性のおかげで、好みの Windows ツールとエディターを使用して Linux のコードとファイルを操作できます。また、その逆も可能です。</value>
     <comment>"mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used.</comment>
  </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Title" xml:space="preserve">
     <value>Docker Desktop の統合</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.Content" xml:space="preserve">
-    <value>Docker での WSL の使用に関する詳細情報</value>
+    <value>Docker での PrettyWSL の使用に関する詳細情報</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocker</value>
     <comment>{Locked}Uri to the Docker remote containers on WSL 2 documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral.Description" xml:space="preserve">
-    <value>Linux 用 Windows サブシステム (WSL) を使用すると、お気に入りの Linux ツール、ユーティリティ、アプリケーション、ワークフローを Windows で直接実行できます。
+    <value>Linux 用 Windows サブシステム (PrettyWSL) を使用すると、お気に入りの Linux ツール、ユーティリティ、アプリケーション、ワークフローを Windows で直接実行できます。
 
 少しの時間を取って、コミュニティのお気に入りの機能をいくつかプレビューしたり、包括的なドキュメントを表示したりしてみてください。</value>
   </data>
   <data name="Settings_OOBEGeneral.Title" xml:space="preserve">
-    <value>WSL へようこそ</value>
+    <value>PrettyWSL へようこそ</value>
   </data>
   <data name="Settings_OOBEGeneral_BestPracticesSetupLink.Content" xml:space="preserve">
     <value>セットアップのベスト プラクティス</value>
@@ -1695,11 +1695,11 @@ WSL で Docker デスクトップを使用するいくつかの利点を以下�
     <comment>{Locked}Uri to the Getting Started with Linux Documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.Content" xml:space="preserve">
-    <value>Linux 用 Windows サブシステム (WSL) ドキュメント</value>
+    <value>Linux 用 Windows サブシステム (PrettyWSL) ドキュメント</value>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to the Microsoft WSL Documentation</comment>
+    <comment>{Locked}Uri to the Microsoft PrettyWSL Documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps.Description" xml:space="preserve">
     <value>グラフィカル ベースの Linux アプリケーションは、alt-tab、スタート メニューの起動、タスク バーのピン留め、切り取り/貼り付けのサポートなど、Windows のネイティブな操作で使用できます。</value>
@@ -1708,9 +1708,9 @@ WSL で Docker デスクトップを使用するいくつかの利点を以下�
     <value>GUI アプリ</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Description" xml:space="preserve">
-    <value>WSL では、Machine Learning ワークフローに Windows GPU を活用できます
+    <value>PrettyWSL では、Machine Learning ワークフローに Windows GPU を活用できます
 
-WSL で実行されている Linux バイナリは、Windows で GPU を自動的に使用してパフォーマンスを向上させることができます。通常の Linux マシンの場合と同じ方法で、これらのワークフローをインストールして実行する必要があります。NVIDIA グラフィックス カードがある場合は Docker コンテナーで CUDA を実行するという方法から、AMD、Intel、または NVIDIA グラフィックス カードで DirectML を使用して PyTorch または TensorFlow を実行するという方法まで、さまざまな方法で開始できます。詳細については、以下の作業の開始ガイドをご覧ください。</value>
+PrettyWSL で実行されている Linux バイナリは、Windows で GPU を自動的に使用してパフォーマンスを向上させることができます。通常の Linux マシンの場合と同じ方法で、これらのワークフローをインストールして実行する必要があります。NVIDIA グラフィックス カードがある場合は Docker コンテナーで CUDA を実行するという方法から、AMD、Intel、または NVIDIA グラフィックス カードで DirectML を使用して PyTorch または TensorFlow を実行するという方法まで、さまざまな方法で開始できます。詳細については、以下の作業の開始ガイドをご覧ください。</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Title" xml:space="preserve">
     <value>GPU アクセラレータ</value>
@@ -1720,14 +1720,14 @@ WSL で実行されている Linux バイナリは、Windows で GPU を自動�
   </data>
   <data name="Settings_OOBEGPUAccelerationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgpu</value>
-    <comment>{Locked}Uri to the GPU acceleration for ML in WSL documentation</comment>
+    <comment>{Locked}Uri to the GPU acceleration for ML in PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIAppsLink.Content" xml:space="preserve">
-    <value>WSL GUI アプリに関する詳細情報</value>
+    <value>PrettyWSL GUI アプリに関する詳細情報</value>
   </data>
   <data name="Settings_OOBEGUIAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslguiapps</value>
-    <comment>{Locked}Uri to the Run GUI apps on the WSL documentation</comment>
+    <comment>{Locked}Uri to the Run GUI apps on the PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps_AppsListDescription.Text" xml:space="preserve">
     <value>ここでは、試しているアプリの一覧を示します ('sudo apt install &lt;アプリ名&gt;' と入力すると、Ubuntu でこれらすべてをインストールできます)
@@ -1750,43 +1750,43 @@ WSL で実行されている Linux バイナリは、Windows で GPU を自動�
   </data>
   <data name="Settings_OOBENetworkingIntegrationLinuxNetworkingAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslnetworking</value>
-    <comment>{Locked}Uri to the Accessing network applications with WSL documentation</comment>
+    <comment>{Locked}Uri to the Accessing network applications with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.Content" xml:space="preserve">
     <value>ミラー モード ネットワークに関する詳細情報</value>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslmirroredmode</value>
-    <comment>{Locked}Uri to the WSL Mirrored Mode networking documentation</comment>
+    <comment>{Locked}Uri to the PrettyWSL Mirrored Mode networking documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Description" xml:space="preserve">
-   <value>WSL は、VS Code から直接、フルタイムの開発環境として使用できます。</value>
+   <value>PrettyWSL は、VS Code から直接、フルタイムの開発環境として使用できます。</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Title" xml:space="preserve">
     <value>VS Code の統合</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.Content" xml:space="preserve">
-    <value>VS Code での WSL の使用に関する詳細情報</value>
+    <value>VS Code での PrettyWSL の使用に関する詳細情報</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslvscode</value>
-    <comment>{Locked}Uri to the using Visual Studio Code with WSL documentation</comment>
+    <comment>{Locked}Uri to the using Visual Studio Code with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallTitle.Text" xml:space="preserve">
     <value>インストールの方法</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallSample.Text" xml:space="preserve">
-    <value>VS Code をインストールしたら、Windows ターミナルからリモート WSL 拡張機能をインストールできます: 
+    <value>VS Code をインストールしたら、Windows ターミナルからリモート PrettyWSL 拡張機能をインストールできます: 
 
 'code –install-extension ms-vscode-remote.remote-wsl'</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectTitle.Text" xml:space="preserve">
-    <value>Visual Studio Code で WSL プロジェクトを開く</value>
+    <value>Visual Studio Code で PrettyWSL プロジェクトを開く</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectSample.Text" xml:space="preserve">
-    <value>WSL ディストリビューションから VS Code でプロジェクトを開くには、ディストリビューションのコマンド ラインを開き、'code .' を実行してプロジェクト ファイルを開きます。
+    <value>PrettyWSL ディストリビューションから VS Code でプロジェクトを開くには、ディストリビューションのコマンド ラインを開き、'code .' を実行してプロジェクト ファイルを開きます。
 
-VS Code 自体のコマンド パレットから、より多くの VS Code リモート オプションにアクセスすることもできます。キーボードで “SHIFT + Ctrl + P” キーを押してコマンド パレットを開き、‘Remote-WSL’ と入力すると、使用可能な VS Code リモート オプションの一覧が表示されます。これにより、リモート セッションでフォルダーを再度開いたり、開くディストリビューションを指定したりできます。</value>
+VS Code 自体のコマンド パレットから、より多くの VS Code リモート オプションにアクセスすることもできます。キーボードで “SHIFT + Ctrl + P” キーを押してコマンド パレットを開き、‘Remote-PrettyWSL’ と入力すると、使用可能な VS Code リモート オプションの一覧が表示されます。これにより、リモート セッションでフォルダーを再度開いたり、開くディストリビューションを指定したりできます。</value>
   </data>
   <data name="Settings_OOBE_HowToUse.Text" xml:space="preserve">
     <value>使用方法</value>
@@ -1824,14 +1824,14 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
   </data>
   <data name="Settings_ReleaseNotesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslreleases</value>
-    <comment>{Locked}Uri to Microsoft WSL release notes</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL release notes</comment>
   </data>
   <data name="Settings_SafeMode.Header" xml:space="preserve">
     <value>セーフ モードを有効にする</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeMode.Description" xml:space="preserve">
-    <value>WSL を "セーフ モード" で実行すると、多くの機能が無効になり、無効な状態のディストリビューションの回復に使用されます。</value>
+    <value>PrettyWSL を "セーフ モード" で実行すると、多くの機能が無効になり、無効な状態のディストリビューションの回復に使用されます。</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1839,7 +1839,7 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL を "セーフ モード" で実行すると、多くの機能が無効になり、無効な状態のディストリビューションの回復に使用されます。</value>
+    <value>PrettyWSL を "セーフ モード" で実行すると、多くの機能が無効になり、無効な状態のディストリビューションの回復に使用されます。</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_Shell_About.Content" xml:space="preserve">
@@ -1879,7 +1879,7 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <value>ネットワーク統合</value>
   </data>
   <data name="Settings_Shell_OOBE.Content" xml:space="preserve">
-    <value>WSL へようこそ</value>
+    <value>PrettyWSL へようこそ</value>
   </data>
   <data name="Settings_Shell_OptionalFeatures.Content" xml:space="preserve">
     <value>オプション機能</value>
@@ -1901,7 +1901,7 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
   </data>
   <data name="Settings_IssuesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslproject</value>
-    <comment>{Locked}Uri to Microsoft WSL issues</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL issues</comment>
   </data>
   <data name="Settings_SparseVHD.Header" xml:space="preserve">
     <value>スパース VHD を既定で有効にする</value>
@@ -1990,13 +1990,13 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <value>変更の適用</value>
   </data>
   <data name="Settings_ApplyChangesDialogTitle" xml:space="preserve">
-    <value>WSL のシャットダウンが必要です</value>
+    <value>PrettyWSL のシャットダウンが必要です</value>
   </data>
   <data name="Settings_ApplyChangesDialogDescription" xml:space="preserve">
-    <value>WSL 設定の変更を完了するには、WSL のシャットダウンと再起動が必要です。シャットダウンすると、アクティブな WSL セッションがすべて終了します。</value>
+    <value>PrettyWSL 設定の変更を完了するには、PrettyWSL のシャットダウンと再起動が必要です。シャットダウンすると、アクティブな PrettyWSL セッションがすべて終了します。</value>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownButton" xml:space="preserve">
-    <value>WSL を今すぐシャットダウン</value>
+    <value>PrettyWSL を今すぐシャットダウン</value>
   </data>
   <data name="Settings_ApplyChangesDialogLaterButton" xml:space="preserve">
     <value>後で</value>
@@ -2012,7 +2012,7 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <comment>{Locked="{0}"}Format placeholder for Win32 error code</comment>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownFailed" xml:space="preserve">
-    <value>設定は保存されましたが、WSL のシャットダウンに失敗しました: {0}</value>
+    <value>設定は保存されましたが、PrettyWSL のシャットダウンに失敗しました: {0}</value>
     <comment>{Locked="{0}"}Format placeholder for exception message</comment>
   </data>
   <data name="Settings_BooleanTrueText" xml:space="preserve">
@@ -2022,27 +2022,27 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <value>オフ</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Title" xml:space="preserve">
-    <value>Visual Studio から WSL 上で動作するアプリをビルド、実行、デバッグ、プロファイル</value>
+    <value>Visual Studio から PrettyWSL 上で動作するアプリをビルド、実行、デバッグ、プロファイル</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Description" xml:space="preserve">
-    <value>Visual Studio から WSL 上でアプリを実行およびデバッグします</value>
+    <value>Visual Studio から PrettyWSL 上でアプリを実行およびデバッグします</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.Content" xml:space="preserve">
-    <value>.NET 開発者向けの Visual Studio での WSL に関する詳細情報</value>
+    <value>.NET 開発者向けの Visual Studio での PrettyWSL に関する詳細情報</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/visualstudio/debugger/debug-dotnet-core-in-wsl-2</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.Content" xml:space="preserve">
-    <value>C++ 開発者向けの Visual Studio と WSL に関する詳細情報</value>
+    <value>C++ 開発者向けの Visual Studio と PrettyWSL に関する詳細情報</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/cpp/linux/?view=msvc-170</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_Description.Text" xml:space="preserve">
-    <value>Linux 用 Windows サブシステム (WSL) を使うと、Visual Studio を離れることなく、.NET Core アプリやクロスプラットフォームの C++ アプリを Linux 上で簡単に実行しデバッグできます。クロスプラットフォーム開発者の場合は、より多くのターゲット環境をテストする簡単な方法として、これを使用できます。</value>
+    <value>Linux 用 Windows サブシステム (PrettyWSL) を使うと、Visual Studio を離れることなく、.NET Core アプリやクロスプラットフォームの C++ アプリを Linux 上で簡単に実行しデバッグできます。クロスプラットフォーム開発者の場合は、より多くのターゲット環境をテストする簡単な方法として、これを使用できます。</value>
   </data>
   <data name="Settings_OOBEVSIntegration_Title.Text" xml:space="preserve">
     <value>Visual Studio 統合</value>
@@ -2051,7 +2051,7 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <value>Visual Studio 統合</value>
   </data>
   <data name="MessageWslcUsage" xml:space="preserve">
-    <value>wslc - WSL コンテナー CLI
+    <value>wslc - PrettyWSL コンテナー CLI
 使用:
   wslc --help</value>
     <comment>{Locked="--help"}Command line arguments, file names and string inserts should not be translated</comment>
@@ -2382,15 +2382,15 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <comment>{Locked="WSLC"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_RootCommandLongDesc" xml:space="preserve">
-    <value>WSLC はLinux 用 Windows サブシステム Container CLI ツールです。これにより、コマンド ラインから WSL コンテナーの管理と対話が可能になります。</value>
-    <comment>{Locked="WSLC"}{Locked="WSL"}Product names should not be translated</comment>
+    <value>WSLC はLinux 用 Windows サブシステム Container CLI ツールです。これにより、コマンド ラインから PrettyWSL コンテナーの管理と対話が可能になります。</value>
+    <comment>{Locked="WSLC"}{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerCommandDesc" xml:space="preserve">
     <value>コンテナーを管理します。</value>
   </data>
   <data name="WSLCCLI_ContainerCommandLongDesc" xml:space="preserve">
-    <value>コンテナーの作成、開始、停止、削除など、WSL コンテナーのライフサイクルを管理します。</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>コンテナーの作成、開始、停止、削除など、PrettyWSL コンテナーのライフサイクルを管理します。</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerAttachDesc" xml:space="preserve">
     <value>コンテナーにアタッチします。</value>
@@ -2641,8 +2641,8 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <value>セッションを管理します。</value>
   </data>
   <data name="WSLCCLI_SessionCommandLongDesc" xml:space="preserve">
-    <value>アクティブなセッションの一覧表示や対話型シェルの起動など、WSL コンテナー セッションを管理します。</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>アクティブなセッションの一覧表示や対話型シェルの起動など、PrettyWSL コンテナー セッションを管理します。</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_SessionListDesc" xml:space="preserve">
     <value>セッションを一覧表示します。</value>
@@ -2974,8 +2974,8 @@ VS Code 自体のコマンド パレットから、より多くの VS Code リ�
     <value>ボリュームを管理します。</value>
   </data>
   <data name="WSLCCLI_VolumeCommandLongDesc" xml:space="preserve">
-    <value>WSL ボリュームの作成、検査、一覧表示、削除など、ボリュームのライフサイクルを管理します。</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>PrettyWSL ボリュームの作成、検査、一覧表示、削除など、ボリュームのライフサイクルを管理します。</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_VolumeCreateDesc" xml:space="preserve">
     <value>ボリュームを作成します。</value>

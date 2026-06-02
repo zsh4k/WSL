@@ -6,7 +6,7 @@ parameters:
   - name: nugetPackages
     type: object
     default:
-      - Microsoft.WSL.PluginApi.nuspec
+      - PrettyWSL.PluginApi.nuspec
 
   - name: pool
     type: string
@@ -86,7 +86,7 @@ stages:
                   Copy-Item "$(Pipeline.Workspace)\drop_$($arch.platform)\sdk\$($arch.platform)\wslcsdk.lib" "$dest\wslcsdk.lib"
                   Copy-Item "$(Pipeline.Workspace)\drop_$($arch.platform)\sdk\$($arch.platform)\wslcsdk.dll" "$dest\wslcsdk.dll"
                   Copy-Item "$(Pipeline.Workspace)\drop_$($arch.platform)\sdk\$($arch.platform)\wslcsdkcs.dll" "$dest\wslcsdkcs.dll"
-                  Copy-Item "$(Pipeline.Workspace)\drop_$($arch.platform)\sdk\$($arch.platform)\Microsoft.WSL.Containers.winmd" "$dest\Microsoft.WSL.Containers.winmd"
+                  Copy-Item "$(Pipeline.Workspace)\drop_$($arch.platform)\sdk\$($arch.platform)\PrettyWSL.Containers.winmd" "$dest\PrettyWSL.Containers.winmd"
               }
 
               # Copy MSIs to the output bundle directory
@@ -184,12 +184,12 @@ stages:
               mkdir appxsym
               foreach ($arch in @("x64", "ARM64"))
               {
-                  Get-ChildItem -Path $(ob_outputDirectory)\pdb\$arch\release\*.pdb -Exclude wsltests.pdb | Compress-Archive -DestinationPath appxsym/Microsoft.WSL_${version}_$arch.zip
-                  Copy-Item -Path appxsym/Microsoft.WSL_${version}_$arch.zip -Destination appxsym/Microsoft.WSL_${version}_$arch.appxsym
+                  Get-ChildItem -Path $(ob_outputDirectory)\pdb\$arch\release\*.pdb -Exclude wsltests.pdb | Compress-Archive -DestinationPath appxsym/PrettyWSL_${version}_$arch.zip
+                  Copy-Item -Path appxsym/PrettyWSL_${version}_$arch.zip -Destination appxsym/PrettyWSL_${version}_$arch.appxsym
               }
               mkdir $(ob_outputDirectory)/appxupload
-              Get-ChildItem -Path appxsym/*.appxsym,$(ob_outputDirectory)/bundle/Microsoft.WSL_${version}_x64_ARM64.msixbundle | Compress-Archive -DestinationPath $(ob_outputDirectory)/appxupload/Microsoft.WSL_${version}_x64_ARM64.zip
-              Move-Item -Path $(ob_outputDirectory)/appxupload/Microsoft.WSL_${version}_x64_ARM64.zip -Destination $(ob_outputDirectory)/appxupload/Microsoft.WSL_${version}_x64_ARM64.appxupload
+              Get-ChildItem -Path appxsym/*.appxsym,$(ob_outputDirectory)/bundle/PrettyWSL_${version}_x64_ARM64.msixbundle | Compress-Archive -DestinationPath $(ob_outputDirectory)/appxupload/PrettyWSL_${version}_x64_ARM64.zip
+              Move-Item -Path $(ob_outputDirectory)/appxupload/PrettyWSL_${version}_x64_ARM64.zip -Destination $(ob_outputDirectory)/appxupload/PrettyWSL_${version}_x64_ARM64.appxupload
               rm appxsym/*.appxsym
 
             displayName: Create appxupload

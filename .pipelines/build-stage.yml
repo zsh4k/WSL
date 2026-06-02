@@ -22,8 +22,8 @@ parameters:
   - name: nugetPackages
     type: object
     default:
-      - Microsoft.WSL.PluginApi.nuspec
-      - Microsoft.WSL.Containers.nuspec
+      - PrettyWSL.PluginApi.nuspec
+      - PrettyWSL.Containers.nuspec
 
   - name: includePackageStage
     type: boolean
@@ -37,7 +37,7 @@ parameters:
       - target: "msixgluepackage"
         pattern: "gluepackage.msix"
       - target: "msipackage;wslcsdkcs"
-        pattern: "wsl.msi,wslcsdkcs.dll,Microsoft.WSL.Containers.winmd"
+        pattern: "wsl.msi,wslcsdkcs.dll,PrettyWSL.Containers.winmd"
 
   - name: pool
     type: string

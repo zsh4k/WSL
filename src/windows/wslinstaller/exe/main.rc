@@ -16,13 +16,13 @@ Abstract:
 #include "wslversioninfo.h"
 
 #define ID_ICON 1
-#define VER_INTERNALNAME_STR "wslinstaller.exe"
-#define VER_ORIGINALFILENAME_STR "wslinstaller.exe"
+#define VER_INTERNALNAME_STR "pwslinstaller.exe"
+#define VER_ORIGINALFILENAME_STR "pwslinstaller.exe"
 
 #define VER_FILETYPE VFT_APP
 #define VER_FILESUBTYPE VFT2_UNKNOWN
-#define VER_FILEDESCRIPTION_STR "Windows Subsystem for Linux Installer Service"
-ID_ICON ICON PRELOAD DISCARDABLE "..\..\..\images\wsl.ico"
+#define VER_FILEDESCRIPTION_STR "PrettyWSL Installer Service"
+ID_ICON ICON PRELOAD DISCARDABLE "..\..\..\images\pwsl.ico"
 
 
 #include <common.ver>

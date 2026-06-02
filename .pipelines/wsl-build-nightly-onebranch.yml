@@ -45,8 +45,8 @@ extends:
       parameters:
         isRelease: false
         isNightly: true
-        vsoOrg: microsoft
-        vsoProject: Microsoft.WSL
+        vsoOrg: prettywsl
+        vsoProject: PrettyWSL
 
     - template: test-stage.yml@self
       parameters:

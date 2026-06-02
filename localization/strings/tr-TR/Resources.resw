@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -137,10 +137,10 @@
     <value>Linux için Windows Alt Sistemi</value>
   </data>
   <data name="AppShortName" xml:space="preserve">
-    <value>WSL</value>
+    <value>PrettyWSL</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
-    <value>Windows Subsystem for Linux, geliştiricilerin bir GNU/Linux ortamını -- çoğu komut satırı aracı, yardımcı program ve uygulama dahil -- doğrudan Windows üzerinde, değiştirilmeden, geleneksel bir sanal makine veya çift önyükleme kurulumunun ek yükü olmadan çalıştırmasını sağlar.</value>
+    <value>PrettyWSL, geliştiricilerin bir GNU/Linux ortamını -- çoğu komut satırı aracı, yardımcı program ve uygulama dahil -- doğrudan Windows üzerinde, değiştirilmeden, geleneksel bir sanal makine veya çift önyükleme kurulumunun ek yükü olmadan çalıştırmasını sağlar.</value>
   </data>
   <data name="MessageDetachFailed" xml:space="preserve">
     <value>Disk ayrılamadı: {}. Daha fazla ayrıntı için lütfen WSL2 içinde 'dmesg' çalıştırın.
@@ -327,7 +327,7 @@ Bilgi için lütfen şu adresi ziyaret https://aka.ms/enablevirtualization</valu
   </data>
   <data name="MessageWsl1NotSupported" xml:space="preserve">
     <value>WSL1, mevcut makine yapılandırmanızla desteklenmiyor.
-Lütfen WSL1'i kullanmak için "Windows Subsystem for Linux" isteğe bağlı bileşenini etkinleştirin.</value>
+Lütfen WSL1'i kullanmak için "PrettyWSL" isteğe bağlı bileşenini etkinleştirin.</value>
   </data>
   <data name="MessageWsl2Needed" xml:space="preserve">
     <value>Bu işlem yalnızca WSL2 tarafından desteklenir.</value>
@@ -341,10 +341,10 @@ Lütfen WSL1'i kullanmak için "Windows Subsystem for Linux" isteğe bağlı bil
         MSAL ara sunucu uygulamasının yolunu görüntüle.
 
     --vm-id
-        WSL VM kimliğini görüntüle.
+        PrettyWSL VM kimliğini görüntüle.
 
     --version
-        WSL paketinin sürümünü görüntüle.
+        PrettyWSL paketinin sürümünü görüntüle.
 
     -n
         Yeni bir satır yazdırma.</value>
@@ -359,11 +359,11 @@ Lütfen WSL1'i kullanmak için "Windows Subsystem for Linux" isteğe bağlı bil
     -a
         Sonucu mutlak yol biçimine zorla.
     -u
-        Windows yolundan WSL yoluna çevirin (varsayılan).
+        Windows yolundan PrettyWSL yoluna çevirin (varsayılan).
     -w
-        WSL yolundan Windows yoluna çevirin.
+        PrettyWSL yolundan Windows yoluna çevirin.
     -m
-        WSL yolundan '\\' yerine '/' içeren bir Windows yoluna çevirin
+        PrettyWSL yolundan '\\' yerine '/' içeren bir Windows yoluna çevirin
 
 Örnek: wslpath 'c:\\users'</value>
     <comment>{Locked="-a
@@ -625,7 +625,7 @@ Linux için Windows Alt Sistemi'nde dağıtımı yönetmek için bağımsız de�
 "}{Locked="--quiet,"}{Locked="--verbose,"}{Locked="--online,"}{Locked="--install'"}{Locked="--set-default,"}{Locked="--set-version "}{Locked="--terminate,"}{Locked="--unregister "}Command line arguments, file names and string inserts should not be translated. {Locked="tar"}"tar" is a file archive format name and should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessagePackageVersions" xml:space="preserve">
-    <value>WSL sürümü: {}
+    <value>PrettyWSL sürümü: {}
 Çekirdek sürümü: {}
 WSLg sürümü: {}
 MSRDC sürümü: {}
@@ -815,7 +815,7 @@ Admin Protection hakkında daha fazla bilgi için lütfen https://aka.ms/apdevgu
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageWarningDuringStartup" xml:space="preserve">
-    <value>WSL başlatılırken hatalar oluştu</value>
+    <value>PrettyWSL başlatılırken hatalar oluştu</value>
   </data>
   <data name="MessageSystemdUserSessionFailed" xml:space="preserve">
     <value>'{}' için sistemli kullanıcı oturumu başlatılamadı. Daha fazla ayrıntı için journalctl'ye bakın.</value>
@@ -922,23 +922,23 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <value>Yansıtılmış ağ modu kullanılırken wsl2.localhostForwarding ayarının etkisi yoktur</value>
   </data>
   <data name="MessageHttpProxyChangeDetected" xml:space="preserve">
-    <value>Konakta bir Http Proxy değişikliği algılandı. Değişikliği uygulamak için lütfen WSL'yi yeniden başlatın.</value>
+    <value>Konakta bir Http Proxy değişikliği algılandı. Değişikliği uygulamak için lütfen PrettyWSL'yi yeniden başlatın.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLocalhostSettingsDropped" xml:space="preserve">
-    <value>Bir localhost proxy yapılandırması algılandı ancak WSL'ye yansıtılmadı. NAT modundaki WSL, localhost proxy'lerini desteklemez.</value>
+    <value>Bir localhost proxy yapılandırması algılandı ancak PrettyWSL'ye yansıtılmadı. NAT modundaki PrettyWSL, localhost proxy'lerini desteklemez.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyV6SettingsDropped" xml:space="preserve">
-    <value>Bir IPv6 proxy yapılandırması algılandı ancak WSL'ye yansıtılmadı. NAT modunda WSL, IPv6'yı desteklemez.</value>
+    <value>Bir IPv6 proxy yapılandırması algılandı ancak PrettyWSL'ye yansıtılmadı. NAT modunda PrettyWSL, IPv6'yı desteklemez.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLoopbackV6SettingsDropped" xml:space="preserve">
-    <value>Bir localhost IPv6 proxy yapılandırması algılandı ancak WSL'ye yansıtılmadı. WSL, localhost IPv6 proxy'lerini desteklemez.</value>
+    <value>Bir localhost IPv6 proxy yapılandırması algılandı ancak PrettyWSL'ye yansıtılmadı. PrettyWSL, localhost IPv6 proxy'lerini desteklemez.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyUnexpectedSettingsDropped" xml:space="preserve">
-    <value>Proxy ayarları çözümlanmaya çalışılırken beklenmeyen bir hata oluştu, proxy ayarları WSL'ye yansıtılamadı.</value>
+    <value>Proxy ayarları çözümlanmaya çalışılırken beklenmeyen bir hata oluştu, proxy ayarları PrettyWSL'ye yansıtılamadı.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageRegistryError" xml:space="preserve">
@@ -970,7 +970,7 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessagePluginRequiresUpdate" xml:space="preserve">
-    <value>'{}' eklentisi daha yeni bir WSL sürümü gerektiriyor. Lütfen şu komutu çalıştırın: wsl.exe --update</value>
+    <value>'{}' eklentisi daha yeni bir PrettyWSL sürümü gerektiriyor. Lütfen şu komutu çalıştırın: wsl.exe --update</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--update"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSettingOverriddenByPolicy" xml:space="preserve">
@@ -988,7 +988,7 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <value>WSL1, bilgisayar ilkesi tarafından devre dışı bırakıldı.</value>
   </data>
   <data name="MessageWSLContainerDisabled" xml:space="preserve">
-    <value>WSL kapsayıcısı bilgisayar ilkesi tarafından devre dışı bırakıldı.</value>
+    <value>PrettyWSL kapsayıcısı bilgisayar ilkesi tarafından devre dışı bırakıldı.</value>
   </data>
   <data name="MessageRegistryBlockedByPolicy" xml:space="preserve">
     <value>'{}' kapsayıcı görüntüsü kayıt defteri bilgisayar ilkesi tarafından engellendi.</value>
@@ -1002,7 +1002,7 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--set-version "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageFinishMsiInstallation" xml:space="preserve">
-    <value>WSL bir yükseltme işlemini bitiriyor...</value>
+    <value>PrettyWSL bir yükseltme işlemini bitiriyor...</value>
   </data>
   <data name="MessageUpdateFailed" xml:space="preserve">
     <value>Güncelleştirme başarısız (çıkış kodu: {}).</value>
@@ -1029,7 +1029,7 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageMissingOptionalComponents" xml:space="preserve">
-    <value>WSL'yi çalıştırmak için gereken isteğe bağlı bileşenler yüklü değil.</value>
+    <value>PrettyWSL'yi çalıştırmak için gereken isteğe bağlı bileşenler yüklü değil.</value>
   </data>
   <data name="MessageInstallMissingOptionalComponents" xml:space="preserve">
     <value>Eksik bileşenleri yükleyin.</value>
@@ -1054,7 +1054,7 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <value>Belgeleri Göster</value>
   </data>
   <data name="MessageVhdInUse" xml:space="preserve">
-    <value>İşlem tamamlanamadı çünkü VHD şu anda kullanımda. WSL'yi durmaya zorlamak için şu komutu kullanın: wsl.exe --shutdown</value>
+    <value>İşlem tamamlanamadı çünkü VHD şu anda kullanımda. PrettyWSL'yi durmaya zorlamak için şu komutu kullanın: wsl.exe --shutdown</value>
     <comment>{Locked="--shutdown"}Command line arguments, file names and string inserts should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="MessageInvalidBoolean" xml:space="preserve">
@@ -1066,7 +1066,7 @@ NAT ağ bağlantısına geri dönülüyor.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessageLocalSystemNotSupported" xml:space="preserve">
-    <value>WSL'nin yerel sistem olarak çalıştırılması desteklenmez.</value>
+    <value>PrettyWSL'nin yerel sistem olarak çalıştırılması desteklenmez.</value>
   </data>
   <data name="MessagePerformanceTip" xml:space="preserve">
     <value>Performans İpuçları:</value>
@@ -1131,12 +1131,12 @@ Web'den indirme deneniyor...</value>
     <comment>{Locked="wsl2.virtio"}{Locked="VirtioProxy"}{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSwiotlbKernelUnsupported" xml:space="preserve">
-    <value>Çalışan çekirdekte virtio cihaz performansını önemli ölçüde iyileştiren bir yama eksik. Bu iyileştirmeyi etkinleştirmek için daha yeni bir WSL çekirdeğine güncelleştirin.</value>
+    <value>Çalışan çekirdekte virtio cihaz performansını önemli ölçüde iyileştiren bir yama eksik. Bu iyileştirmeyi etkinleştirmek için daha yeni bir PrettyWSL çekirdeğine güncelleştirin.</value>
     <comment>{Locked="virtio"}</comment>
   </data>
   <data name="MessageInstallationCorrupted" xml:space="preserve">
-    <value>WSL yüklemesi bozulmuş gibi görünüyor (Hata kodu: {}).
-WSL'yi onarmak için herhangi bir tuşa basın veya CTRL-C tuşlarına basın.
+    <value>PrettyWSL yüklemesi bozulmuş gibi görünüyor (Hata kodu: {}).
+PrettyWSL'yi onarmak için herhangi bir tuşa basın veya CTRL-C tuşlarına basın.
 Bu istem 60 saniye içinde zaman aşımına uğradı.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -1230,7 +1230,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxy.Description" xml:space="preserve">
-    <value>WSL'nin Windows'un HTTP ara sunucusu bilgilerini kullanmasına olanak verir.</value>
+    <value>PrettyWSL'nin Windows'un HTTP ara sunucusu bilgilerini kullanmasına olanak verir.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1238,7 +1238,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL'nin Windows'un HTTP ara sunucusu bilgilerini kullanmasına olanak verir.</value>
+    <value>PrettyWSL'nin Windows'un HTTP ara sunucusu bilgilerini kullanmasına olanak verir.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_BestEffortDNS.Header" xml:space="preserve">
@@ -1296,7 +1296,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>Dağıtımlara gözat</value>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.Text" xml:space="preserve">
-    <value>Öncelikle WSL'deki GUI uygulamalarına güç sağlamak için kullanılan özel bir sistem dağıtımı olarak yüklenecek bir VHD'ye giden yolu belirtin. [Buradan sistem dağıtımları hakkında daha fazla bilgi edinin].</value>
+    <value>Öncelikle PrettyWSL'deki GUI uygulamalarına güç sağlamak için kullanılan özel bir sistem dağıtımı olarak yüklenecek bir VHD'ye giden yolu belirtin. [Buradan sistem dağıtımları hakkında daha fazla bilgi edinin].</value>
     <comment>{Locked="["}{Locked="]"}{Locked="VHD"}The text in between the delimiters [ ] is made into a hyperlink in code, and the delimiters are removed. "VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.NavigateUri" xml:space="preserve">
@@ -1307,7 +1307,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>Özel sistem dağıtımı</value>
   </data>
   <data name="Settings_CustomSystemDistroPathTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Öncelikli olarak WSL'deki GUI uygulamalarına güç sağlamak için kullanılan özel bir sistem dağıtımı şeklinde yüklenecek VHD'ye giden yolu belirtin.</value>
+    <value>Öncelikli olarak PrettyWSL'deki GUI uygulamalarına güç sağlamak için kullanılan özel bir sistem dağıtımı şeklinde yüklenecek VHD'ye giden yolu belirtin.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DebugConsole.Header" xml:space="preserve">
@@ -1327,7 +1327,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSize.Description" xml:space="preserve">
-    <value>Yalnızca yeni oluşturulan dağıtımlar için genişletilebilir WSL sanal sabit diski (VHD) için varsayılan en büyük boyut.</value>
+    <value>Yalnızca yeni oluşturulan dağıtımlar için genişletilebilir PrettyWSL sanal sabit diski (VHD) için varsayılan en büyük boyut.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeResetButton.Content" xml:space="preserve">
@@ -1338,7 +1338,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Yalnızca yeni oluşturulan dağıtımlar için genişletilebilir WSL sanal sabit diski (VHD) için megabayt olarak belirtilen varsayılan en büyük boyut.</value>
+    <value>Yalnızca yeni oluşturulan dağıtımlar için genişletilebilir PrettyWSL sanal sabit diski (VHD) için megabayt olarak belirtilen varsayılan en büyük boyut.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DeveloperPageTitle.Text" xml:space="preserve">
@@ -1349,20 +1349,20 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
   </data>
   <data name="Settings_DocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to Microsoft WSL documentation</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL documentation</comment>
   </data>
   <data name="Settings_DrvFSMode.Header" xml:space="preserve">
     <value>DrvFS modunu değiştir</value>
   </data>
   <data name="Settings_DrvFSMode.Description" xml:space="preserve">
-    <value>WSL'de işletim sistemleri arası dosya erişimi uygulamasını değiştirir.</value>
+    <value>PrettyWSL'de işletim sistemleri arası dosya erişimi uygulamasını değiştirir.</value>
   </data>
   <data name="Settings_DNSProxy.Header" xml:space="preserve">
     <value>DNS Ara Sunucusu etkin</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxy.Description" xml:space="preserve">
-    <value>Sadece wsl2.networkingMode NAT olarak ayarlandığında uygulanabilir. WSL'ye Linux'taki DNS Sunucusunu ana bilgisayardaki NAT'a göre yapılandırmasını bildiren boole değeri. False olarak ayarlandığında Windows'tan Linux'a DNS sunucuları yansıtılır.</value>
+    <value>Sadece wsl2.networkingMode NAT olarak ayarlandığında uygulanabilir. PrettyWSL'ye Linux'taki DNS Sunucusunu ana bilgisayardaki NAT'a göre yapılandırmasını bildiren boole değeri. False olarak ayarlandığında Windows'tan Linux'a DNS sunucuları yansıtılır.</value>
     <comment>{Locked="wsl2.networkingMode"}{Locked="DNS"}.wslconfig property key names should not be translated. "DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1370,7 +1370,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Sadece wsl2.networkingMode NAT olarak ayarlandığında uygulanabilir. WSL'ye Linux'taki DNS Sunucusunu ana bilgisayardaki NAT'a göre yapılandırmasını bildiren boole değeri. False olarak ayarlandığında Windows'tan Linux'a DNS sunucuları yansıtılır.</value>
+    <value>Sadece wsl2.networkingMode NAT olarak ayarlandığında uygulanabilir. PrettyWSL'ye Linux'taki DNS Sunucusunu ana bilgisayardaki NAT'a göre yapılandırmasını bildiren boole değeri. False olarak ayarlandığında Windows'tan Linux'a DNS sunucuları yansıtılır.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Header" xml:space="preserve">
@@ -1378,7 +1378,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Description" xml:space="preserve">
-    <value>DNS isteklerinin WSL'den Windows'a ara sunucudan aktarılma şeklini değiştirir.</value>
+    <value>DNS isteklerinin PrettyWSL'den Windows'a ara sunucudan aktarılma şeklini değiştirir.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1386,7 +1386,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>DNS isteklerinin WSL'den Windows'a ara sunucudan aktarılma şeklini değiştirir.</value>
+    <value>DNS isteklerinin PrettyWSL'den Windows'a ara sunucudan aktarılma şeklini değiştirir.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_FileSystemPageTitle.Text" xml:space="preserve">
@@ -1396,7 +1396,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>GUI uygulamalarını etkinleştir</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.Text" xml:space="preserve">
-    <value>WSL'de GUI uygulamaları ([WSLg]) için desteği açmak veya kapatmak için Boole değeri.</value>
+    <value>PrettyWSL'de GUI uygulamaları ([WSLg]) için desteği açmak veya kapatmak için Boole değeri.</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgproject</value>
@@ -1406,7 +1406,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>GUI uygulamalarını etkinleştirin.</value>
   </data>
   <data name="Settings_GUIApplicationsToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL'de GUI uygulamaları (WSL g olarak bilinir) için desteği açmak veya kapatmak için Boolean.</value>
+    <value>PrettyWSL'de GUI uygulamaları (PrettyWSL g olarak bilinir) için desteği açmak veya kapatmak için Boolean.</value>
   </data>
   <data name="Settings_HWPerfCounters.Header" xml:space="preserve">
     <value>Donanım performans sayaçlarını etkinleştir</value>
@@ -1424,13 +1424,13 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>Hyper-V Güvenlik Duvarı etkin</value>
   </data>
   <data name="Settings_HyperVFirewall.Description" xml:space="preserve">
-    <value>WSL ağ trafiğini filtrelemek için Windows Güvenlik Duvarı kurallarının yanı sıra Hyper-V trafiğine özel kurallara izin veren Hyper-V güvenlik duvarını sağlar.</value>
+    <value>PrettyWSL ağ trafiğini filtrelemek için Windows Güvenlik Duvarı kurallarının yanı sıra Hyper-V trafiğine özel kurallara izin veren Hyper-V güvenlik duvarını sağlar.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.Name" xml:space="preserve">
     <value>Hyper-V Güvenlik Duvarı etkin.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL ağ trafiğini filtrelemek için Windows Güvenlik Duvarı kurallarının yanı sıra Hyper-V trafiğine özel kurallara izin veren Hyper-V güvenlik duvarını sağlar.</value>
+    <value>PrettyWSL ağ trafiğini filtrelemek için Windows Güvenlik Duvarı kurallarının yanı sıra Hyper-V trafiğine özel kurallara izin veren Hyper-V güvenlik duvarını sağlar.</value>
   </data>
   <data name="Settings_HostAddressLoopback.Header" xml:space="preserve">
     <value>Ana Bilgisayar Adresi Geri Döngüsü</value>
@@ -1466,7 +1466,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeout.Description" xml:space="preserve">
-    <value>Yalnızca wsl2.autoProxy true olarak ayarlandığında geçerlidir. WSL kapsayıcısını başlatırken WSL'nin HTTP ara sunucusu bilgilerini almak için beklediği süreyi (milisaniye cinsinden) yapılandırır. Ara sunucu ayarları bu süreden sonra çözülürse, alınan ara sunucu ayarlarını kullanmak için WSL örneğinin yeniden başlatılması gerekir.</value>
+    <value>Yalnızca wsl2.autoProxy true olarak ayarlandığında geçerlidir. PrettyWSL kapsayıcısını başlatırken PrettyWSL'nin HTTP ara sunucusu bilgilerini almak için beklediği süreyi (milisaniye cinsinden) yapılandırır. Ara sunucu ayarları bu süreden sonra çözülürse, alınan ara sunucu ayarlarını kullanmak için PrettyWSL örneğinin yeniden başlatılması gerekir.</value>
     <comment>{Locked="wsl2.autoProxy"}.wslconfig property key names should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutResetButton.Content" xml:space="preserve">
@@ -1477,7 +1477,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Yalnızca wsl2.autoProxy true olarak ayarlandığında geçerlidir. WSL kapsayıcısını başlatırken WSL'nin HTTP ara sunucusu bilgilerini almak için beklediği süreyi (milisaniye cinsinden) yapılandırır. Ara sunucu ayarları bu süreden sonra çözülürse, alınan ara sunucu ayarlarını kullanmak için WSL örneğinin yeniden başlatılması gerekir.</value>
+    <value>Yalnızca wsl2.autoProxy true olarak ayarlandığında geçerlidir. PrettyWSL kapsayıcısını başlatırken PrettyWSL'nin HTTP ara sunucusu bilgilerini almak için beklediği süreyi (milisaniye cinsinden) yapılandırır. Ara sunucu ayarları bu süreden sonra çözülürse, alınan ara sunucu ayarlarını kullanmak için PrettyWSL örneğinin yeniden başlatılması gerekir.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_KernelCommandLine.Header" xml:space="preserve">
@@ -1538,13 +1538,13 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>Ağ modu</value>
   </data>
   <data name="Settings_NetworkingMode.Description" xml:space="preserve">
-    <value>WSL için ağ modunu belirtir.</value>
+    <value>PrettyWSL için ağ modunu belirtir.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.Name" xml:space="preserve">
     <value>Ağ modu.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL için ağ modunu belirtir.</value>
+    <value>PrettyWSL için ağ modunu belirtir.</value>
   </data>
   <data name="Settings_NetworkingPageTitle.Text" xml:space="preserve">
     <value>Ağ İletişimi</value>
@@ -1571,10 +1571,10 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="\\wsl.localhost\"}Url addresses should not be translated.</comment>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLTitle.Text" xml:space="preserve">
-    <value>Windows dosyalarını ve programlarını WSL'den başlatma</value>
+    <value>Windows dosyalarını ve programlarını PrettyWSL'den başlatma</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLSample.Text" xml:space="preserve">
-    <value>WSL kullanırken bile Windows çalıştırılabilir dosyalarınızı doğrudan bash'ten çalıştırabilirsiniz. Dosya Gezgini’ni geçerli klasörünüzde açmak için
+    <value>PrettyWSL kullanırken bile Windows çalıştırılabilir dosyalarınızı doğrudan bash'ten çalıştırabilirsiniz. Dosya Gezgini’ni geçerli klasörünüzde açmak için
 'powershell.exe /c start .' komutunu çalıştırmayı deneyin.</value>
     <comment>{Locked="/c start ."}Command line arguments and file names should not be translated</comment>
   </data>
@@ -1593,7 +1593,7 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>Yansıtılmış Mod Ağı</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_MirroredModeNetworkingSample.Text" xml:space="preserve">
-    <value>WSL ayrıca, IPv6 desteği ve yerel alan ağınızdaki ağ uygulamalarınıza erişme yeteneği gibi gelişmiş özellikler ekleyen, yansıtılmış mod adı verilen yeni bir ağ modunu da içerir.</value>
+    <value>PrettyWSL ayrıca, IPv6 desteği ve yerel alan ağınızdaki ağ uygulamalarınıza erişme yeteneği gibi gelişmiş özellikler ekleyen, yansıtılmış mod adı verilen yeni bir ağ modunu da içerir.</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccessLink.Content" xml:space="preserve">
     <value>İşletim Sistemleri Arası Dosya Erişimi Hakkında Daha Fazla Bilgi Edinin</value>
@@ -1606,73 +1606,73 @@ Kurtarma yönergelerine bakın: https://aka.ms/wsldiskmountrecovery</value>
     <value>Linux için Windows Alt Sistemi'ne hoş geldiniz</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Description" xml:space="preserve">
-   <value>WSL, farklı Linux dağıtımlarını denemenin harika bir yoludur.</value>
+   <value>PrettyWSL, farklı Linux dağıtımlarını denemenin harika bir yoludur.</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Title" xml:space="preserve">
     <value>Dağıtım Yönetimi</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.Content" xml:space="preserve">
-    <value>Temel WSL komutları hakkında daha fazla bilgi edinin</value>
+    <value>Temel PrettyWSL komutları hakkında daha fazla bilgi edinin</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcommands</value>
-    <comment>{Locked}Uri to the basic WSL commands documentation</comment>
+    <comment>{Locked}Uri to the basic PrettyWSL commands documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.Content" xml:space="preserve">
     <value>Herhangi bir Linux dağıtımını içeri aktarma hakkında daha fazla bilgi edinin</value>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcustomdistro</value>
-    <comment>{Locked}Uri to the import any linux distribution to use with WSL documentation</comment>
+    <comment>{Locked}Uri to the import any linux distribution to use with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosTitle.Text" xml:space="preserve">
-    <value>Yüklenebilir WSL Dağıtımlarını Listele Komutu</value>
+    <value>Yüklenebilir PrettyWSL Dağıtımlarını Listele Komutu</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe -l -o'</value>
     <comment>{Locked="-l -o"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosTitle.Text" xml:space="preserve">
-    <value>Adlandırılmış bir WSL Dağıtım Komutu Yükleme</value>
+    <value>Adlandırılmış bir PrettyWSL Dağıtım Komutu Yükleme</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe --install &lt;DistroName&gt;'</value>
     <comment>{Locked="--install "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosTitle.Text" xml:space="preserve">
-    <value>Kullanılabilir WSL Dağıtımlarını Listele Komutu</value>
+    <value>Kullanılabilir PrettyWSL Dağıtımlarını Listele Komutu</value>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe -l'</value>
     <comment>{Locked="-l"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Description" xml:space="preserve">
-    <value>Docker Masaüstü, Linux kapsayıcılarıyla geliştirmenize yardımcı olmak için WSL ile harika çalışır.
+    <value>Docker Masaüstü, Linux kapsayıcılarıyla geliştirmenize yardımcı olmak için PrettyWSL ile harika çalışır.
 
-Docker Masaüstü'nü WSL ile kullanmanın avantajlarından bazıları şunlardır:
+Docker Masaüstü'nü PrettyWSL ile kullanmanın avantajlarından bazıları şunlardır:
 
-• Docker komutlarını WSL'de veya Windows'da aynı Docker daemon'ını ve resimlerini kullanarak çalıştırabilirsiniz.
-• WSL'de Windows sürücülerinin otomatik olarak bağlanmasını kullanarak Windows ve Linux arasında dosya ve klasörleri sorunsuz bir şekilde paylaşabilirsiniz.
-• WSL'nin birlikte çalışabilirliği sayesinde, Linux kodu ve dosyaları üzerinde çalışmak için tercih ettiğiniz Windows araçlarını ve düzenleyicilerini kullanabilir veya tam tersini yapabilirsiniz.</value>
+• Docker komutlarını PrettyWSL'de veya Windows'da aynı Docker daemon'ını ve resimlerini kullanarak çalıştırabilirsiniz.
+• PrettyWSL'de Windows sürücülerinin otomatik olarak bağlanmasını kullanarak Windows ve Linux arasında dosya ve klasörleri sorunsuz bir şekilde paylaşabilirsiniz.
+• PrettyWSL'nin birlikte çalışabilirliği sayesinde, Linux kodu ve dosyaları üzerinde çalışmak için tercih ettiğiniz Windows araçlarını ve düzenleyicilerini kullanabilir veya tam tersini yapabilirsiniz.</value>
     <comment>"mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used.</comment>
  </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Title" xml:space="preserve">
     <value>Docker Masaüstü Tümleştirmesi</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.Content" xml:space="preserve">
-    <value>WSL'yi Docker ile Kullanma Hakkında Daha Fazla Bilgi Edinin</value>
+    <value>PrettyWSL'yi Docker ile Kullanma Hakkında Daha Fazla Bilgi Edinin</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocker</value>
     <comment>{Locked}Uri to the Docker remote containers on WSL 2 documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral.Description" xml:space="preserve">
-    <value>Linux için Windows Alt Sistemi (WSL), sık kullandığınız Linux araçlarınızı, yardımcı programlarınızı, uygulamalarınızı ve iş akışlarınızı doğrudan Windows üzerinde çalıştırmanıza olanak sağlar.
+    <value>Linux için Windows Alt Sistemi (PrettyWSL), sık kullandığınız Linux araçlarınızı, yardımcı programlarınızı, uygulamalarınızı ve iş akışlarınızı doğrudan Windows üzerinde çalıştırmanıza olanak sağlar.
 
 Topluluğun sık kullanılan özelliklerinden bazılarını önizlemek veya kapsamlı belgelerimizi görüntülemek için birkaç dakikanızı ayırın.</value>
   </data>
   <data name="Settings_OOBEGeneral.Title" xml:space="preserve">
-    <value>WSL’ye Hoş Geldiniz</value>
+    <value>PrettyWSL’ye Hoş Geldiniz</value>
   </data>
   <data name="Settings_OOBEGeneral_BestPracticesSetupLink.Content" xml:space="preserve">
     <value>Kurulum için En İyi Yöntemler</value>
@@ -1689,11 +1689,11 @@ Topluluğun sık kullanılan özelliklerinden bazılarını önizlemek veya kaps
     <comment>{Locked}Uri to the Getting Started with Linux Documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.Content" xml:space="preserve">
-    <value>Linux için Windows Alt Sistemi (WSL) Belgeleri</value>
+    <value>Linux için Windows Alt Sistemi (PrettyWSL) Belgeleri</value>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to the Microsoft WSL Documentation</comment>
+    <comment>{Locked}Uri to the Microsoft PrettyWSL Documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps.Description" xml:space="preserve">
     <value>Grafik tabanlı Linux uygulamalarını alt-sekme, başlat menüsünü başlatma, görev çubuğu sabitleme ve kes-yapıştır desteği gibi yerel Windows etkileşimleriyle kullanabilirsiniz.</value>
@@ -1702,9 +1702,9 @@ Topluluğun sık kullanılan özelliklerinden bazılarını önizlemek veya kaps
     <value>GUI Uygulamaları</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Description" xml:space="preserve">
-    <value>WSL, Makine Öğrenimi iş akışları için Windows GPU'nuzdan yararlanabilir
+    <value>PrettyWSL, Makine Öğrenimi iş akışları için Windows GPU'nuzdan yararlanabilir
 
-WSL'de çalışan Linux ikili dosyaları, performanslarını hızlandırmak için Windows'taki GPU'nuzu otomatik olarak kullanabilir. Bu iş akışlarını normal bir Linux makinesindekiyle aynı şekilde yüklemeniz ve çalıştırmanız yeterlidir. NVIDIA grafik kartınız varsa CUDA'yı docker kapsayıcısında çalıştırmaktan, AMD, Intel veya NVIDIA grafik kartınızda PyTorch veya TensorFlow'u DirectML ile çalıştırmaya kadar başlamanın birçok farklı yolu vardır. Daha fazla bilgi edinmek için aşağıda başlarken kılavuzumuza bakın.</value>
+PrettyWSL'de çalışan Linux ikili dosyaları, performanslarını hızlandırmak için Windows'taki GPU'nuzu otomatik olarak kullanabilir. Bu iş akışlarını normal bir Linux makinesindekiyle aynı şekilde yüklemeniz ve çalıştırmanız yeterlidir. NVIDIA grafik kartınız varsa CUDA'yı docker kapsayıcısında çalıştırmaktan, AMD, Intel veya NVIDIA grafik kartınızda PyTorch veya TensorFlow'u DirectML ile çalıştırmaya kadar başlamanın birçok farklı yolu vardır. Daha fazla bilgi edinmek için aşağıda başlarken kılavuzumuza bakın.</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Title" xml:space="preserve">
     <value>GPU Hızlandırma</value>
@@ -1714,14 +1714,14 @@ WSL'de çalışan Linux ikili dosyaları, performanslarını hızlandırmak içi
   </data>
   <data name="Settings_OOBEGPUAccelerationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgpu</value>
-    <comment>{Locked}Uri to the GPU acceleration for ML in WSL documentation</comment>
+    <comment>{Locked}Uri to the GPU acceleration for ML in PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIAppsLink.Content" xml:space="preserve">
-    <value>WSL GUI Uygulamaları Hakkında Daha Fazla Bilgi Edinin</value>
+    <value>PrettyWSL GUI Uygulamaları Hakkında Daha Fazla Bilgi Edinin</value>
   </data>
   <data name="Settings_OOBEGUIAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslguiapps</value>
-    <comment>{Locked}Uri to the Run GUI apps on the WSL documentation</comment>
+    <comment>{Locked}Uri to the Run GUI apps on the PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps_AppsListDescription.Text" xml:space="preserve">
     <value>Denenecek uygulamaların listesini aşağıda bulabilirsiniz (Bunların hepsini Ubuntu'ya 'sudo apt install &lt;The App Name&gt;' yazarak yükleyebilirsiniz)
@@ -1744,43 +1744,43 @@ WSL'de çalışan Linux ikili dosyaları, performanslarını hızlandırmak içi
   </data>
   <data name="Settings_OOBENetworkingIntegrationLinuxNetworkingAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslnetworking</value>
-    <comment>{Locked}Uri to the Accessing network applications with WSL documentation</comment>
+    <comment>{Locked}Uri to the Accessing network applications with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.Content" xml:space="preserve">
     <value>Yansıtılmış Mod Ağı Hakkında Daha Fazla Bilgi Edinin</value>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslmirroredmode</value>
-    <comment>{Locked}Uri to the WSL Mirrored Mode networking documentation</comment>
+    <comment>{Locked}Uri to the PrettyWSL Mirrored Mode networking documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Description" xml:space="preserve">
-   <value>WSL'yi tam zamanlı geliştirme ortamınız olarak doğrudan VS Code'dan kullanabilirsiniz.</value>
+   <value>PrettyWSL'yi tam zamanlı geliştirme ortamınız olarak doğrudan VS Code'dan kullanabilirsiniz.</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Title" xml:space="preserve">
     <value>VS Code Tümleştirmesi</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.Content" xml:space="preserve">
-    <value>WSL'yi VS Code ile Kullanma Hakkında Daha Fazla Bilgi Edinin</value>
+    <value>PrettyWSL'yi VS Code ile Kullanma Hakkında Daha Fazla Bilgi Edinin</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslvscode</value>
-    <comment>{Locked}Uri to the using Visual Studio Code with WSL documentation</comment>
+    <comment>{Locked}Uri to the using Visual Studio Code with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallTitle.Text" xml:space="preserve">
     <value>Yükleme</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallSample.Text" xml:space="preserve">
-    <value>VS Code'u yükledikten sonra Remote WSL uzantısını Windows Terminal'dan yükleyebilirsiniz:
+    <value>VS Code'u yükledikten sonra Remote PrettyWSL uzantısını Windows Terminal'dan yükleyebilirsiniz:
 
 'code –install-extension ms-vscode-remote.remote-wsl'</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectTitle.Text" xml:space="preserve">
-    <value>Visual Studio Code'da bir WSL Projesi Açma</value>
+    <value>Visual Studio Code'da bir PrettyWSL Projesi Açma</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectSample.Text" xml:space="preserve">
-    <value>WSL dağıtımınızdan VS Code'da bir proje açmak için dağıtımın komut satırını açın ve bir proje dosyası açmak için 'code .' komutunu çalıştırın.
+    <value>PrettyWSL dağıtımınızdan VS Code'da bir proje açmak için dağıtımın komut satırını açın ve bir proje dosyası açmak için 'code .' komutunu çalıştırın.
 
-Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Remote seçeneğine de erişebilirsiniz. Komut paletini açmak için klavyenizdeki “SHIFT+CTRL+P” tuşlarına basın ve kullanılabilir VS Code Remote seçeneklerinin listesini görmek için ‘Remote-WSL’ yazın. Bu işlem, uzak bir oturumda klasörü yeniden açmanıza, hangi dağıtımı açmak istediğinizi belirtmenize ve daha fazlasına olanak sağlar.</value>
+Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Remote seçeneğine de erişebilirsiniz. Komut paletini açmak için klavyenizdeki “SHIFT+CTRL+P” tuşlarına basın ve kullanılabilir VS Code Remote seçeneklerinin listesini görmek için ‘Remote-PrettyWSL’ yazın. Bu işlem, uzak bir oturumda klasörü yeniden açmanıza, hangi dağıtımı açmak istediğinizi belirtmenize ve daha fazlasına olanak sağlar.</value>
   </data>
   <data name="Settings_OOBE_HowToUse.Text" xml:space="preserve">
     <value>Kullanma</value>
@@ -1818,14 +1818,14 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
   </data>
   <data name="Settings_ReleaseNotesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslreleases</value>
-    <comment>{Locked}Uri to Microsoft WSL release notes</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL release notes</comment>
   </data>
   <data name="Settings_SafeMode.Header" xml:space="preserve">
     <value>Güvenli modu etkinleştir</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeMode.Description" xml:space="preserve">
-    <value>WSL'yi birçok özelliği devre dışı bırakan ve kötü durumdaki dağıtımları kurtarmak için kullanılması amaçlanan "Güvenli Mod "da çalıştırın.</value>
+    <value>PrettyWSL'yi birçok özelliği devre dışı bırakan ve kötü durumdaki dağıtımları kurtarmak için kullanılması amaçlanan "Güvenli Mod "da çalıştırın.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1833,7 +1833,7 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>WSL'yi birçok özelliği devre dışı bırakan ve kötü durumdaki dağıtımları kurtarmak için kullanılması amaçlanan "Güvenli Mod "da çalıştırın.</value>
+    <value>PrettyWSL'yi birçok özelliği devre dışı bırakan ve kötü durumdaki dağıtımları kurtarmak için kullanılması amaçlanan "Güvenli Mod "da çalıştırın.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_Shell_About.Content" xml:space="preserve">
@@ -1873,7 +1873,7 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
     <value>Ağ Tümleştirmesi</value>
   </data>
   <data name="Settings_Shell_OOBE.Content" xml:space="preserve">
-    <value>WSL’ye Hoş Geldiniz</value>
+    <value>PrettyWSL’ye Hoş Geldiniz</value>
   </data>
   <data name="Settings_Shell_OptionalFeatures.Content" xml:space="preserve">
     <value>İsteğe Bağlı Özellikler</value>
@@ -1895,7 +1895,7 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
   </data>
   <data name="Settings_IssuesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslproject</value>
-    <comment>{Locked}Uri to Microsoft WSL issues</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL issues</comment>
   </data>
   <data name="Settings_SparseVHD.Header" xml:space="preserve">
     <value>Seyrek VHD'yi varsayılan olarak etkinleştir</value>
@@ -1984,13 +1984,13 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
     <value>Değişiklikleri uygula</value>
   </data>
   <data name="Settings_ApplyChangesDialogTitle" xml:space="preserve">
-    <value>WSL'nin Kapatılması Gerekiyor</value>
+    <value>PrettyWSL'nin Kapatılması Gerekiyor</value>
   </data>
   <data name="Settings_ApplyChangesDialogDescription" xml:space="preserve">
-    <value>Değiştirilen WSL ayarlarının geçerli hale gelmesi için WSL'nin kapatılıp yeniden başlatılması gerekir. Kapatma işlemi, aktif olan tüm WSL oturumlarının sonlanmasına yol açar.</value>
+    <value>Değiştirilen PrettyWSL ayarlarının geçerli hale gelmesi için PrettyWSL'nin kapatılıp yeniden başlatılması gerekir. Kapatma işlemi, aktif olan tüm PrettyWSL oturumlarının sonlanmasına yol açar.</value>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownButton" xml:space="preserve">
-    <value>WSL'yi şimdi kapatın</value>
+    <value>PrettyWSL'yi şimdi kapatın</value>
   </data>
   <data name="Settings_ApplyChangesDialogLaterButton" xml:space="preserve">
     <value>Daha sonra</value>
@@ -2006,7 +2006,7 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
     <comment>{Locked="{0}"}Format placeholder for Win32 error code</comment>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownFailed" xml:space="preserve">
-    <value>Ayarlar kaydedildi, ancak WSL kapatılamadı: {0}</value>
+    <value>Ayarlar kaydedildi, ancak PrettyWSL kapatılamadı: {0}</value>
     <comment>{Locked="{0}"}Format placeholder for exception message</comment>
   </data>
   <data name="Settings_BooleanTrueText" xml:space="preserve">
@@ -2016,27 +2016,27 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
     <value>Kapalı</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Title" xml:space="preserve">
-    <value>Visual Studio'dan WSL üzerinde çalışan uygulamalarınızı derleyin, çalıştırın, hatalarını ayıklayın ve profillerini oluşturun</value>
+    <value>Visual Studio'dan PrettyWSL üzerinde çalışan uygulamalarınızı derleyin, çalıştırın, hatalarını ayıklayın ve profillerini oluşturun</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Description" xml:space="preserve">
-    <value>Visual Studio'dan WSL üzerinde uygulamalarınızı çalıştırın ve hatalarını ayıklayın</value>
+    <value>Visual Studio'dan PrettyWSL üzerinde uygulamalarınızı çalıştırın ve hatalarını ayıklayın</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.Content" xml:space="preserve">
-    <value>.NET geliştiricileri için Visual Studio'da WSL hakkında daha fazla bilgi edinin</value>
+    <value>.NET geliştiricileri için Visual Studio'da PrettyWSL hakkında daha fazla bilgi edinin</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/visualstudio/debugger/debug-dotnet-core-in-wsl-2</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.Content" xml:space="preserve">
-    <value>C++ geliştiricileri için Visual Studio ve WSL hakkında daha fazla bilgi edinin</value>
+    <value>C++ geliştiricileri için Visual Studio ve PrettyWSL hakkında daha fazla bilgi edinin</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/cpp/linux/?view=msvc-170</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_Description.Text" xml:space="preserve">
-    <value>Linux için Windows Alt Sistemi'ni (WSL) kullanarak Visual Studio'dan ayrılmadan Linux'ta .Net Core ve platformlar arası C++ uygulamalarınızı kolayca çalıştırabilir ve hatalarını ayıklayabilirsiniz. Platformlar arası geliştirme yapıyorsanız, bu yöntemi hedef ortamlarınızı daha fazla test etmenin basit bir yolu olarak kullanabilirsiniz.</value>
+    <value>Linux için Windows Alt Sistemi'ni (PrettyWSL) kullanarak Visual Studio'dan ayrılmadan Linux'ta .Net Core ve platformlar arası C++ uygulamalarınızı kolayca çalıştırabilir ve hatalarını ayıklayabilirsiniz. Platformlar arası geliştirme yapıyorsanız, bu yöntemi hedef ortamlarınızı daha fazla test etmenin basit bir yolu olarak kullanabilirsiniz.</value>
   </data>
   <data name="Settings_OOBEVSIntegration_Title.Text" xml:space="preserve">
     <value>Visual Studio Tümleştirmesi</value>
@@ -2045,7 +2045,7 @@ Ayrıca VS Code'un içindeki komut paleti aracılığıyla daha fazla VS Code Re
     <value>Visual Studio Tümleştirmesi</value>
   </data>
   <data name="MessageWslcUsage" xml:space="preserve">
-    <value>wslc - WSL Kapsayıcı CLI’si
+    <value>wslc - PrettyWSL Kapsayıcı CLI’si
 Kullanım:
   wslc --help</value>
     <comment>{Locked="--help"}Command line arguments, file names and string inserts should not be translated</comment>
@@ -2376,15 +2376,15 @@ Bu ürünle ilgili gizlilik bilgileri için lütfen https://aka.ms/privacy sayfa
     <comment>{Locked="WSLC"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_RootCommandLongDesc" xml:space="preserve">
-    <value>WSLC, Linux için Windows Alt Sistemi Kapsayıcı CLI aracıdır. Komut satırından WSL kapsayıcılarını yönetmeyi ve onlarla etkileşim kurmayı sağlar.</value>
-    <comment>{Locked="WSLC"}{Locked="WSL"}Product names should not be translated</comment>
+    <value>WSLC, Linux için Windows Alt Sistemi Kapsayıcı CLI aracıdır. Komut satırından PrettyWSL kapsayıcılarını yönetmeyi ve onlarla etkileşim kurmayı sağlar.</value>
+    <comment>{Locked="WSLC"}{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerCommandDesc" xml:space="preserve">
     <value>Kapsayıcıları yönet.</value>
   </data>
   <data name="WSLCCLI_ContainerCommandLongDesc" xml:space="preserve">
-    <value>Kapsayıcı oluşturma, WSL kaldırma dahil olmak üzere kapsayıcıların yaşam döngüsünü yönetin.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Kapsayıcı oluşturma, PrettyWSL kaldırma dahil olmak üzere kapsayıcıların yaşam döngüsünü yönetin.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerAttachDesc" xml:space="preserve">
     <value>Kapsayıcıya bağlan.</value>
@@ -2635,8 +2635,8 @@ Bu ürünle ilgili gizlilik bilgileri için lütfen https://aka.ms/privacy sayfa
     <value>Oturumları yönet.</value>
   </data>
   <data name="WSLCCLI_SessionCommandLongDesc" xml:space="preserve">
-    <value>Etkin oturumların listelenmesi ve etkileşimli kabukların başlatılması da dahil WSL kapsayıcı oturumlarını yönet.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Etkin oturumların listelenmesi ve etkileşimli kabukların başlatılması da dahil PrettyWSL kapsayıcı oturumlarını yönet.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_SessionListDesc" xml:space="preserve">
     <value>Oturumları listele.</value>
@@ -2968,8 +2968,8 @@ Bu ürünle ilgili gizlilik bilgileri için lütfen https://aka.ms/privacy sayfa
     <value>Birimleri yönetin.</value>
   </data>
   <data name="WSLCCLI_VolumeCommandLongDesc" xml:space="preserve">
-    <value>Oluşturma, inceleme, listeleme ve silme işlemleri de dahil olmak üzere WSL birimlerinin yaşam döngüsünü yönetin.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Oluşturma, inceleme, listeleme ve silme işlemleri de dahil olmak üzere PrettyWSL birimlerinin yaşam döngüsünü yönetin.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_VolumeCreateDesc" xml:space="preserve">
     <value>Birim oluşturun.</value>

@@ -30,14 +30,14 @@
          without requiring COM registration or renaming the DLL to match the namespace. -->
     <ItemDefinitionGroup Condition="'$(WslcEnableCppWinRT)' == 'true' and '$(ConfigurationType)' != 'StaticLibrary'">
         <Manifest>
-            <AdditionalManifestFiles>$(MSBuildThisFileDirectory)..\..\manifests\Microsoft.WSL.Containers.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+            <AdditionalManifestFiles>$(MSBuildThisFileDirectory)..\..\manifests\PrettyWSL.Containers.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
         </Manifest>
     </ItemDefinitionGroup>
 
     <ItemGroup>
         <ReferenceCopyLocalPaths Include="$(MSBuildThisFileDirectory)..\..\runtimes\win-$(WslcPlatform)\native\wslcsdk.dll" />
-        <Reference Include="Microsoft.WSL.Containers" Condition="'$(WslcEnableCppWinRT)' == 'true'">
-            <HintPath>$(MSBuildThisFileDirectory)..\..\winmd\Microsoft.WSL.Containers.winmd</HintPath>
+        <Reference Include="PrettyWSL.Containers" Condition="'$(WslcEnableCppWinRT)' == 'true'">
+            <HintPath>$(MSBuildThisFileDirectory)..\..\winmd\PrettyWSL.Containers.winmd</HintPath>
             <Implementation>wslcsdk.dll</Implementation>
         </Reference>
     </ItemGroup>
@@ -46,7 +46,7 @@
         <Error Text="wslcsdk.dll could not be copied because platform '$(WslcPlatform)' is not supported. Only x64 and arm64 platforms are supported. You can override the detected platform by setting the property WslcPlatform." />
     </Target>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\Microsoft.WSL.Containers.common.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\PrettyWSL.Containers.common.targets" />
 
     <!-- ================================================================== -->
     <!-- C++ specific: Write .tlog files for VS Fast Up-to-Date Check       -->

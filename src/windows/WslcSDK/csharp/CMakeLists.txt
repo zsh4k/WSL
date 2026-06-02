@@ -26,7 +26,7 @@ set_target_properties(
   VS_GLOBAL_Platforms "AnyCPU"
   VS_GLOBAL_PlatformTarget "AnyCPU"
   VS_PACKAGE_REFERENCES "Microsoft.Windows.CsWinRT_${CSWINRT_VERSION}"
-  VS_GLOBAL_CsWinRTIncludes "Microsoft.WSL.Containers"
+  VS_GLOBAL_CsWinRTIncludes "PrettyWSL.Containers"
 )
 
 add_dependencies(wslcsdkcs wslcsdkwinrt)

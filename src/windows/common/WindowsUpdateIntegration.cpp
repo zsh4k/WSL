@@ -141,7 +141,7 @@ WindowsUpdateContext::WindowsUpdateContext(std::unique_ptr<WindowsUpdateClassFac
 {
     m_session = m_factory->CreateUpdateSession();
 
-    auto applicationID = wil::make_bstr(L"Windows Subsystem for Linux");
+    auto applicationID = wil::make_bstr(L"PrettyWSL");
     THROW_IF_FAILED(m_session->put_ClientApplicationID(applicationID.get()));
 
     m_activity = std::make_unique<ActivityType>();

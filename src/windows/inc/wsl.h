@@ -14,7 +14,7 @@ Abstract:
 
 #pragma once
 
-#define WSL_BINARY_NAME L"wsl.exe"
+#define WSL_BINARY_NAME L"pwsl.exe"
 #define WSL_CHANGE_DIRECTORY_ARG L"--cd"
 #define WSL_CWD_HOME L"~"
 #define WSL_DEBUG_SHELL_ARG_LONG L"--debug-shell"

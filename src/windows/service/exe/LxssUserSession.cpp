@@ -3362,12 +3362,12 @@ void LxssUserSessionImpl::_ProcessImportResultMessage(
         }
         else
         {
-            iconPath = basePath / L"wsl.exe";
+            iconPath = basePath / L"pwsl.exe";
         }
 
         if (Message.GenerateShortcut)
         {
-            _CreateDistributionShortcut(Configuration.Name.c_str(), iconPath.c_str(), (basePath / L"wsl.exe").c_str(), Registration);
+            _CreateDistributionShortcut(Configuration.Name.c_str(), iconPath.c_str(), (basePath / L"pwsl.exe").c_str(), Registration);
         }
 
         // Generate a Windows Terminal profile, as long as the distribution didn't opt-out of it.

@@ -214,11 +214,11 @@ jobs:
               if ('${{ parameters.isRelease }}' -eq 'True') {
                   Copy-Item -Path "$(packageStagingDir)\${{ parameters.platform }}\wslcsdk.dll" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\wslcsdk.dll"
                   Copy-Item -Path "$(packageStagingDir)\${{ parameters.platform }}\wslcsdkcs.dll" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\wslcsdkcs.dll"
-                  Copy-Item -Path "$(packageStagingDir)\${{ parameters.platform }}\Microsoft.WSL.Containers.winmd" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\Microsoft.WSL.Containers.winmd"
+                  Copy-Item -Path "$(packageStagingDir)\${{ parameters.platform }}\PrettyWSL.Containers.winmd" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\PrettyWSL.Containers.winmd"
               } else {
                   Copy-Item -Path "bin\${{ parameters.platform }}\release\wslcsdk.dll" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\wslcsdk.dll"
                   Copy-Item -Path "bin\${{ parameters.platform }}\release\wslcsdkcs.dll" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\wslcsdkcs.dll"
-                  Copy-Item -Path "bin\${{ parameters.platform }}\release\Microsoft.WSL.Containers.winmd" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\Microsoft.WSL.Containers.winmd"
+                  Copy-Item -Path "bin\${{ parameters.platform }}\release\PrettyWSL.Containers.winmd" -Destination "$(ob_outputDirectory)\sdk\${{ parameters.platform }}\PrettyWSL.Containers.winmd"
               }
 
       - task: PowerShell@2
@@ -318,11 +318,11 @@ jobs:
             Move-Item -Path "diagnostics\wsl.wprp" -Destination "$(ob_outputDirectory)\testbin\wsl.wprp"
             Move-Item -Path "test\linux\unit_tests" -Destination "$(ob_outputDirectory)\testbin\unit_tests"
 
-            $TestDistroVersion = (Select-Xml -Path packages.config -XPath '/packages/package[@id=''Microsoft.WSL.TestDistro'']/@version').Node.Value
-            Copy-Item "packages\Microsoft.WSL.TestDistro.$TestDistroVersion\x64\test_distro.tar.xz" "$(ob_outputDirectory)\testbin\x64"
+            $TestDistroVersion = (Select-Xml -Path packages.config -XPath '/packages/package[@id=''PrettyWSL.TestDistro'']/@version').Node.Value
+            Copy-Item "packages\PrettyWSL.TestDistro.$TestDistroVersion\x64\test_distro.tar.xz" "$(ob_outputDirectory)\testbin\x64"
 
-            $TestDataVersion = (Select-Xml -Path packages.config -XPath '/packages/package[@id=''Microsoft.WSL.TestData'']/@version').Node.Value
-            Copy-Item "packages\Microsoft.WSL.TestData.$TestDataVersion\x64" "$(ob_outputDirectory)\testbin\x64\test_data" -Recurse -Force
+            $TestDataVersion = (Select-Xml -Path packages.config -XPath '/packages/package[@id=''PrettyWSL.TestData'']/@version').Node.Value
+            Copy-Item "packages\PrettyWSL.TestData.$TestDataVersion\x64" "$(ob_outputDirectory)\testbin\x64\test_data" -Recurse -Force
 
           displayName: Stage test artifacts
 

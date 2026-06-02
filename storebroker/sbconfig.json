@@ -18,7 +18,7 @@
         "MediaFallbackLanguage": "",
         "PackagePath": [],
         "OutPath": "",
-        "OutName": "WindowsSubsystemForLinux",
+        "OutName": "PrettyWSL",
         "DisableAutoPackageNameFormatting": false
     },
     "appSubmission": {

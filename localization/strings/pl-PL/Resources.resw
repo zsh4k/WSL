@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -137,7 +137,7 @@
     <value>Podsystem Windows dla systemu Linux</value>
   </data>
   <data name="AppShortName" xml:space="preserve">
-    <value>WSL</value>
+    <value>PrettyWSL</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Podsystem Windows dla systemu Linux umożliwia deweloperom uruchamianie środowiska GNU/Linux — a w tym większości narzędzi wiersza polecenia, narzędzi i aplikacji — bezpośrednio w systemie Windows, bez modyfikacji, bez obciążenia tradycyjnej maszyny wirtualnej lub konfiguracji uruchomienia jednego z kilku systemów operacyjnych.</value>
@@ -341,10 +341,10 @@ Włącz opcjonalny składnik „Podsystem Windows dla systemu Linux”, aby uży
         Wyświetl ścieżkę do aplikacji serwera proxy MSAL.
 
     --vm-id
-        Wyświetl identyfikator maszyny wirtualnej WSL.
+        Wyświetl identyfikator maszyny wirtualnej PrettyWSL.
 
     --version
-        Wyświetl wersję pakietu WSL.
+        Wyświetl wersję pakietu PrettyWSL.
 
     -n
         Nie drukuj nowego wiersza.</value>
@@ -359,11 +359,11 @@ Włącz opcjonalny składnik „Podsystem Windows dla systemu Linux”, aby uży
     -a
         Wymuś wynik do bezwzględnego formatu ścieżki.
     -u
-        Tłumaczenie ze ścieżki systemu Windows na ścieżkę WSL (domyślna).
+        Tłumaczenie ze ścieżki systemu Windows na ścieżkę PrettyWSL (domyślna).
     -w
-        Tłumaczenie ze ścieżki WSL na ścieżkę systemu Windows.
+        Tłumaczenie ze ścieżki PrettyWSL na ścieżkę systemu Windows.
     -m
-        Tłumaczenie ze ścieżki WSL na ścieżkę systemu Windows ze znakiem „/” zamiast „\\”
+        Tłumaczenie ze ścieżki PrettyWSL na ścieżkę systemu Windows ze znakiem „/” zamiast „\\”
 
 Przykład: wslpath „c:\\users”</value>
     <comment>{Locked="-a
@@ -625,7 +625,7 @@ Argumenty zarządzania dystrybucjami w Podsystemie Windows dla systemu Linux:
 "}{Locked="--quiet,"}{Locked="--verbose,"}{Locked="--online,"}{Locked="--install'"}{Locked="--set-default,"}{Locked="--set-version "}{Locked="--terminate,"}{Locked="--unregister "}Command line arguments, file names and string inserts should not be translated. {Locked="tar"}"tar" is a file archive format name and should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessagePackageVersions" xml:space="preserve">
-    <value>Wersja podsystemu WSL: {}
+    <value>Wersja podsystemu PrettyWSL: {}
 Wersja jądra: {}
 Wersja usługi WSLg: {}
 Wersja MSRDC: {}
@@ -815,7 +815,7 @@ Więcej informacji na temat Admin Protection można znaleźć na stronie https:/
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageWarningDuringStartup" xml:space="preserve">
-    <value>Wystąpiły błędy podczas uruchamiania podsystemu WSL</value>
+    <value>Wystąpiły błędy podczas uruchamiania podsystemu PrettyWSL</value>
   </data>
   <data name="MessageSystemdUserSessionFailed" xml:space="preserve">
     <value>Nie można uruchomić systemowej sesji użytkownika dla "{}". Aby uzyskać więcej szczegółów, zobacz dziennik journalctl.</value>
@@ -922,23 +922,23 @@ Powrót do sieci NAT.</value>
     <value>Ustawienie wsl2.localhostForwarding nie ma wpływu w przypadku korzystania z trybu sieci lustrzanej</value>
   </data>
   <data name="MessageHttpProxyChangeDetected" xml:space="preserve">
-    <value>Na hoście wykryto zmianę serwera proxy HTTP. Uruchom ponownie podsystem WSL, aby zastosować zmianę.</value>
+    <value>Na hoście wykryto zmianę serwera proxy HTTP. Uruchom ponownie podsystem PrettyWSL, aby zastosować zmianę.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLocalhostSettingsDropped" xml:space="preserve">
-    <value>Wykryto konfigurację serwera proxy hosta lokalnego, ale nie została ona zdublowana w podsystemie WSL. Podsystem WSL w trybie NAT nie obsługuje serwerów proxy hosta lokalnego.</value>
+    <value>Wykryto konfigurację serwera proxy hosta lokalnego, ale nie została ona zdublowana w podsystemie PrettyWSL. Podsystem PrettyWSL w trybie NAT nie obsługuje serwerów proxy hosta lokalnego.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyV6SettingsDropped" xml:space="preserve">
-    <value>Wykryto konfigurację serwera proxy IPv6, ale nie została ona zdublowana w podsystemie WSL. Podsystem WSL w trybie NAT nie obsługuje protokołu IPv6.</value>
+    <value>Wykryto konfigurację serwera proxy IPv6, ale nie została ona zdublowana w podsystemie PrettyWSL. Podsystem PrettyWSL w trybie NAT nie obsługuje protokołu IPv6.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLoopbackV6SettingsDropped" xml:space="preserve">
-    <value>Wykryto konfigurację serwera proxy IPv6 hosta lokalnego, ale nie została ona zdublowana w podsystemie WSL. Podsystem WSL nie obsługuje serwerów proxy IPv6 hosta lokalnego.</value>
+    <value>Wykryto konfigurację serwera proxy IPv6 hosta lokalnego, ale nie została ona zdublowana w podsystemie PrettyWSL. Podsystem PrettyWSL nie obsługuje serwerów proxy IPv6 hosta lokalnego.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyUnexpectedSettingsDropped" xml:space="preserve">
-    <value>Wystąpił nieoczekiwany błąd podczas próby rozpoznania ustawień serwera proxy. Ustawienia serwera proxy nie zostały zdublowane w podsystemie WSL.</value>
+    <value>Wystąpił nieoczekiwany błąd podczas próby rozpoznania ustawień serwera proxy. Ustawienia serwera proxy nie zostały zdublowane w podsystemie PrettyWSL.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageRegistryError" xml:space="preserve">
@@ -970,7 +970,7 @@ Powrót do sieci NAT.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessagePluginRequiresUpdate" xml:space="preserve">
-    <value>Wtyczka „{}” wymaga nowszej wersji podsystemu WSL. Uruchom polecenie: wsl.exe --update</value>
+    <value>Wtyczka „{}” wymaga nowszej wersji podsystemu PrettyWSL. Uruchom polecenie: wsl.exe --update</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--update"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSettingOverriddenByPolicy" xml:space="preserve">
@@ -988,7 +988,7 @@ Powrót do sieci NAT.</value>
     <value>System WSL1 został wyłączony przez zasady komputera.</value>
   </data>
   <data name="MessageWSLContainerDisabled" xml:space="preserve">
-    <value>Kontener WSL jest wyłączony przez zasady komputera.</value>
+    <value>Kontener PrettyWSL jest wyłączony przez zasady komputera.</value>
   </data>
   <data name="MessageRegistryBlockedByPolicy" xml:space="preserve">
     <value>Rejestr obrazów kontenerów „{}” jest zablokowany przez zasady komputera.</value>
@@ -1002,7 +1002,7 @@ Powrót do sieci NAT.</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--set-version "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageFinishMsiInstallation" xml:space="preserve">
-    <value>Podsystem WSL kończy uaktualnianie...</value>
+    <value>Podsystem PrettyWSL kończy uaktualnianie...</value>
   </data>
   <data name="MessageUpdateFailed" xml:space="preserve">
     <value>Aktualizacja nie powiodła się (kod zakończenia: {}).</value>
@@ -1029,7 +1029,7 @@ Powrót do sieci NAT.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageMissingOptionalComponents" xml:space="preserve">
-    <value>Opcjonalne składniki potrzebne do uruchomienia WSL nie są zainstalowane.</value>
+    <value>Opcjonalne składniki potrzebne do uruchomienia PrettyWSL nie są zainstalowane.</value>
   </data>
   <data name="MessageInstallMissingOptionalComponents" xml:space="preserve">
     <value>Zainstaluj brakujące składniki.</value>
@@ -1054,7 +1054,7 @@ Powrót do sieci NAT.</value>
     <value>Zobacz dokumenty</value>
   </data>
   <data name="MessageVhdInUse" xml:space="preserve">
-    <value>Nie można ukończyć operacji, ponieważ dysk VHD jest obecnie używany. Aby wymusić zatrzymanie używania protokołu WSL:  wsl.exe --shutdown</value>
+    <value>Nie można ukończyć operacji, ponieważ dysk VHD jest obecnie używany. Aby wymusić zatrzymanie używania protokołu PrettyWSL:  wsl.exe --shutdown</value>
     <comment>{Locked="--shutdown"}Command line arguments, file names and string inserts should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="MessageInvalidBoolean" xml:space="preserve">
@@ -1066,7 +1066,7 @@ Powrót do sieci NAT.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessageLocalSystemNotSupported" xml:space="preserve">
-    <value>Uruchamianie podsystemu WSL jako systemu lokalnego nie jest obsługiwane.</value>
+    <value>Uruchamianie podsystemu PrettyWSL jako systemu lokalnego nie jest obsługiwane.</value>
   </data>
   <data name="MessagePerformanceTip" xml:space="preserve">
     <value>Porada dotycząca wydajności:</value>
@@ -1131,12 +1131,12 @@ Próba pobrania z sieci Web...</value>
     <comment>{Locked="wsl2.virtio"}{Locked="VirtioProxy"}{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSwiotlbKernelUnsupported" xml:space="preserve">
-    <value>W uruchomionym jądrze brakuje poprawki, która znacznie poprawia wydajność urządzenia virtio. Zaktualizuj jądro WSL do nowszej wersji, aby włączyć tę optymalizację.</value>
+    <value>W uruchomionym jądrze brakuje poprawki, która znacznie poprawia wydajność urządzenia virtio. Zaktualizuj jądro PrettyWSL do nowszej wersji, aby włączyć tę optymalizację.</value>
     <comment>{Locked="virtio"}</comment>
   </data>
   <data name="MessageInstallationCorrupted" xml:space="preserve">
-    <value>Instalacja podsystemu WSL jest prawdopodobnie uszkodzona (kod błędu: {}).
-Naciśnij dowolny, aby naprawić podsystem WSL, lub CTRL-C, aby anulować.
+    <value>Instalacja podsystemu PrettyWSL jest prawdopodobnie uszkodzona (kod błędu: {}).
+Naciśnij dowolny, aby naprawić podsystem PrettyWSL, lub CTRL-C, aby anulować.
 Ten monit przekroczy limit czasu w ciągu 60 sekund.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -1230,7 +1230,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxy.Description" xml:space="preserve">
-    <value>Włącza WSL w celu korzystania z informacji serwera proxy HTTP systemu Windows.</value>
+    <value>Włącza PrettyWSL w celu korzystania z informacji serwera proxy HTTP systemu Windows.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1238,7 +1238,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Włącza WSL w celu korzystania z informacji serwera proxy HTTP systemu Windows.</value>
+    <value>Włącza PrettyWSL w celu korzystania z informacji serwera proxy HTTP systemu Windows.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_BestEffortDNS.Header" xml:space="preserve">
@@ -1296,7 +1296,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Przeglądaj dystrybucje</value>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.Text" xml:space="preserve">
-    <value>Określ ścieżkę do dysku VHD, który będzie ładowany jako niestandardowa dystrybucja systemu, używana głównie do obsługi aplikacji graficznego interfejsu użytkownika w podsystemie WSL. [Dowiedz się więcej o dystrybucji systemu tutaj].</value>
+    <value>Określ ścieżkę do dysku VHD, który będzie ładowany jako niestandardowa dystrybucja systemu, używana głównie do obsługi aplikacji graficznego interfejsu użytkownika w podsystemie PrettyWSL. [Dowiedz się więcej o dystrybucji systemu tutaj].</value>
     <comment>{Locked="["}{Locked="]"}{Locked="VHD"}The text in between the delimiters [ ] is made into a hyperlink in code, and the delimiters are removed. "VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.NavigateUri" xml:space="preserve">
@@ -1307,7 +1307,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Niestandardowa dystrybucja systemu</value>
   </data>
   <data name="Settings_CustomSystemDistroPathTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Określ ścieżkę do VHD, który będzie ładowany jako niestandardowa dystrybucja systemu, używana głównie do obsługi aplikacji graficznego interfejsu użytkownika w podsystemie WSL.</value>
+    <value>Określ ścieżkę do VHD, który będzie ładowany jako niestandardowa dystrybucja systemu, używana głównie do obsługi aplikacji graficznego interfejsu użytkownika w podsystemie PrettyWSL.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DebugConsole.Header" xml:space="preserve">
@@ -1327,7 +1327,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSize.Description" xml:space="preserve">
-    <value>Domyślny maksymalny rozmiar rozszerzalnego wirtualnego dysku twardego (VHD) podsystemu WSL tylko dla nowo utworzonych dystrybucji.</value>
+    <value>Domyślny maksymalny rozmiar rozszerzalnego wirtualnego dysku twardego (VHD) podsystemu PrettyWSL tylko dla nowo utworzonych dystrybucji.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeResetButton.Content" xml:space="preserve">
@@ -1338,7 +1338,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Domyślny maksymalny rozmiar (w megabajtach) tylko dla rozwijalnego wirtualnego dysku twardego WSL (VHD) dla nowo utworzonych dystrybucji.</value>
+    <value>Domyślny maksymalny rozmiar (w megabajtach) tylko dla rozwijalnego wirtualnego dysku twardego PrettyWSL (VHD) dla nowo utworzonych dystrybucji.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DeveloperPageTitle.Text" xml:space="preserve">
@@ -1349,20 +1349,20 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
   </data>
   <data name="Settings_DocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to Microsoft WSL documentation</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL documentation</comment>
   </data>
   <data name="Settings_DrvFSMode.Header" xml:space="preserve">
     <value>Zmień tryb DrvFS</value>
   </data>
   <data name="Settings_DrvFSMode.Description" xml:space="preserve">
-    <value>Zmienia implementację dostępu do plików między systemami operacyjnymi w podsystemie WSL.</value>
+    <value>Zmienia implementację dostępu do plików między systemami operacyjnymi w podsystemie PrettyWSL.</value>
   </data>
   <data name="Settings_DNSProxy.Header" xml:space="preserve">
     <value>Włączono serwer proxy DNS</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxy.Description" xml:space="preserve">
-    <value>Ma zastosowanie tylko wtedy, gdy właściwość wsl2.networkingMode jest ustawiona na wartość NAT. Wartość logiczna informująca podsystem WSL o skonfigurowaniu serwera DNS w systemie Linux do translatora adresów sieciowych na hoście. Ustawienie wartości false spowoduje zdublowanie serwerów DNS z systemu Windows do systemu Linux.</value>
+    <value>Ma zastosowanie tylko wtedy, gdy właściwość wsl2.networkingMode jest ustawiona na wartość NAT. Wartość logiczna informująca podsystem PrettyWSL o skonfigurowaniu serwera DNS w systemie Linux do translatora adresów sieciowych na hoście. Ustawienie wartości false spowoduje zdublowanie serwerów DNS z systemu Windows do systemu Linux.</value>
     <comment>{Locked="wsl2.networkingMode"}{Locked="DNS"}.wslconfig property key names should not be translated. "DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1370,7 +1370,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Ma zastosowanie tylko wtedy, gdy właściwość wsl2.networkingMode jest ustawiona na wartość NAT. Wartość logiczna informująca podsystem WSL o skonfigurowaniu serwera DNS w systemie Linux do translatora adresów sieciowych na hoście. Ustawienie wartości false spowoduje zdublowanie serwerów DNS z systemu Windows do systemu Linux.</value>
+    <value>Ma zastosowanie tylko wtedy, gdy właściwość wsl2.networkingMode jest ustawiona na wartość NAT. Wartość logiczna informująca podsystem PrettyWSL o skonfigurowaniu serwera DNS w systemie Linux do translatora adresów sieciowych na hoście. Ustawienie wartości false spowoduje zdublowanie serwerów DNS z systemu Windows do systemu Linux.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Header" xml:space="preserve">
@@ -1378,7 +1378,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Description" xml:space="preserve">
-    <value>Zmienia sposób proxy żądań DNS z podsystemu WSL do systemu Windows.</value>
+    <value>Zmienia sposób proxy żądań DNS z podsystemu PrettyWSL do systemu Windows.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1386,7 +1386,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Zmienia sposób proxy żądań DNS z podsystemu WSL do systemu Windows.</value>
+    <value>Zmienia sposób proxy żądań DNS z podsystemu PrettyWSL do systemu Windows.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_FileSystemPageTitle.Text" xml:space="preserve">
@@ -1396,7 +1396,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Włączanie aplikacji graficznego interfejsu użytkownika</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.Text" xml:space="preserve">
-    <value>Wartość logiczna umożliwiająca włączenie lub wyłączenie obsługi aplikacji graficznego interfejsu użytkownika ([WSLg]) w podsystemie WSL.</value>
+    <value>Wartość logiczna umożliwiająca włączenie lub wyłączenie obsługi aplikacji graficznego interfejsu użytkownika ([WSLg]) w podsystemie PrettyWSL.</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgproject</value>
@@ -1406,7 +1406,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Włączanie aplikacji graficznego interfejsu użytkownika.</value>
   </data>
   <data name="Settings_GUIApplicationsToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Wartość logiczna umożliwiająca włączenie lub wyłączenie obsługi aplikacji graficznego interfejsu użytkownika (znanych jako WSL g) w podsystemie WSL.</value>
+    <value>Wartość logiczna umożliwiająca włączenie lub wyłączenie obsługi aplikacji graficznego interfejsu użytkownika (znanych jako PrettyWSL g) w podsystemie PrettyWSL.</value>
   </data>
   <data name="Settings_HWPerfCounters.Header" xml:space="preserve">
     <value>Włącz liczniki wydajności sprzętu</value>
@@ -1424,13 +1424,13 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Włączono zaporę funkcji Hyper-V</value>
   </data>
   <data name="Settings_HyperVFirewall.Description" xml:space="preserve">
-    <value>Włącza zaporę funkcji Hyper-V, która umożliwia regułom Zapory systemu Windows, a także regułom specyficznym dla ruchu funkcji Hyper-V, filtrowanie ruchu sieciowego WSL.</value>
+    <value>Włącza zaporę funkcji Hyper-V, która umożliwia regułom Zapory systemu Windows, a także regułom specyficznym dla ruchu funkcji Hyper-V, filtrowanie ruchu sieciowego PrettyWSL.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.Name" xml:space="preserve">
     <value>Włączono zaporę funkcji Hyper-V.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Włącza zaporę funkcji Hyper-V, która umożliwia regułom Zapory systemu Windows, a także regułom specyficznym dla ruchu funkcji Hyper-V, filtrowanie ruchu sieciowego WSL.</value>
+    <value>Włącza zaporę funkcji Hyper-V, która umożliwia regułom Zapory systemu Windows, a także regułom specyficznym dla ruchu funkcji Hyper-V, filtrowanie ruchu sieciowego PrettyWSL.</value>
   </data>
   <data name="Settings_HostAddressLoopback.Header" xml:space="preserve">
     <value>Sprzężenie zwrotne adresów hosta</value>
@@ -1466,7 +1466,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeout.Description" xml:space="preserve">
-    <value>Ma zastosowanie tylko wtedy, gdy wsl2.autoProxy ma wartość true. Konfiguruje, jak długo (w milisekundach) protokół WSL będzie czekać na pobranie informacji o serwerze proxy HTTP podczas uruchamiania kontenera WSL. Jeśli ustawienia serwera proxy zostaną rozwiązane po tym czasie, wystąpienie WSL musi zostać uruchomione ponownie, aby można było użyć pobranych ustawień serwera proxy.</value>
+    <value>Ma zastosowanie tylko wtedy, gdy wsl2.autoProxy ma wartość true. Konfiguruje, jak długo (w milisekundach) protokół PrettyWSL będzie czekać na pobranie informacji o serwerze proxy HTTP podczas uruchamiania kontenera PrettyWSL. Jeśli ustawienia serwera proxy zostaną rozwiązane po tym czasie, wystąpienie PrettyWSL musi zostać uruchomione ponownie, aby można było użyć pobranych ustawień serwera proxy.</value>
     <comment>{Locked="wsl2.autoProxy"}.wslconfig property key names should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutResetButton.Content" xml:space="preserve">
@@ -1477,7 +1477,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Ma zastosowanie tylko wtedy, gdy właściwość wsl2.autoProxy ma wartość true. Określa, jak długo w milisekundach podsystem WSL będzie oczekiwać na pobranie informacji o serwerze proxy HTTP podczas uruchamiania kontenera WSL. Jeśli ustawienia serwera proxy zostaną rozpoznane po tym czasie, należy ponownie uruchomić wystąpienie podsystemu WSL, aby można było użyć pobranych ustawień serwera proxy.</value>
+    <value>Ma zastosowanie tylko wtedy, gdy właściwość wsl2.autoProxy ma wartość true. Określa, jak długo w milisekundach podsystem PrettyWSL będzie oczekiwać na pobranie informacji o serwerze proxy HTTP podczas uruchamiania kontenera PrettyWSL. Jeśli ustawienia serwera proxy zostaną rozpoznane po tym czasie, należy ponownie uruchomić wystąpienie podsystemu PrettyWSL, aby można było użyć pobranych ustawień serwera proxy.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_KernelCommandLine.Header" xml:space="preserve">
@@ -1538,13 +1538,13 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Tryb sieciowy</value>
   </data>
   <data name="Settings_NetworkingMode.Description" xml:space="preserve">
-    <value>Określa tryb sieci dla podsystemu WSL.</value>
+    <value>Określa tryb sieci dla podsystemu PrettyWSL.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.Name" xml:space="preserve">
     <value>Tryb sieciowy.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Określa tryb sieci dla podsystemu WSL.</value>
+    <value>Określa tryb sieci dla podsystemu PrettyWSL.</value>
   </data>
   <data name="Settings_NetworkingPageTitle.Text" xml:space="preserve">
     <value>Sieci</value>
@@ -1571,10 +1571,10 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="\\wsl.localhost\"}Url addresses should not be translated.</comment>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLTitle.Text" xml:space="preserve">
-    <value>Uruchamiaj pliki i programy systemu Windows z poziomu podsystemu WSL</value>
+    <value>Uruchamiaj pliki i programy systemu Windows z poziomu podsystemu PrettyWSL</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLSample.Text" xml:space="preserve">
-    <value>Nawet podczas korzystania z podsystemu WSL możesz uruchamiać pliki wykonywalne systemu Windows bezpośrednio z powłoki Bash. Spróbuj uruchomić
+    <value>Nawet podczas korzystania z podsystemu PrettyWSL możesz uruchamiać pliki wykonywalne systemu Windows bezpośrednio z powłoki Bash. Spróbuj uruchomić
 „powershell.exe /c start .”, aby otworzyć Eksploratora plików w bieżącym folderze.</value>
     <comment>{Locked="/c start ."}Command line arguments and file names should not be translated</comment>
   </data>
@@ -1593,7 +1593,7 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Sieć w trybie dublowanym</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_MirroredModeNetworkingSample.Text" xml:space="preserve">
-    <value>Podsystem WSL obejmuje również nowy tryb sieci, nazywany trybem dublowanym, który dodaje zaawansowane funkcje, takie jak obsługa protokołu IPv6 i możliwość uzyskiwania dostępu do aplikacji sieciowych w sieci lokalnej.</value>
+    <value>Podsystem PrettyWSL obejmuje również nowy tryb sieci, nazywany trybem dublowanym, który dodaje zaawansowane funkcje, takie jak obsługa protokołu IPv6 i możliwość uzyskiwania dostępu do aplikacji sieciowych w sieci lokalnej.</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccessLink.Content" xml:space="preserve">
     <value>Dowiedz się więcej o dostępie do plików między systemami operacyjnymi</value>
@@ -1606,73 +1606,73 @@ Zobacz instrukcje odzyskiwania: https://aka.ms/wsldiskmountrecovery</value>
     <value>Podsystem Windows dla systemu Linux — Zapraszamy!</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Description" xml:space="preserve">
-   <value>Podsystem WSL to doskonały sposób na wypróbowanie różnych dystrybucji systemu Linux.</value>
+   <value>Podsystem PrettyWSL to doskonały sposób na wypróbowanie różnych dystrybucji systemu Linux.</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Title" xml:space="preserve">
     <value>Zarządzanie dystrybucją</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.Content" xml:space="preserve">
-    <value>Dowiedz się więcej o podstawowych poleceniach podsystemu WSL</value>
+    <value>Dowiedz się więcej o podstawowych poleceniach podsystemu PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcommands</value>
-    <comment>{Locked}Uri to the basic WSL commands documentation</comment>
+    <comment>{Locked}Uri to the basic PrettyWSL commands documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.Content" xml:space="preserve">
     <value>Dowiedz się więcej o importowaniu dowolnej dystrybucji systemu Linux</value>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcustomdistro</value>
-    <comment>{Locked}Uri to the import any linux distribution to use with WSL documentation</comment>
+    <comment>{Locked}Uri to the import any linux distribution to use with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosTitle.Text" xml:space="preserve">
-    <value>Polecenie Wyświetl listę dystrybucji do zainstalowania podsystemu WSL</value>
+    <value>Polecenie Wyświetl listę dystrybucji do zainstalowania podsystemu PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosSample.Text" xml:space="preserve">
     <value>„wsl.exe -l -o”</value>
     <comment>{Locked="-l -o"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosTitle.Text" xml:space="preserve">
-    <value>Polecenie Zainstaluj nazwaną dystrybucję podsystemu WSL</value>
+    <value>Polecenie Zainstaluj nazwaną dystrybucję podsystemu PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosSample.Text" xml:space="preserve">
     <value>„wsl.exe --install &lt;DistroName&gt;”</value>
     <comment>{Locked="--install "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosTitle.Text" xml:space="preserve">
-    <value>Polecenie Wyświetl listę dostępnych dystrybucji podsystemu WSL</value>
+    <value>Polecenie Wyświetl listę dostępnych dystrybucji podsystemu PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosSample.Text" xml:space="preserve">
     <value>„wsl.exe -l”</value>
     <comment>{Locked="-l"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Description" xml:space="preserve">
-    <value>Program Docker Desktop doskonale współpracuje z podsystemem WSL, aby ułatwić programowanie za pomocą kontenerów systemu Linux.
+    <value>Program Docker Desktop doskonale współpracuje z podsystemem PrettyWSL, aby ułatwić programowanie za pomocą kontenerów systemu Linux.
 
-Niektóre korzyści wynikające z używania programu Docker Desktop z podsystemem WSL to:
+Niektóre korzyści wynikające z używania programu Docker Desktop z podsystemem PrettyWSL to:
 
-• Polecenia platformy Docker można uruchamiać w podsystemie WSL lub w systemie Windows przy użyciu tego samego demona platformy Docker i obrazów.
-• Możesz bezproblemowo udostępniać pliki i foldery między systemami Windows i Linux przy użyciu automatycznego instalowania dysków z systemem Windows w podsystemie WSL.
-• Korzystając z preferowanych narzędzi i edytorów systemu Windows, możesz pracować nad kodem i plikami systemu Linux i na odwrót dzięki współdziałaniu podsystemu WSL.</value>
+• Polecenia platformy Docker można uruchamiać w podsystemie PrettyWSL lub w systemie Windows przy użyciu tego samego demona platformy Docker i obrazów.
+• Możesz bezproblemowo udostępniać pliki i foldery między systemami Windows i Linux przy użyciu automatycznego instalowania dysków z systemem Windows w podsystemie PrettyWSL.
+• Korzystając z preferowanych narzędzi i edytorów systemu Windows, możesz pracować nad kodem i plikami systemu Linux i na odwrót dzięki współdziałaniu podsystemu PrettyWSL.</value>
     <comment>"mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used.</comment>
  </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Title" xml:space="preserve">
     <value>Integracja z programem Docker Desktop</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.Content" xml:space="preserve">
-    <value>Dowiedz się więcej o używaniu podsystemu WSL z platformą Docker</value>
+    <value>Dowiedz się więcej o używaniu podsystemu PrettyWSL z platformą Docker</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocker</value>
     <comment>{Locked}Uri to the Docker remote containers on WSL 2 documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral.Description" xml:space="preserve">
-    <value>Podsystem Windows dla systemu Linux (WSL) umożliwia uruchamianie ulubionych narzędzi, funkcji, aplikacji i przepływów pracy systemu Linux bezpośrednio w systemie Windows.
+    <value>Podsystem Windows dla systemu Linux (PrettyWSL) umożliwia uruchamianie ulubionych narzędzi, funkcji, aplikacji i przepływów pracy systemu Linux bezpośrednio w systemie Windows.
 
 Poświęć chwilę, aby zapoznać się z niektórymi ulubionymi funkcjami społeczności lub zapoznać się z naszą kompleksową dokumentacją.</value>
   </data>
   <data name="Settings_OOBEGeneral.Title" xml:space="preserve">
-    <value>WSL — Zapraszamy!</value>
+    <value>PrettyWSL — Zapraszamy!</value>
   </data>
   <data name="Settings_OOBEGeneral_BestPracticesSetupLink.Content" xml:space="preserve">
     <value>Najlepsze rozwiązania dotyczące konfiguracji</value>
@@ -1689,11 +1689,11 @@ Poświęć chwilę, aby zapoznać się z niektórymi ulubionymi funkcjami społe
     <comment>{Locked}Uri to the Getting Started with Linux Documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.Content" xml:space="preserve">
-    <value>Dokumentacja podsystemu Windows dla systemu Linux (WSL)</value>
+    <value>Dokumentacja podsystemu Windows dla systemu Linux (PrettyWSL)</value>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to the Microsoft WSL Documentation</comment>
+    <comment>{Locked}Uri to the Microsoft PrettyWSL Documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps.Description" xml:space="preserve">
     <value>Możesz używać graficznych aplikacji systemu Linux z natywnymi interakcjami systemu Windows, takimi jak alt-tab, uruchamianie menu Start, przypinanie paska zadań i obsługa wycinania i wklejania.</value>
@@ -1702,9 +1702,9 @@ Poświęć chwilę, aby zapoznać się z niektórymi ulubionymi funkcjami społe
     <value>Aplikacje graficznego interfejsu użytkownika</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Description" xml:space="preserve">
-    <value>Podsystem WSL może korzystać z procesora GPU systemu Windows na potrzeby przepływów pracy uczenia maszynowego
+    <value>Podsystem PrettyWSL może korzystać z procesora GPU systemu Windows na potrzeby przepływów pracy uczenia maszynowego
 
-Pliki binarne systemu Linux działające w podsystemie WSL mogą automatycznie korzystać z procesora GPU w systemie Windows na potrzeby przyspieszenia ich wydajności. Wystarczy zainstalować i uruchomić te przepływy pracy w taki sam sposób, jak na zwykłej maszynie z systemem Linux. Istnieje wiele różnych sposobów, aby rozpocząć pracę, począwszy od uruchamiania CUDA w kontenerze Docker, jeśli masz kartę graficzną NVIDIA, do uruchamiania PyTorch lub TensorFlow z DirectML na karcie graficznej AMD, Intel lub NVIDIA. Zobacz nasz przewodnik wprowadzający poniżej, aby dowiedzieć się więcej.</value>
+Pliki binarne systemu Linux działające w podsystemie PrettyWSL mogą automatycznie korzystać z procesora GPU w systemie Windows na potrzeby przyspieszenia ich wydajności. Wystarczy zainstalować i uruchomić te przepływy pracy w taki sam sposób, jak na zwykłej maszynie z systemem Linux. Istnieje wiele różnych sposobów, aby rozpocząć pracę, począwszy od uruchamiania CUDA w kontenerze Docker, jeśli masz kartę graficzną NVIDIA, do uruchamiania PyTorch lub TensorFlow z DirectML na karcie graficznej AMD, Intel lub NVIDIA. Zobacz nasz przewodnik wprowadzający poniżej, aby dowiedzieć się więcej.</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Title" xml:space="preserve">
     <value>Przyspieszanie procesora GPU</value>
@@ -1714,14 +1714,14 @@ Pliki binarne systemu Linux działające w podsystemie WSL mogą automatycznie k
   </data>
   <data name="Settings_OOBEGPUAccelerationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgpu</value>
-    <comment>{Locked}Uri to the GPU acceleration for ML in WSL documentation</comment>
+    <comment>{Locked}Uri to the GPU acceleration for ML in PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIAppsLink.Content" xml:space="preserve">
-    <value>Dowiedz się więcej o aplikacjach graficznego interfejsu użytkownika podsystemu WSL</value>
+    <value>Dowiedz się więcej o aplikacjach graficznego interfejsu użytkownika podsystemu PrettyWSL</value>
   </data>
   <data name="Settings_OOBEGUIAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslguiapps</value>
-    <comment>{Locked}Uri to the Run GUI apps on the WSL documentation</comment>
+    <comment>{Locked}Uri to the Run GUI apps on the PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps_AppsListDescription.Text" xml:space="preserve">
     <value>Oto lista aplikacji do wypróbowania (możesz zainstalować wszystkie te aplikacje w systemie Ubuntu, wpisując „sudo apt install &lt;The App Name&gt;”)
@@ -1744,43 +1744,43 @@ Pliki binarne systemu Linux działające w podsystemie WSL mogą automatycznie k
   </data>
   <data name="Settings_OOBENetworkingIntegrationLinuxNetworkingAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslnetworking</value>
-    <comment>{Locked}Uri to the Accessing network applications with WSL documentation</comment>
+    <comment>{Locked}Uri to the Accessing network applications with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.Content" xml:space="preserve">
     <value>Dowiedz się więcej o sieci w trybie dublowanym</value>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslmirroredmode</value>
-    <comment>{Locked}Uri to the WSL Mirrored Mode networking documentation</comment>
+    <comment>{Locked}Uri to the PrettyWSL Mirrored Mode networking documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Description" xml:space="preserve">
-   <value>Podsystemu WSL można używać jako głównego środowiska deweloperskiego bezpośrednio z programu VS Code.</value>
+   <value>Podsystemu PrettyWSL można używać jako głównego środowiska deweloperskiego bezpośrednio z programu VS Code.</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Title" xml:space="preserve">
     <value>Integracja z programem VS Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.Content" xml:space="preserve">
-    <value>Dowiedz się więcej o używaniu podsystemu WSL z programem VS Code</value>
+    <value>Dowiedz się więcej o używaniu podsystemu PrettyWSL z programem VS Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslvscode</value>
-    <comment>{Locked}Uri to the using Visual Studio Code with WSL documentation</comment>
+    <comment>{Locked}Uri to the using Visual Studio Code with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallTitle.Text" xml:space="preserve">
     <value>Jak zainstalować</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallSample.Text" xml:space="preserve">
-    <value>Po zainstalowaniu programu VS Code możesz zainstalować rozszerzenie Remote WSL z poziomu narzędzia Terminal Windows:
+    <value>Po zainstalowaniu programu VS Code możesz zainstalować rozszerzenie Remote PrettyWSL z poziomu narzędzia Terminal Windows:
 
 „code –install-extension ms-vscode-remote.remote-wsl”</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectTitle.Text" xml:space="preserve">
-    <value>Otwórz projektu podsystemu WSL w programie Visual Studio Code</value>
+    <value>Otwórz projektu podsystemu PrettyWSL w programie Visual Studio Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectSample.Text" xml:space="preserve">
-    <value>Aby otworzyć projekt w programie VS Code z poziomu dystrybucji podsystemu WSL, otwórz wiersz polecenia dystrybucji i uruchom polecenie „code .”, aby otworzyć plik projektu.
+    <value>Aby otworzyć projekt w programie VS Code z poziomu dystrybucji podsystemu PrettyWSL, otwórz wiersz polecenia dystrybucji i uruchom polecenie „code .”, aby otworzyć plik projektu.
 
-Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu VS Code za pomocą palety poleceń w samym programie VS Code. Naciśnij kombinację klawiszy „SHIFT+CTRL+P” na klawiaturze, aby otworzyć paletę poleceń, i wpisz „Remote-WSL” w celu wyświetlenia dostępnych opcji zdalnych programu VS Code, umożliwiając ponowne otwarcie folderu w sesji zdalnej, określenie dystrybucji, którą chcesz otworzyć i nie tylko.</value>
+Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu VS Code za pomocą palety poleceń w samym programie VS Code. Naciśnij kombinację klawiszy „SHIFT+CTRL+P” na klawiaturze, aby otworzyć paletę poleceń, i wpisz „Remote-PrettyWSL” w celu wyświetlenia dostępnych opcji zdalnych programu VS Code, umożliwiając ponowne otwarcie folderu w sesji zdalnej, określenie dystrybucji, którą chcesz otworzyć i nie tylko.</value>
   </data>
   <data name="Settings_OOBE_HowToUse.Text" xml:space="preserve">
     <value>Jak używać</value>
@@ -1818,14 +1818,14 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
   </data>
   <data name="Settings_ReleaseNotesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslreleases</value>
-    <comment>{Locked}Uri to Microsoft WSL release notes</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL release notes</comment>
   </data>
   <data name="Settings_SafeMode.Header" xml:space="preserve">
     <value>Włącz tryb awaryjny</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeMode.Description" xml:space="preserve">
-    <value>Uruchom podsystem WSL w „trybie awaryjnym”, który wyłącza wiele funkcji i jest przeznaczony do odzyskiwania dystrybucji, które są w złych stanach.</value>
+    <value>Uruchom podsystem PrettyWSL w „trybie awaryjnym”, który wyłącza wiele funkcji i jest przeznaczony do odzyskiwania dystrybucji, które są w złych stanach.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1833,7 +1833,7 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Uruchom podsystem WSL w „trybie awaryjnym”, który wyłącza wiele funkcji i jest przeznaczony do odzyskiwania dystrybucji, które są w złych stanach.</value>
+    <value>Uruchom podsystem PrettyWSL w „trybie awaryjnym”, który wyłącza wiele funkcji i jest przeznaczony do odzyskiwania dystrybucji, które są w złych stanach.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_Shell_About.Content" xml:space="preserve">
@@ -1873,7 +1873,7 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
     <value>Integracja sieci</value>
   </data>
   <data name="Settings_Shell_OOBE.Content" xml:space="preserve">
-    <value>WSL — Zapraszamy!</value>
+    <value>PrettyWSL — Zapraszamy!</value>
   </data>
   <data name="Settings_Shell_OptionalFeatures.Content" xml:space="preserve">
     <value>Funkcje opcjonalne</value>
@@ -1895,7 +1895,7 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
   </data>
   <data name="Settings_IssuesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslproject</value>
-    <comment>{Locked}Uri to Microsoft WSL issues</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL issues</comment>
   </data>
   <data name="Settings_SparseVHD.Header" xml:space="preserve">
     <value>Domyślnie włącz rozrzedzony VHD</value>
@@ -1984,13 +1984,13 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
     <value>Zastosuj zmiany</value>
   </data>
   <data name="Settings_ApplyChangesDialogTitle" xml:space="preserve">
-    <value>Wymagane zamknięcie systemu WSL</value>
+    <value>Wymagane zamknięcie systemu PrettyWSL</value>
   </data>
   <data name="Settings_ApplyChangesDialogDescription" xml:space="preserve">
-    <value>Zmienione ustawienia systemu WSL wymagają zamknięcia i ponownego uruchomienia systemu WSL w celu sfinalizowania. Zamknięcie spowoduje przerwanie wszystkich aktywnych sesji systemu WSL.</value>
+    <value>Zmienione ustawienia systemu PrettyWSL wymagają zamknięcia i ponownego uruchomienia systemu PrettyWSL w celu sfinalizowania. Zamknięcie spowoduje przerwanie wszystkich aktywnych sesji systemu PrettyWSL.</value>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownButton" xml:space="preserve">
-    <value>Zamknij system WSL teraz</value>
+    <value>Zamknij system PrettyWSL teraz</value>
   </data>
   <data name="Settings_ApplyChangesDialogLaterButton" xml:space="preserve">
     <value>Później</value>
@@ -2006,7 +2006,7 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
     <comment>{Locked="{0}"}Format placeholder for Win32 error code</comment>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownFailed" xml:space="preserve">
-    <value>Ustawienia zostały zapisane, ale zamknięcie systemu WSL nie powiodło się: {0}</value>
+    <value>Ustawienia zostały zapisane, ale zamknięcie systemu PrettyWSL nie powiodło się: {0}</value>
     <comment>{Locked="{0}"}Format placeholder for exception message</comment>
   </data>
   <data name="Settings_BooleanTrueText" xml:space="preserve">
@@ -2016,27 +2016,27 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
     <value>Wyłączony</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Title" xml:space="preserve">
-    <value>Kompiluj, uruchamiaj, debuguj i profiluj aplikacje działające w systemie WSL z poziomu programu Visual Studio</value>
+    <value>Kompiluj, uruchamiaj, debuguj i profiluj aplikacje działające w systemie PrettyWSL z poziomu programu Visual Studio</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Description" xml:space="preserve">
-    <value>Uruchamiaj i debuguj aplikacje w systemie WSL z poziomu programu Visual Studio</value>
+    <value>Uruchamiaj i debuguj aplikacje w systemie PrettyWSL z poziomu programu Visual Studio</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.Content" xml:space="preserve">
-    <value>Dowiedz się więcej o systemie WSL w programie Visual Studio dla deweloperów .NET</value>
+    <value>Dowiedz się więcej o systemie PrettyWSL w programie Visual Studio dla deweloperów .NET</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/visualstudio/debugger/debug-dotnet-core-in-wsl-2</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.Content" xml:space="preserve">
-    <value>Dowiedz się więcej o programie Visual Studio i systemie WSL dla deweloperów C++</value>
+    <value>Dowiedz się więcej o programie Visual Studio i systemie PrettyWSL dla deweloperów C++</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/cpp/linux/?view=msvc-170</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_Description.Text" xml:space="preserve">
-    <value>Możesz łatwo uruchamiać i debugować aplikacje .NET Core oraz wieloplatformowe aplikacje C++ w systemie Linux bez opuszczania programu Visual Studio, korzystając z Podsystemu Windows dla systemu Linux (WSL). Jeśli jesteś deweloperem międzyplatformowym, możesz użyć tej metody jako prostego sposobu na przetestowanie większej liczby środowisk docelowych.</value>
+    <value>Możesz łatwo uruchamiać i debugować aplikacje .NET Core oraz wieloplatformowe aplikacje C++ w systemie Linux bez opuszczania programu Visual Studio, korzystając z Podsystemu Windows dla systemu Linux (PrettyWSL). Jeśli jesteś deweloperem międzyplatformowym, możesz użyć tej metody jako prostego sposobu na przetestowanie większej liczby środowisk docelowych.</value>
   </data>
   <data name="Settings_OOBEVSIntegration_Title.Text" xml:space="preserve">
     <value>Integracja z programem Visual Studio</value>
@@ -2045,7 +2045,7 @@ Możesz również uzyskać dostęp do większej liczby opcji zdalnych programu V
     <value>Integracja z programem Visual Studio</value>
   </data>
   <data name="MessageWslcUsage" xml:space="preserve">
-    <value>wslc – interfejs wiersza polecenia kontenera WSL
+    <value>wslc – interfejs wiersza polecenia kontenera PrettyWSL
 Użycie: 
   wslc --help</value>
     <comment>{Locked="--help"}Command line arguments, file names and string inserts should not be translated</comment>
@@ -2376,15 +2376,15 @@ Aby uzyskać informacje o prywatności dotyczące tego produktu, odwiedź stron�
     <comment>{Locked="WSLC"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_RootCommandLongDesc" xml:space="preserve">
-    <value>WSLC jest narzędziem interfejsu wiersza polecenia kontenera Podsystem Windows dla systemu Linux. Umożliwia zarządzanie kontenerami WSL i interakcję z nimi z wiersza polecenia.</value>
-    <comment>{Locked="WSLC"}{Locked="WSL"}Product names should not be translated</comment>
+    <value>WSLC jest narzędziem interfejsu wiersza polecenia kontenera Podsystem Windows dla systemu Linux. Umożliwia zarządzanie kontenerami PrettyWSL i interakcję z nimi z wiersza polecenia.</value>
+    <comment>{Locked="WSLC"}{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerCommandDesc" xml:space="preserve">
     <value>Zarządzaj kontenerami.</value>
   </data>
   <data name="WSLCCLI_ContainerCommandLongDesc" xml:space="preserve">
-    <value>Zarządzaj cyklem życia kontenerów WSL, w tym tworzeniem, uruchamianiem, zatrzymywaniem i usuwaniem.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Zarządzaj cyklem życia kontenerów PrettyWSL, w tym tworzeniem, uruchamianiem, zatrzymywaniem i usuwaniem.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerAttachDesc" xml:space="preserve">
     <value>Dołącz do kontenera.</value>
@@ -2635,8 +2635,8 @@ Aby uzyskać informacje o prywatności dotyczące tego produktu, odwiedź stron�
     <value>Zarządzaj sesjami.</value>
   </data>
   <data name="WSLCCLI_SessionCommandLongDesc" xml:space="preserve">
-    <value>Zarządzaj sesjami kontenerów WSL, w tym wyświetlaniem list aktywnych sesji i uruchamianiem interakcyjnych powłok.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Zarządzaj sesjami kontenerów PrettyWSL, w tym wyświetlaniem list aktywnych sesji i uruchamianiem interakcyjnych powłok.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_SessionListDesc" xml:space="preserve">
     <value>Wyświetl listę sesji.</value>
@@ -2968,8 +2968,8 @@ Przy pierwszym uruchomieniu tworzy plik ze wszystkimi ustawieniami ujętymi w ko
     <value>Zarządzaj woluminami.</value>
   </data>
   <data name="WSLCCLI_VolumeCommandLongDesc" xml:space="preserve">
-    <value>Zarządzaj cyklem życia woluminów WSL, w tym ich tworzeniem, inspekcją, wyświetlaniem i usuwaniem.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Zarządzaj cyklem życia woluminów PrettyWSL, w tym ich tworzeniem, inspekcją, wyświetlaniem i usuwaniem.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_VolumeCreateDesc" xml:space="preserve">
     <value>Utwórz wolumin.</value>

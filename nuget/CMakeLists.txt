@@ -1,4 +1,4 @@
-set(NUGET_PACKAGES Microsoft.WSL.PluginApi.nuspec Microsoft.WSL.Containers.nuspec)
+set(NUGET_PACKAGES PrettyWSL.PluginApi.nuspec PrettyWSL.Containers.nuspec)
 set(WSL_NUGET_TARGET_FRAMEWORK "net8.0-windows10.0.19041.0")
 
 # Generate vars with native paths since nuget won't accept unix path separators.

@@ -48,7 +48,7 @@ void ShellExec(_In_ LPCWSTR operation, _In_ LPCWSTR file, _In_ LPCWSTR args)
 
 void LaunchWsl(_In_ LPCWSTR args)
 {
-    const auto path = wsl::windows::common::wslutil::GetBasePath() / L"wsl.exe";
+    const auto path = wsl::windows::common::wslutil::GetBasePath() / L"pwsl.exe";
     ShellExec(L"runas", path.c_str(), args);
 }
 

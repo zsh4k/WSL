@@ -6,8 +6,8 @@ parameters:
 - name: nugetPackages
   type: object
   default:
-      - Microsoft.WSL.PluginApi
-      - Microsoft.WSL.Containers
+      - PrettyWSL.PluginApi
+      - PrettyWSL.Containers
 
 stages:
 - stage: nuget

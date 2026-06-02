@@ -12,10 +12,10 @@
          xmlns:com3="http://schemas.microsoft.com/appx/manifest/com/windows10/3"
          IgnorableNamespaces="uap uap3 uap10 rescap desktop desktop6 com com2 com3">
 
-    <Identity Name="MicrosoftCorporationII.WindowsSubsystemForLinux" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="${PACKAGE_VERSION}" ProcessorArchitecture="${TARGET_PLATFORM}"/>
+    <Identity Name="PrettyWSL.PrettyWSL" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" Version="${PACKAGE_VERSION}" ProcessorArchitecture="${TARGET_PLATFORM}"/>
     <Properties>
         <DisplayName>ms-resource:AppName</DisplayName>
-        <PublisherDisplayName>Microsoft Corp.</PublisherDisplayName>
+        <PublisherDisplayName>PrettyWSL Project</PublisherDisplayName>
         <Logo>Images\StoreLogo.png</Logo>
         <desktop6:FileSystemWriteVirtualization>disabled</desktop6:FileSystemWriteVirtualization>
         <desktop6:RegistryWriteVirtualization>disabled</desktop6:RegistryWriteVirtualization>
@@ -31,8 +31,8 @@
         <Resource uap:Scale="200"/>
     </Resources>
     <Applications>
-        <Application Id="wsl"
-          Executable="wsl.exe"
+        <Application Id="prettywsl"
+          Executable="pwsl.exe"
           EntryPoint="Windows.FullTrustApplication"
           uap10:Parameters="--cd ~">
             <uap:VisualElements
@@ -46,34 +46,34 @@
                 <uap:SplashScreen Image="Images\SplashScreen.png"/>
             </uap:VisualElements>
             <Extensions>
-                <desktop6:Extension Category="windows.service" Executable="wslinstaller.exe" EntryPoint="main">
-                    <desktop6:Service Name="WslInstaller" StartupType="auto" StartAccount="localSystem">
+                <desktop6:Extension Category="windows.service" Executable="pwslinstaller.exe" EntryPoint="main">
+                    <desktop6:Service Name="PrettywslInstaller" StartupType="auto" StartAccount="localSystem">
                     </desktop6:Service>
                 </desktop6:Extension>
-                <uap3:Extension Category="windows.appExecutionAlias" Executable="wsl.exe" EntryPoint="Windows.FullTrustApplication">
+                <uap3:Extension Category="windows.appExecutionAlias" Executable="pwsl.exe" EntryPoint="Windows.FullTrustApplication">
                     <uap3:AppExecutionAlias>
                         <desktop:ExecutionAlias Alias="bash.exe"/>
-                        <desktop:ExecutionAlias Alias="wsl.exe"/>
-                        <desktop:ExecutionAlias Alias="wslconfig.exe"/>
+                        <desktop:ExecutionAlias Alias="pwsl.exe"/>
+                        <desktop:ExecutionAlias Alias="pwslconfig.exe"/>
                     </uap3:AppExecutionAlias>
                 </uap3:Extension>
                 <uap3:Extension Category="windows.appExtension">
-                    <uap3:AppExtension Name="com.microsoft.windows.wsl"
-                        Id="Wsl-EntryPoint"
-                        DisplayName="WSL entry point"
-                        Description="Entry point for the Windows Subsystem for Linux"
+                    <uap3:AppExtension Name="com.prettywsl.wsl"
+                        Id="Prettywsl-EntryPoint"
+                        DisplayName="PrettyWSL entry point"
+                        Description="Entry point for PrettyWSL"
                         PublicFolder="Public">
                         <uap3:Properties>
                             <Clsid>{a9b7a1b9-0671-405c-95f1-e0612cb4ce7e}</Clsid>
-                            <EntryPoint>wsl.exe</EntryPoint>
+                            <EntryPoint>pwsl.exe</EntryPoint>
                         </uap3:Properties>
                     </uap3:AppExtension>
                 </uap3:Extension>
                 <com2:Extension Category="windows.comServer">
                     <com2:ComServer>
-                        <com3:ServiceServer ServiceName="WslInstaller"
+                        <com3:ServiceServer ServiceName="PrettywslInstaller"
                             LaunchAndActivationPermission="O:BAG:BAD:(A;;11;;;AU)(A;;11;;;PS)(A;;11;;;SY)">
-                            <com3:Class Id="B5AEB4C3-9541-492F-AD4D-505951F6ADA4" DisplayName="WslInstaller"/>
+                            <com3:Class Id="B5AEB4C3-9541-492F-AD4D-505951F6ADA4" DisplayName="PrettywslInstaller"/>
                         </com3:ServiceServer>
                     </com2:ComServer>
                 </com2:Extension>

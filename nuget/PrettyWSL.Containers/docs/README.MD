@@ -1,4 +1,4 @@
-# Microsoft.WSL.Containers
+# PrettyWSL.Containers
 
 > **⚠️ Preview:** This SDK is currently in preview and is subject to breaking changes
 > in future releases without prior notice. Do not rely on API stability for production
@@ -22,8 +22,8 @@ MSBuild (via NuGet) and CMake both configure include directories and link librar
 
 **CMake:**
 ```cmake
-find_package(Microsoft.WSL.Containers REQUIRED)
-target_link_libraries(my_app PRIVATE Microsoft.WSL.Containers::SDK)
+find_package(PrettyWSL.Containers REQUIRED)
+target_link_libraries(my_app PRIVATE PrettyWSL.Containers::SDK)
 ```
 
 The runtime DLL (`wslcsdk.dll`) is automatically copied to the output directory.
@@ -35,12 +35,12 @@ The runtime DLL (`wslcsdk.dll`) is automatically copied to the output directory.
 ### C++/WinRT
 
 The package includes a WinRT metadata file and automatically:
-- Adds `Microsoft.WSL.Containers.winmd` as a reference so C++/WinRT generates projection headers
+- Adds `PrettyWSL.Containers.winmd` as a reference so C++/WinRT generates projection headers
 - Injects an activation manifest into your binary so `RoGetActivationFactory` resolves the classes to `wslcsdk.dll` without COM registration
 
 **MSBuild — C++/WinRT (requires the [Microsoft.Windows.CppWinRT](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT) NuGet package):**
 ```cpp
-#include <winrt/Microsoft.WSL.Containers.h>
+#include <winrt/PrettyWSL.Containers.h>
 
 auto settings = winrt::Microsoft::WSL::Containers::SessionSettings(L"my-session", L"C:\\path\\to\\storage");
 ```
@@ -56,7 +56,7 @@ To disable C++/WinRT integration (suppress the winmd reference and manifest inje
 
 **MSBuild — C# (.NET 8+):** The `wslcsdkcs.dll` projection assembly is referenced automatically.
 ```csharp
-using Microsoft.WSL.Containers;
+using PrettyWSL.Containers;
 
 var settings = new SessionSettings("my-session", @"C:\path\to\storage");
 ```
@@ -102,7 +102,7 @@ Add `WslcImage` items to your project. Each item builds an image and saves it to
 ### CMake
 
 ```cmake
-find_package(Microsoft.WSL.Containers REQUIRED)
+find_package(PrettyWSL.Containers REQUIRED)
 
 wslc_add_image(my-server
     IMAGE        ghcr.io/myorg/my-server:latest

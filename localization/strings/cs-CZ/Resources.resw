@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -137,7 +137,7 @@
     <value>Subsystém Windows pro Linux</value>
   </data>
   <data name="AppShortName" xml:space="preserve">
-    <value>WSL</value>
+    <value>PrettyWSL</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Subsystém Windows pro Linux umožňuje vývojářům spouštět prostředí GNU/Linux - včetně většiny nástrojů příkazového řádku, nástrojů a aplikací - přímo ve Windows, bez úprav, bez režie tradičního virtuálního počítače nebo nastavení duálního spouštění.</value>
@@ -341,10 +341,10 @@ Pokud chcete používat WSL1, povolte prosím volitelnou komponentu Subsystém W
         Zobrazení cesty k aplikaci proxy MSAL.
 
     --vm-id
-        Zobrazí ID virtuálního počítače WSL.
+        Zobrazí ID virtuálního počítače PrettyWSL.
 
     --version
-        Zobrazí verzi balíčku WSL.
+        Zobrazí verzi balíčku PrettyWSL.
 
     -n
         Netisknout nový řádek.</value>
@@ -359,11 +359,11 @@ Pokud chcete používat WSL1, povolte prosím volitelnou komponentu Subsystém W
     -a
         Vynutí formát absolutní cesty výsledku.
     -u
-        Převede cestu z Windows na cestu WSL (výchozí).
+        Převede cestu z Windows na cestu PrettyWSL (výchozí).
     -w
-        Umožňuje přeložit z cesty WSL na cestu Windows.
+        Umožňuje přeložit z cesty PrettyWSL na cestu Windows.
     -m
-        Převést z cesty WSL na cestu Windows, kde se místo \\přeloží znak /
+        Převést z cesty PrettyWSL na cestu Windows, kde se místo \\přeloží znak /
 
 Příklad: wslpath 'c:\\users'</value>
     <comment>{Locked="-a
@@ -625,7 +625,7 @@ Argumenty pro správu distribucí v Subsystému Windows pro Linux:
 "}{Locked="--quiet,"}{Locked="--verbose,"}{Locked="--online,"}{Locked="--install'"}{Locked="--set-default,"}{Locked="--set-version "}{Locked="--terminate,"}{Locked="--unregister "}Command line arguments, file names and string inserts should not be translated. {Locked="tar"}"tar" is a file archive format name and should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessagePackageVersions" xml:space="preserve">
-    <value>Verze WSL: {}
+    <value>Verze PrettyWSL: {}
 Verze jádra: {}
 Verze WSLg: {}
 Verze MSRDC: {}
@@ -815,7 +815,7 @@ Další informace o Admin Protection najdete na https://aka.ms/apdevguide</value
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageWarningDuringStartup" xml:space="preserve">
-    <value>Při spouštění WSL došlo k chybám</value>
+    <value>Při spouštění PrettyWSL došlo k chybám</value>
   </data>
   <data name="MessageSystemdUserSessionFailed" xml:space="preserve">
     <value>Nepodařilo se spustit systémovou relaci uživatele pro {}. Další podrobnosti najdete v seznamu deníků.</value>
@@ -922,23 +922,23 @@ Návrat k sítím NAT.</value>
     <value>Nastavení wsl2.localhostForwarding nemá žádný vliv při použití zrcadleného síťového režimu</value>
   </data>
   <data name="MessageHttpProxyChangeDetected" xml:space="preserve">
-    <value>Na hostiteli byla zjištěna změna proxy serveru HTTP. Restartujte WSL, aby se změna použila.</value>
+    <value>Na hostiteli byla zjištěna změna proxy serveru HTTP. Restartujte PrettyWSL, aby se změna použila.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLocalhostSettingsDropped" xml:space="preserve">
-    <value>Byla zjištěna konfigurace proxy serveru localhost, ale nebyla zrcadlena do WSL. WSL v režimu NAT nepodporuje proxy localhost.</value>
+    <value>Byla zjištěna konfigurace proxy serveru localhost, ale nebyla zrcadlena do PrettyWSL. PrettyWSL v režimu NAT nepodporuje proxy localhost.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyV6SettingsDropped" xml:space="preserve">
-    <value>Byla zjištěna konfigurace proxy serveru IPv6, ale nebyla zrcadlena do WSL. WSL v režimu NAT nepodporuje protokol IPv6.</value>
+    <value>Byla zjištěna konfigurace proxy serveru IPv6, ale nebyla zrcadlena do PrettyWSL. PrettyWSL v režimu NAT nepodporuje protokol IPv6.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLoopbackV6SettingsDropped" xml:space="preserve">
-    <value>Byla zjištěna konfigurace proxy serveru IPv6 místního hostitele, ale nebyla zrcadlena do WSL. WSL nepodporuje proxy localhost IPv6.</value>
+    <value>Byla zjištěna konfigurace proxy serveru IPv6 místního hostitele, ale nebyla zrcadlena do PrettyWSL. PrettyWSL nepodporuje proxy localhost IPv6.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyUnexpectedSettingsDropped" xml:space="preserve">
-    <value>Při pokusu o překlad nastavení proxy serveru došlo k neočekávané chybě. Nastavení proxy serveru nebylo zrcadleno do WSL.</value>
+    <value>Při pokusu o překlad nastavení proxy serveru došlo k neočekávané chybě. Nastavení proxy serveru nebylo zrcadleno do PrettyWSL.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageRegistryError" xml:space="preserve">
@@ -970,7 +970,7 @@ Návrat k sítím NAT.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessagePluginRequiresUpdate" xml:space="preserve">
-    <value>Modul plug-in {} vyžaduje novější verzi WSL. Spusťte prosím:  wsl.exe --update</value>
+    <value>Modul plug-in {} vyžaduje novější verzi PrettyWSL. Spusťte prosím:  wsl.exe --update</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--update"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSettingOverriddenByPolicy" xml:space="preserve">
@@ -988,7 +988,7 @@ Návrat k sítím NAT.</value>
     <value>Protokol WSL1 je zakázán zásadami počítače.</value>
   </data>
   <data name="MessageWSLContainerDisabled" xml:space="preserve">
-    <value>Zásady počítače zakazují kontejner WSL.</value>
+    <value>Zásady počítače zakazují kontejner PrettyWSL.</value>
   </data>
   <data name="MessageRegistryBlockedByPolicy" xml:space="preserve">
     <value>Zásady počítače zablokovaly registr imagí kontejneru {}.</value>
@@ -1002,7 +1002,7 @@ Návrat k sítím NAT.</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--set-version "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageFinishMsiInstallation" xml:space="preserve">
-    <value>WSL dokončuje upgrade…</value>
+    <value>PrettyWSL dokončuje upgrade…</value>
   </data>
   <data name="MessageUpdateFailed" xml:space="preserve">
     <value>Aktualizace se nezdařila (ukončovací kód: {}).</value>
@@ -1029,7 +1029,7 @@ Návrat k sítím NAT.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageMissingOptionalComponents" xml:space="preserve">
-    <value>Volitelné součásti potřebné ke spuštění WSL nejsou nainstalovány.</value>
+    <value>Volitelné součásti potřebné ke spuštění PrettyWSL nejsou nainstalovány.</value>
   </data>
   <data name="MessageInstallMissingOptionalComponents" xml:space="preserve">
     <value>Nainstalujte chybějící komponenty.</value>
@@ -1054,7 +1054,7 @@ Návrat k sítím NAT.</value>
     <value>Zobrazit dokumentaci</value>
   </data>
   <data name="MessageVhdInUse" xml:space="preserve">
-    <value>Operaci nešlo dokončit, protože se VHD právě používá. Vynucení ukončení používání WSL: wsl.exe --shutdown</value>
+    <value>Operaci nešlo dokončit, protože se VHD právě používá. Vynucení ukončení používání PrettyWSL: wsl.exe --shutdown</value>
     <comment>{Locked="--shutdown"}Command line arguments, file names and string inserts should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="MessageInvalidBoolean" xml:space="preserve">
@@ -1066,7 +1066,7 @@ Návrat k sítím NAT.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessageLocalSystemNotSupported" xml:space="preserve">
-    <value>Spouštění WSL jako místního systému se nepodporuje.</value>
+    <value>Spouštění PrettyWSL jako místního systému se nepodporuje.</value>
   </data>
   <data name="MessagePerformanceTip" xml:space="preserve">
     <value>Tip pro lepší výkon:</value>
@@ -1131,12 +1131,12 @@ Probíhá pokus o stažení webu...</value>
     <comment>{Locked="wsl2.virtio"}{Locked="VirtioProxy"}{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSwiotlbKernelUnsupported" xml:space="preserve">
-    <value>Aktuálně spuštěné jádro postrádá opravu, která výrazně zlepšuje výkon zařízení virtio. Pokud chcete tuto optimalizaci povolit, aktualizujte na novější jádro WSL.</value>
+    <value>Aktuálně spuštěné jádro postrádá opravu, která výrazně zlepšuje výkon zařízení virtio. Pokud chcete tuto optimalizaci povolit, aktualizujte na novější jádro PrettyWSL.</value>
     <comment>{Locked="virtio"}</comment>
   </data>
   <data name="MessageInstallationCorrupted" xml:space="preserve">
-    <value>Instalace WSL je pravděpodobně poškozena (kód chyby: {}).
-Stisknutím libovolné klávesy opravíte WSL nebo CTRL-C akci zrušíte.
+    <value>Instalace PrettyWSL je pravděpodobně poškozena (kód chyby: {}).
+Stisknutím libovolné klávesy opravíte PrettyWSL nebo CTRL-C akci zrušíte.
 Časový limit této výzvy vyprší za 60 sekund.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -1230,7 +1230,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxy.Description" xml:space="preserve">
-    <value>Povoluje WSL používat informace o proxy serveru HTTP systému Windows.</value>
+    <value>Povoluje PrettyWSL používat informace o proxy serveru HTTP systému Windows.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1238,7 +1238,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Povoluje WSL používat informace o proxy serveru HTTP systému Windows.</value>
+    <value>Povoluje PrettyWSL používat informace o proxy serveru HTTP systému Windows.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_BestEffortDNS.Header" xml:space="preserve">
@@ -1296,7 +1296,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <value>Procházet distribuce</value>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.Text" xml:space="preserve">
-    <value>Určete cestu k VHD, který se načte jako vlastní distribuce systému a primárně se použije používá k napájení aplikací s grafickým uživatelským rozhraním ve WSL. [Další informace o distribucích systému najdete tady].</value>
+    <value>Určete cestu k VHD, který se načte jako vlastní distribuce systému a primárně se použije používá k napájení aplikací s grafickým uživatelským rozhraním ve PrettyWSL. [Další informace o distribucích systému najdete tady].</value>
     <comment>{Locked="["}{Locked="]"}{Locked="VHD"}The text in between the delimiters [ ] is made into a hyperlink in code, and the delimiters are removed. "VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.NavigateUri" xml:space="preserve">
@@ -1307,7 +1307,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <value>Vlastní distribuce systému</value>
   </data>
   <data name="Settings_CustomSystemDistroPathTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Určete cestu k VHD, který se načte jako vlastní distribuce systému a primárně se použije používá k napájení aplikací s grafickým uživatelským rozhraním ve WSL.</value>
+    <value>Určete cestu k VHD, který se načte jako vlastní distribuce systému a primárně se použije používá k napájení aplikací s grafickým uživatelským rozhraním ve PrettyWSL.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DebugConsole.Header" xml:space="preserve">
@@ -1327,7 +1327,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSize.Description" xml:space="preserve">
-    <value>Výchozí maximální velikost rozšiřitelného virtuálního pevného disku (VHD) WSL pouze pro nově vytvořené distribuce</value>
+    <value>Výchozí maximální velikost rozšiřitelného virtuálního pevného disku (VHD) PrettyWSL pouze pro nově vytvořené distribuce</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeResetButton.Content" xml:space="preserve">
@@ -1338,7 +1338,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Výchozí maximální velikost zadaná v megabajtech pro rozšiřitelný virtuální pevný disk WSL (VHD) pouze pro nově vytvořené distribuce.</value>
+    <value>Výchozí maximální velikost zadaná v megabajtech pro rozšiřitelný virtuální pevný disk PrettyWSL (VHD) pouze pro nově vytvořené distribuce.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DeveloperPageTitle.Text" xml:space="preserve">
@@ -1349,20 +1349,20 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
   </data>
   <data name="Settings_DocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to Microsoft WSL documentation</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL documentation</comment>
   </data>
   <data name="Settings_DrvFSMode.Header" xml:space="preserve">
     <value>Změnit režim DrvFS</value>
   </data>
   <data name="Settings_DrvFSMode.Description" xml:space="preserve">
-    <value>Změní implementaci přístupu k souborům mezi operačními systémy v WSL.</value>
+    <value>Změní implementaci přístupu k souborům mezi operačními systémy v PrettyWSL.</value>
   </data>
   <data name="Settings_DNSProxy.Header" xml:space="preserve">
     <value>Proxy server DNS je povolený</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxy.Description" xml:space="preserve">
-    <value>Lze použít pouze v případě, že je vlastnost wsl2.networkingMode nastavena na hodnotu NAT. Logická hodnota pro informování WSL o konfiguraci serveru DNS v Linuxu na překlad adres (NAT) na hostiteli. Nastavení na false bude zrcadlit servery DNS z Windows do Linuxu.</value>
+    <value>Lze použít pouze v případě, že je vlastnost wsl2.networkingMode nastavena na hodnotu NAT. Logická hodnota pro informování PrettyWSL o konfiguraci serveru DNS v Linuxu na překlad adres (NAT) na hostiteli. Nastavení na false bude zrcadlit servery DNS z Windows do Linuxu.</value>
     <comment>{Locked="wsl2.networkingMode"}{Locked="DNS"}.wslconfig property key names should not be translated. "DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1370,7 +1370,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Lze použít pouze v případě, že je vlastnost wsl2.networkingMode nastavena na hodnotu NAT. Logická hodnota pro informování WSL o konfiguraci serveru DNS v Linuxu na překlad adres (NAT) na hostiteli. Nastavení na false bude zrcadlit servery DNS z Windows do Linuxu.</value>
+    <value>Lze použít pouze v případě, že je vlastnost wsl2.networkingMode nastavena na hodnotu NAT. Logická hodnota pro informování PrettyWSL o konfiguraci serveru DNS v Linuxu na překlad adres (NAT) na hostiteli. Nastavení na false bude zrcadlit servery DNS z Windows do Linuxu.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Header" xml:space="preserve">
@@ -1378,7 +1378,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Description" xml:space="preserve">
-    <value>Změní způsob, jakým jsou požadavky DNS proxy z WSL na Windows.</value>
+    <value>Změní způsob, jakým jsou požadavky DNS proxy z PrettyWSL na Windows.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1386,7 +1386,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Změní způsob, jakým jsou požadavky DNS proxy z WSL na Windows.</value>
+    <value>Změní způsob, jakým jsou požadavky DNS proxy z PrettyWSL na Windows.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_FileSystemPageTitle.Text" xml:space="preserve">
@@ -1396,7 +1396,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <value>Povolit aplikace s grafickým uživatelským rozhraním</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.Text" xml:space="preserve">
-    <value>Logická hodnota pro zapnutí nebo vypnutí podpory aplikací s grafickým uživatelským rozhraním ([WSLg]) v WSL.</value>
+    <value>Logická hodnota pro zapnutí nebo vypnutí podpory aplikací s grafickým uživatelským rozhraním ([WSLg]) v PrettyWSL.</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgproject</value>
@@ -1406,7 +1406,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <value>Povolte aplikace s grafickým uživatelským rozhraním.</value>
   </data>
   <data name="Settings_GUIApplicationsToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Logická hodnota pro zapnutí nebo vypnutí podpory aplikací s grafickým uživatelským rozhraním (taktéž WSL g) ve WSL.</value>
+    <value>Logická hodnota pro zapnutí nebo vypnutí podpory aplikací s grafickým uživatelským rozhraním (taktéž PrettyWSL g) ve PrettyWSL.</value>
   </data>
   <data name="Settings_HWPerfCounters.Header" xml:space="preserve">
     <value>Povolit čítače výkonu hardwaru</value>
@@ -1424,13 +1424,13 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <value>Brána firewall technologie Hyper-V povolena</value>
   </data>
   <data name="Settings_HyperVFirewall.Description" xml:space="preserve">
-    <value>Povolí bránu firewall technologie Hyper-V, která umožňuje filtrovat síťový provoz WSL pomocí pravidel brány Windows Firewall a pravidel specifických pro přenosy technologie Hyper-V.</value>
+    <value>Povolí bránu firewall technologie Hyper-V, která umožňuje filtrovat síťový provoz PrettyWSL pomocí pravidel brány Windows Firewall a pravidel specifických pro přenosy technologie Hyper-V.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.Name" xml:space="preserve">
     <value>Brána firewall technologie Hyper-V povolena.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Povolí bránu firewall technologie Hyper-V, která umožňuje filtrovat síťový provoz WSL pomocí pravidel brány Windows Firewall a pravidel specifických pro přenosy technologie Hyper-V.</value>
+    <value>Povolí bránu firewall technologie Hyper-V, která umožňuje filtrovat síťový provoz PrettyWSL pomocí pravidel brány Windows Firewall a pravidel specifických pro přenosy technologie Hyper-V.</value>
   </data>
   <data name="Settings_HostAddressLoopback.Header" xml:space="preserve">
     <value>Zpětná smyčka adresy hostitele</value>
@@ -1466,7 +1466,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeout.Description" xml:space="preserve">
-    <value>Lze použít pouze v případě, že je vlastnost wsl2.autoProxy nastavena na hodnotu true. Konfiguruje, jak dlouho (v milisekundách) WSL počká na načtení informací o proxy serveru HTTP při spuštění kontejneru WSL. Pokud se nastavení proxy serveru po této době vyřeší, musí se instance WSL restartovat, aby se použila načtená nastavení proxy serveru.</value>
+    <value>Lze použít pouze v případě, že je vlastnost wsl2.autoProxy nastavena na hodnotu true. Konfiguruje, jak dlouho (v milisekundách) PrettyWSL počká na načtení informací o proxy serveru HTTP při spuštění kontejneru PrettyWSL. Pokud se nastavení proxy serveru po této době vyřeší, musí se instance PrettyWSL restartovat, aby se použila načtená nastavení proxy serveru.</value>
     <comment>{Locked="wsl2.autoProxy"}.wslconfig property key names should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutResetButton.Content" xml:space="preserve">
@@ -1477,7 +1477,7 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Lze použít pouze v případě, že je vlastnost wsl2.autoProxy nastavena na hodnotu true. Konfiguruje, jak dlouho (v milisekundách) WSL počká na načtení informací o proxy serveru HTTP při spuštění kontejneru WSL. Pokud se nastavení proxy serveru po této době vyřeší, musí se instance WSL restartovat, aby se použila načtená nastavení proxy serveru.</value>
+    <value>Lze použít pouze v případě, že je vlastnost wsl2.autoProxy nastavena na hodnotu true. Konfiguruje, jak dlouho (v milisekundách) PrettyWSL počká na načtení informací o proxy serveru HTTP při spuštění kontejneru PrettyWSL. Pokud se nastavení proxy serveru po této době vyřeší, musí se instance PrettyWSL restartovat, aby se použila načtená nastavení proxy serveru.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_KernelCommandLine.Header" xml:space="preserve">
@@ -1538,13 +1538,13 @@ Zobrazit pokyny pro obnovení: https://aka.ms/wsldiskmountrecovery</value>
     <value>Síťový režim</value>
   </data>
   <data name="Settings_NetworkingMode.Description" xml:space="preserve">
-    <value>Určuje síťový režim pro WSL.</value>
+    <value>Určuje síťový režim pro PrettyWSL.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.Name" xml:space="preserve">
     <value>Síťový režim.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Určuje síťový režim pro WSL.</value>
+    <value>Určuje síťový režim pro PrettyWSL.</value>
   </data>
   <data name="Settings_NetworkingPageTitle.Text" xml:space="preserve">
     <value>Sítě</value>
@@ -1571,10 +1571,10 @@ cd /mnt/c</value>
     <comment>{Locked="\\wsl.localhost\"}Url addresses should not be translated.</comment>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLTitle.Text" xml:space="preserve">
-    <value>Spuštění souborů a programů Windows z WSL</value>
+    <value>Spuštění souborů a programů Windows z PrettyWSL</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLSample.Text" xml:space="preserve">
-    <value>I když používáte WSL, můžete spustit spustitelné soubory Windows přímo z bashe. Zkuste spustit
+    <value>I když používáte PrettyWSL, můžete spustit spustitelné soubory Windows přímo z bashe. Zkuste spustit
 powershell.exe /c start . a otevře se Průzkumník souborů v aktuální složce.</value>
     <comment>{Locked="/c start ."}Command line arguments and file names should not be translated</comment>
   </data>
@@ -1593,7 +1593,7 @@ powershell.exe /c start . a otevře se Průzkumník souborů v aktuální složc
     <value>Sítě v zrcadleném režimu</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_MirroredModeNetworkingSample.Text" xml:space="preserve">
-    <value>WSL také obsahuje nový síťový režim nazývaný zrcadlený režim, který přidává pokročilé funkce, jako jsou podpora protokolu IPv6 a možnost přístupu k síťovým aplikacím v místní síti.</value>
+    <value>PrettyWSL také obsahuje nový síťový režim nazývaný zrcadlený režim, který přidává pokročilé funkce, jako jsou podpora protokolu IPv6 a možnost přístupu k síťovým aplikacím v místní síti.</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccessLink.Content" xml:space="preserve">
     <value>Další informace o přístupu k souborům napříč operačními systémy</value>
@@ -1606,73 +1606,73 @@ powershell.exe /c start . a otevře se Průzkumník souborů v aktuální složc
     <value>Vítá vás Subsystém Windows pro Linux</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Description" xml:space="preserve">
-   <value>WSL je skvělý způsob, jak vyzkoušet různé distribuce Linuxu.</value>
+   <value>PrettyWSL je skvělý způsob, jak vyzkoušet různé distribuce Linuxu.</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Title" xml:space="preserve">
     <value>Správa distribuce</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.Content" xml:space="preserve">
-    <value>Další informace o základních příkazech WSL</value>
+    <value>Další informace o základních příkazech PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcommands</value>
-    <comment>{Locked}Uri to the basic WSL commands documentation</comment>
+    <comment>{Locked}Uri to the basic PrettyWSL commands documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.Content" xml:space="preserve">
     <value>Další informace o importu libovolné distribuce Linuxu</value>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcustomdistro</value>
-    <comment>{Locked}Uri to the import any linux distribution to use with WSL documentation</comment>
+    <comment>{Locked}Uri to the import any linux distribution to use with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosTitle.Text" xml:space="preserve">
-    <value>Příkaz pro zobrazení seznamu instalovatelných distribucí WSL</value>
+    <value>Příkaz pro zobrazení seznamu instalovatelných distribucí PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosSample.Text" xml:space="preserve">
     <value>wsl.exe -l -o</value>
     <comment>{Locked="-l -o"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosTitle.Text" xml:space="preserve">
-    <value>Příkaz pro instalaci jmenovaných distribucí WSL</value>
+    <value>Příkaz pro instalaci jmenovaných distribucí PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosSample.Text" xml:space="preserve">
     <value>wsl.exe --install &lt;Název distribuce&gt;</value>
     <comment>{Locked="--install "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosTitle.Text" xml:space="preserve">
-    <value>Příkaz pro zobrazení seznamu dostupných distribucí WSL</value>
+    <value>Příkaz pro zobrazení seznamu dostupných distribucí PrettyWSL</value>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosSample.Text" xml:space="preserve">
     <value>wsl.exe -l</value>
     <comment>{Locked="-l"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Description" xml:space="preserve">
-    <value>Docker Desktop funguje skvěle s WSL a pomůže vám při vývoji díky linuxovým kontejnerům.
+    <value>Docker Desktop funguje skvěle s PrettyWSL a pomůže vám při vývoji díky linuxovým kontejnerům.
 
-Mezi výhody používání aplikace Docker Desktop s WSL patří:
+Mezi výhody používání aplikace Docker Desktop s PrettyWSL patří:
 
-• Příkazy Dockeru můžete spouštět ve WSL nebo Windows pomocí stejného démona a imagí Dockeru.
-• Soubory a složky můžete bez problémů sdílet mezi Windows a Linuxem pomocí automatického připojení jednotek Windows ve WSL.
-• Díky interoperabilitě WSL můžete pomocí preferovaných nástrojů a editorů Windows pracovat na linuxovém kódu a souborech a naopak.</value>
+• Příkazy Dockeru můžete spouštět ve PrettyWSL nebo Windows pomocí stejného démona a imagí Dockeru.
+• Soubory a složky můžete bez problémů sdílet mezi Windows a Linuxem pomocí automatického připojení jednotek Windows ve PrettyWSL.
+• Díky interoperabilitě PrettyWSL můžete pomocí preferovaných nástrojů a editorů Windows pracovat na linuxovém kódu a souborech a naopak.</value>
     <comment>"mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used.</comment>
  </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Title" xml:space="preserve">
     <value>Integrace aplikace Docker Desktop</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.Content" xml:space="preserve">
-    <value>Další informace o používání WSL s Dockerem</value>
+    <value>Další informace o používání PrettyWSL s Dockerem</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocker</value>
     <comment>{Locked}Uri to the Docker remote containers on WSL 2 documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral.Description" xml:space="preserve">
-    <value>Subsystém Windows pro Linux (WSL) umožňuje spouštět oblíbené linuxové nástroje, pomůcky, aplikace a pracovní postupy přímo ve Windows.
+    <value>Subsystém Windows pro Linux (PrettyWSL) umožňuje spouštět oblíbené linuxové nástroje, pomůcky, aplikace a pracovní postupy přímo ve Windows.
 
 Věnujte chvíli zobrazení náhledu některých oblíbených funkcí komunity nebo si prohlédněte naši komplexní dokumentaci.</value>
   </data>
   <data name="Settings_OOBEGeneral.Title" xml:space="preserve">
-    <value>Vítá vás WSL</value>
+    <value>Vítá vás PrettyWSL</value>
   </data>
   <data name="Settings_OOBEGeneral_BestPracticesSetupLink.Content" xml:space="preserve">
     <value>Osvědčené postupy instalace</value>
@@ -1689,11 +1689,11 @@ Věnujte chvíli zobrazení náhledu některých oblíbených funkcí komunity n
     <comment>{Locked}Uri to the Getting Started with Linux Documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.Content" xml:space="preserve">
-    <value>Dokumentace k subsystému Windows pro Linux (WSL)</value>
+    <value>Dokumentace k subsystému Windows pro Linux (PrettyWSL)</value>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to the Microsoft WSL Documentation</comment>
+    <comment>{Locked}Uri to the Microsoft PrettyWSL Documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps.Description" xml:space="preserve">
     <value>Můžete používat grafické linuxové aplikace s nativní interakcí s Windows, jako jsou alt-tab, spuštění nabídky Start, připnutí na hlavní panel a podpora vyjmutí a vložení.</value>
@@ -1702,9 +1702,9 @@ Věnujte chvíli zobrazení náhledu některých oblíbených funkcí komunity n
     <value>Aplikace s grafickým rozhraním (GUI)</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Description" xml:space="preserve">
-    <value>WSL může využívat GPU Windows pro pracovní postupy strojového učení 
+    <value>PrettyWSL může využívat GPU Windows pro pracovní postupy strojového učení 
 
-Binární soubory Linuxu spuštěné ve WSL můžou automaticky používat GPU ve Windows ke zrychlení výkonu. Tyto pracovní postupy stačí nainstalovat a spustit stejným způsobem jako na běžném počítači s Linuxem. Existuje mnoho různých způsobů, jak začít používat CUDA v kontejneru Dockeru, pokud máte grafickou kartu NVIDIA, ke spuštění PyTorch nebo TensorFlow s DirectML na grafické kartě AMD, Intel nebo NVIDIA. Další informace najdete níže v naší příručce Začínáme.</value>
+Binární soubory Linuxu spuštěné ve PrettyWSL můžou automaticky používat GPU ve Windows ke zrychlení výkonu. Tyto pracovní postupy stačí nainstalovat a spustit stejným způsobem jako na běžném počítači s Linuxem. Existuje mnoho různých způsobů, jak začít používat CUDA v kontejneru Dockeru, pokud máte grafickou kartu NVIDIA, ke spuštění PyTorch nebo TensorFlow s DirectML na grafické kartě AMD, Intel nebo NVIDIA. Další informace najdete níže v naší příručce Začínáme.</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Title" xml:space="preserve">
     <value>Akcelerace GPU</value>
@@ -1714,14 +1714,14 @@ Binární soubory Linuxu spuštěné ve WSL můžou automaticky používat GPU v
   </data>
   <data name="Settings_OOBEGPUAccelerationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgpu</value>
-    <comment>{Locked}Uri to the GPU acceleration for ML in WSL documentation</comment>
+    <comment>{Locked}Uri to the GPU acceleration for ML in PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIAppsLink.Content" xml:space="preserve">
-    <value>Další informace o aplikacích s grafickým rozhraním (GUI) WSL</value>
+    <value>Další informace o aplikacích s grafickým rozhraním (GUI) PrettyWSL</value>
   </data>
   <data name="Settings_OOBEGUIAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslguiapps</value>
-    <comment>{Locked}Uri to the Run GUI apps on the WSL documentation</comment>
+    <comment>{Locked}Uri to the Run GUI apps on the PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps_AppsListDescription.Text" xml:space="preserve">
     <value>Tady je seznam aplikací, které můžete vyzkoušet (všechny tyto aplikace můžete nainstalovat v Ubuntu zadáním sudo apt install &lt;Název aplikace&gt;)
@@ -1744,43 +1744,43 @@ Binární soubory Linuxu spuštěné ve WSL můžou automaticky používat GPU v
   </data>
   <data name="Settings_OOBENetworkingIntegrationLinuxNetworkingAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslnetworking</value>
-    <comment>{Locked}Uri to the Accessing network applications with WSL documentation</comment>
+    <comment>{Locked}Uri to the Accessing network applications with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.Content" xml:space="preserve">
     <value>Další informace o síti v zrcadleném režimu</value>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslmirroredmode</value>
-    <comment>{Locked}Uri to the WSL Mirrored Mode networking documentation</comment>
+    <comment>{Locked}Uri to the PrettyWSL Mirrored Mode networking documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Description" xml:space="preserve">
-   <value>WSL můžete používat jako plnohodnotné vývojové prostředí přímo z VS Code.</value>
+   <value>PrettyWSL můžete používat jako plnohodnotné vývojové prostředí přímo z VS Code.</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Title" xml:space="preserve">
     <value>Integrace VS Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.Content" xml:space="preserve">
-    <value>Další informace o používání WSL s VS Code</value>
+    <value>Další informace o používání PrettyWSL s VS Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslvscode</value>
-    <comment>{Locked}Uri to the using Visual Studio Code with WSL documentation</comment>
+    <comment>{Locked}Uri to the using Visual Studio Code with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallTitle.Text" xml:space="preserve">
     <value>Postup instalace</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallSample.Text" xml:space="preserve">
-    <value>Po instalaci nástroje VS Code můžete nainstalovat rozšíření Remote WSL z terminálu Windows:
+    <value>Po instalaci nástroje VS Code můžete nainstalovat rozšíření Remote PrettyWSL z terminálu Windows:
 
 code –install-extension ms-vscode-remote.remote-wsl</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectTitle.Text" xml:space="preserve">
-    <value>Otevření projektu WSL ve Visual Studio Code</value>
+    <value>Otevření projektu PrettyWSL ve Visual Studio Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectSample.Text" xml:space="preserve">
-    <value>Chcete-li otevřít projekt v nástroji VS Code z distribuce WSL, otevřete příkazový řádek distribuce a spuštěním příkazu code . otevřete soubor projektu.
+    <value>Chcete-li otevřít projekt v nástroji VS Code z distribuce PrettyWSL, otevřete příkazový řádek distribuce a spuštěním příkazu code . otevřete soubor projektu.
 
-K dalším možnostem VS Code Remote můžete přistupovat také prostřednictvím palety příkazů v samotném VS Code. Stisknutím SHIFT + CTRL + P na klávesnici otevřete paletu příkazů a zadáním Remote-WSL zobrazíte seznam dostupných možností VS Code Remote, které umožňují znovu otevřít složku ve vzdálené relaci, určit distribuci, kterou chcete otevřít, a mnohem více.</value>
+K dalším možnostem VS Code Remote můžete přistupovat také prostřednictvím palety příkazů v samotném VS Code. Stisknutím SHIFT + CTRL + P na klávesnici otevřete paletu příkazů a zadáním Remote-PrettyWSL zobrazíte seznam dostupných možností VS Code Remote, které umožňují znovu otevřít složku ve vzdálené relaci, určit distribuci, kterou chcete otevřít, a mnohem více.</value>
   </data>
   <data name="Settings_OOBE_HowToUse.Text" xml:space="preserve">
     <value>Jak používat</value>
@@ -1818,14 +1818,14 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
   </data>
   <data name="Settings_ReleaseNotesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslreleases</value>
-    <comment>{Locked}Uri to Microsoft WSL release notes</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL release notes</comment>
   </data>
   <data name="Settings_SafeMode.Header" xml:space="preserve">
     <value>Povolit nouzový režim</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeMode.Description" xml:space="preserve">
-    <value>Spusťte WSL v nouzovém režimu, který zakáže mnoho funkcí a je určen k obnovení distribucí, které jsou ve špatném stavu.</value>
+    <value>Spusťte PrettyWSL v nouzovém režimu, který zakáže mnoho funkcí a je určen k obnovení distribucí, které jsou ve špatném stavu.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1833,7 +1833,7 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Spusťte WSL v nouzovém režimu, který zakáže mnoho funkcí a je určen k obnovení distribucí, které jsou ve špatném stavu.</value>
+    <value>Spusťte PrettyWSL v nouzovém režimu, který zakáže mnoho funkcí a je určen k obnovení distribucí, které jsou ve špatném stavu.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_Shell_About.Content" xml:space="preserve">
@@ -1873,7 +1873,7 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
     <value>Integrace sítí</value>
   </data>
   <data name="Settings_Shell_OOBE.Content" xml:space="preserve">
-    <value>Vítá vás WSL</value>
+    <value>Vítá vás PrettyWSL</value>
   </data>
   <data name="Settings_Shell_OptionalFeatures.Content" xml:space="preserve">
     <value>Volitelné funkce</value>
@@ -1895,7 +1895,7 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
   </data>
   <data name="Settings_IssuesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslproject</value>
-    <comment>{Locked}Uri to Microsoft WSL issues</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL issues</comment>
   </data>
   <data name="Settings_SparseVHD.Header" xml:space="preserve">
     <value>Ve výchozím nastavení povolit zhuštěný VHD</value>
@@ -1984,13 +1984,13 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
     <value>Použít změny</value>
   </data>
   <data name="Settings_ApplyChangesDialogTitle" xml:space="preserve">
-    <value>Je potřeba vypnout WSL</value>
+    <value>Je potřeba vypnout PrettyWSL</value>
   </data>
   <data name="Settings_ApplyChangesDialogDescription" xml:space="preserve">
-    <value>Změny nastavení WSL vyžadují k dokončení vypnutí a restartování WSL. Po vypnutí se ukončí všechny aktivní relace WSL.</value>
+    <value>Změny nastavení PrettyWSL vyžadují k dokončení vypnutí a restartování PrettyWSL. Po vypnutí se ukončí všechny aktivní relace PrettyWSL.</value>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownButton" xml:space="preserve">
-    <value>Vypnout WSL teď</value>
+    <value>Vypnout PrettyWSL teď</value>
   </data>
   <data name="Settings_ApplyChangesDialogLaterButton" xml:space="preserve">
     <value>Později</value>
@@ -2006,7 +2006,7 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
     <comment>{Locked="{0}"}Format placeholder for Win32 error code</comment>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownFailed" xml:space="preserve">
-    <value>Nastavení se uložila, ale vypnutí WSL se nezdařilo: {0}</value>
+    <value>Nastavení se uložila, ale vypnutí PrettyWSL se nezdařilo: {0}</value>
     <comment>{Locked="{0}"}Format placeholder for exception message</comment>
   </data>
   <data name="Settings_BooleanTrueText" xml:space="preserve">
@@ -2016,27 +2016,27 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
     <value>Vypnuto</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Title" xml:space="preserve">
-    <value>Vytvářejte, spouštějte, laďte a profilujte své aplikace běžící na WSL z Visual Studia</value>
+    <value>Vytvářejte, spouštějte, laďte a profilujte své aplikace běžící na PrettyWSL z Visual Studia</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Description" xml:space="preserve">
-    <value>Spouštějte a laďte své aplikace ve WSL z Visual Studia</value>
+    <value>Spouštějte a laďte své aplikace ve PrettyWSL z Visual Studia</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.Content" xml:space="preserve">
-    <value>Další informace o WSL ve Visual Studiu pro vývojáře .NET</value>
+    <value>Další informace o PrettyWSL ve Visual Studiu pro vývojáře .NET</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/visualstudio/debugger/debug-dotnet-core-in-wsl-2</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.Content" xml:space="preserve">
-    <value>Další informace o Visual Studiu a WSL pro vývojáře v C++</value>
+    <value>Další informace o Visual Studiu a PrettyWSL pro vývojáře v C++</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/cpp/linux/?view=msvc-170</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_Description.Text" xml:space="preserve">
-    <value>Pomocí subsystému Windows pro Linux (WSL) můžete v Linuxu snadno spouštět a ladit své aplikace .NET Core a multiplatformní aplikace C++ přímo ve Visual Studiu, aniž byste museli opustit toto prostředí. Pokud jste multiplatformní vývojář, můžete tuto metodu využít jako jednoduchý způsob testování více cílových prostředí.</value>
+    <value>Pomocí subsystému Windows pro Linux (PrettyWSL) můžete v Linuxu snadno spouštět a ladit své aplikace .NET Core a multiplatformní aplikace C++ přímo ve Visual Studiu, aniž byste museli opustit toto prostředí. Pokud jste multiplatformní vývojář, můžete tuto metodu využít jako jednoduchý způsob testování více cílových prostředí.</value>
   </data>
   <data name="Settings_OOBEVSIntegration_Title.Text" xml:space="preserve">
     <value>Integrace Visual Studia</value>
@@ -2045,7 +2045,7 @@ K dalším možnostem VS Code Remote můžete přistupovat také prostřednictv�
     <value>Integrace Visual Studia</value>
   </data>
   <data name="MessageWslcUsage" xml:space="preserve">
-    <value>wslc – WSL Container CLI
+    <value>wslc – PrettyWSL Container CLI
 Využití:
   wslc --help</value>
     <comment>{Locked="--help"}Command line arguments, file names and string inserts should not be translated</comment>
@@ -2376,15 +2376,15 @@ Informace o ochraně osobních údajů k tomuto produktu najdete na stránce htt
     <comment>{Locked="WSLC"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_RootCommandLongDesc" xml:space="preserve">
-    <value>WSLC je nástroj příkazového řádku pro kontejnery Windows Subsystem pro Linux. Umožňuje správu kontejnerů WSL a interakci s nimi z příkazového řádku.</value>
-    <comment>{Locked="WSLC"}{Locked="WSL"}Product names should not be translated</comment>
+    <value>WSLC je nástroj příkazového řádku pro kontejnery Windows Subsystem pro Linux. Umožňuje správu kontejnerů PrettyWSL a interakci s nimi z příkazového řádku.</value>
+    <comment>{Locked="WSLC"}{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerCommandDesc" xml:space="preserve">
     <value>Spravovat kontejnery.</value>
   </data>
   <data name="WSLCCLI_ContainerCommandLongDesc" xml:space="preserve">
-    <value>Spravovat životní cyklus kontejnerů WSL, včetně jejich vytváření, spouštění, zastavování a odstraňování.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Spravovat životní cyklus kontejnerů PrettyWSL, včetně jejich vytváření, spouštění, zastavování a odstraňování.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerAttachDesc" xml:space="preserve">
     <value>Připojit se ke kontejneru.</value>
@@ -2635,8 +2635,8 @@ Informace o ochraně osobních údajů k tomuto produktu najdete na stránce htt
     <value>Spravovat relace.</value>
   </data>
   <data name="WSLCCLI_SessionCommandLongDesc" xml:space="preserve">
-    <value>Spravovat relace kontejnerů WSL, včetně výpisu aktivních relací a spouštění interaktivních shellů.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Spravovat relace kontejnerů PrettyWSL, včetně výpisu aktivních relací a spouštění interaktivních shellů.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_SessionListDesc" xml:space="preserve">
     <value>Vypsat relace.</value>
@@ -2968,8 +2968,8 @@ Při prvním spuštění vytvoří soubor se všemi nastaveními okomentovanými
     <value>Spravujte svazky.</value>
   </data>
   <data name="WSLCCLI_VolumeCommandLongDesc" xml:space="preserve">
-    <value>Spravujte životní cyklus svazků WSL, včetně jejich vytváření, kontroly, výpisu a odstranění.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Spravujte životní cyklus svazků PrettyWSL, včetně jejich vytváření, kontroly, výpisu a odstranění.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_VolumeCreateDesc" xml:space="preserve">
     <value>Vytvořte svazek.</value>

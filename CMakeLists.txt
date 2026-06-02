@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 set(CMAKE_SYSTEM_VERSION 10.0.26100.0)
 
-project(wsl)
+project(prettywsl)
 
 # Rationalize TARGET_PLATFORM
 # When neither CMAKE_GENERATOR_PLATFORM nor TARGET_PLATFORM is set, default to the host architecture.
@@ -199,11 +199,11 @@ if (OFFICIAL_BUILD AND NOT PACKAGE_VERSION MATCHES "^([0-9]+)\\.([0-9]+)\\.([0-9
 endif()
 
 if (${TARGET_PLATFORM} STREQUAL "x64")
-    set(DCAT_PRODUCT_NAME WSL.amd64)
+    set(DCAT_PRODUCT_NAME PrettyWSL.amd64)
 endif()
 
 if (${TARGET_PLATFORM} STREQUAL "arm64")
-    set(DCAT_PRODUCT_NAME WSL.arm64)
+    set(DCAT_PRODUCT_NAME PrettyWSL.arm64)
 endif()
 
 set(DCAT_REGISTRATION_KEY "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Update\\TargetingInfo\\DynamicInstalled\\${DCAT_PRODUCT_NAME}")

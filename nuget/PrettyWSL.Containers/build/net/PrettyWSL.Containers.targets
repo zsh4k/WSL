@@ -29,7 +29,7 @@
         <Error Text="wslcsdk.dll could not be copied because the $(_wslcInvalidPlatformProperty) '$(_wslcInvalidPlatform)' is not supported. Only x64 and arm64 platforms are supported." />
     </Target>
 
-    <Import Project="$(MSBuildThisFileDirectory)..\Microsoft.WSL.Containers.common.targets" />
+    <Import Project="$(MSBuildThisFileDirectory)..\PrettyWSL.Containers.common.targets" />
 
     <!-- ================================================================== -->
     <!-- C# specific: CPS Up-to-Date Check for container source files       -->

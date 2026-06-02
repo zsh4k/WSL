@@ -272,7 +272,7 @@ try
     wil::unique_hkey key = wsl::windows::common::registry::OpenKey(HKEY_LOCAL_MACHINE, L"SYSTEM\\CurrentControlSet\\Services", KEY_READ);
     THROW_LAST_ERROR_IF(!key);
 
-    const auto AppUserModelId = wsl::windows::common::registry::ReadString(key.get(), L"WSLService", L"AppUserModelId", L"");
+    const auto AppUserModelId = wsl::windows::common::registry::ReadString(key.get(), L"PrettyWSLService", L"AppUserModelId", L"");
     key.reset();
 
     DWORD DeleteStatus = ERROR_NOT_SUPPORTED;
@@ -827,7 +827,7 @@ void RegisterLspCategoriesImpl(DWORD flags)
     const auto installRoot = wsl::windows::common::wslutil::GetMsiPackagePath();
     THROW_HR_IF(E_INVALIDARG, !installRoot.has_value());
 
-    for (const auto& e : {L"wsl.exe", L"wslhost.exe", L"wslrelay.exe", L"wslg.exe", L"wslservice.exe"})
+    for (const auto& e : {L"pwsl.exe", L"pwslhost.exe", L"pwslrelay.exe", L"pwslg.exe", L"pwslservice.exe"})
     {
         auto executable = installRoot.value() + e;
         INT error{};
@@ -945,7 +945,7 @@ static void SetWslServiceStartType(DWORD StartType)
     const wil::unique_schandle manager{OpenSCManagerW(nullptr, nullptr, SC_MANAGER_CONNECT)};
     THROW_LAST_ERROR_IF(!manager);
 
-    const wil::unique_schandle service{OpenServiceW(manager.get(), L"WSLService", SERVICE_CHANGE_CONFIG)};
+    const wil::unique_schandle service{OpenServiceW(manager.get(), L"PrettyWSLService", SERVICE_CHANGE_CONFIG)};
     if (!service)
     {
         const auto error = GetLastError();

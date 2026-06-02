@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!--
     Microsoft ResX Schema
@@ -137,7 +137,7 @@
     <value>Windows-undersystem for Linux</value>
   </data>
   <data name="AppShortName" xml:space="preserve">
-    <value>WSL</value>
+    <value>PrettyWSL</value>
   </data>
   <data name="AppDescription" xml:space="preserve">
     <value>Med Windows-undersystem for Linux kan utviklere kjøre et GNU/Linux-miljø – inkludert de fleste kommandolinjeverktøy, verktøy og programmer – direkte på Windows, uendret, uten kostnadene ved en tradisjonell virtuell maskin eller konfigurasjon av dobbeltoppstart.</value>
@@ -341,10 +341,10 @@ Aktiver den valgfrie Windows-undersystem for Linux-komponenten for å bruke WSL1
         Vis banen til MSAL-proxyprogrammet.
 
     --vm-id
-        Vis VM-ID-en for WSL.
+        Vis VM-ID-en for PrettyWSL.
 
     --version
-        Vis versjonen av WSL-pakken.
+        Vis versjonen av PrettyWSL-pakken.
 
     -n
         Ikke skriv ut et linjeskift.</value>
@@ -359,11 +359,11 @@ Aktiver den valgfrie Windows-undersystem for Linux-komponenten for å bruke WSL1
     -a
         Tving resultat til absolutt baneformat.
     -u
-        Oversett fra en Windows-bane til en WSL-bane (standard).
+        Oversett fra en Windows-bane til en PrettyWSL-bane (standard).
     -w
-        Oversett fra en WSL-bane til en Windows-bane.
+        Oversett fra en PrettyWSL-bane til en Windows-bane.
     -m
-        Oversett fra en WSL-bane til en Windows-bane, med / stedet for \\
+        Oversett fra en PrettyWSL-bane til en Windows-bane, med / stedet for \\
 
 Eksempel: wslpath c:\\users</value>
     <comment>{Locked="-a
@@ -625,7 +625,7 @@ Argumenter for behandling av distribusjoner i Windows-undersystem for Linux:
 "}{Locked="--quiet,"}{Locked="--verbose,"}{Locked="--online,"}{Locked="--install'"}{Locked="--set-default,"}{Locked="--set-version "}{Locked="--terminate,"}{Locked="--unregister "}Command line arguments, file names and string inserts should not be translated. {Locked="tar"}"tar" is a file archive format name and should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessagePackageVersions" xml:space="preserve">
-    <value>WSL-versjon: {}
+    <value>PrettyWSL-versjon: {}
 Kernelversjon: {}
 WSLg-versjon: {}
 MSRDC-versjon: {}
@@ -815,7 +815,7 @@ Hvis du vil ha mer informasjon om Admin Protection, kan du gå til https://aka.m
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageWarningDuringStartup" xml:space="preserve">
-    <value>Det oppstod feil under WSL-oppstart</value>
+    <value>Det oppstod feil under PrettyWSL-oppstart</value>
   </data>
   <data name="MessageSystemdUserSessionFailed" xml:space="preserve">
     <value>Kan ikke starte systembrukerøkten for {}. Se journalctl hvis du vil ha mer informasjon.</value>
@@ -922,23 +922,23 @@ Faller tilbake til NAT-nettverk.</value>
     <value>Innstillingen wsl2.localhostForwarding har ingen effekt ved bruk av avspeilet nettverksmodus</value>
   </data>
   <data name="MessageHttpProxyChangeDetected" xml:space="preserve">
-    <value>Det ble oppdaget en http-proxy-endring på verten. Start WSL på nytt for å bruke endringen.</value>
+    <value>Det ble oppdaget en http-proxy-endring på verten. Start PrettyWSL på nytt for å bruke endringen.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLocalhostSettingsDropped" xml:space="preserve">
-    <value>En localhost-proxykonfigurasjon ble oppdaget, men ikke avspeilet i Windows Subsystem for Linux. Windows Subsystem for Linux i NAT-modus støtter ikke localhost-proxyer.</value>
+    <value>En localhost-proxykonfigurasjon ble oppdaget, men ikke avspeilet i PrettyWSL. PrettyWSL i NAT-modus støtter ikke localhost-proxyer.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyV6SettingsDropped" xml:space="preserve">
-    <value>En IPv6-proxykonfigurasjon ble oppdaget, men ikke avspeilet i WSL. WSL i NAT-modus støtter ikke IPv6.</value>
+    <value>En IPv6-proxykonfigurasjon ble oppdaget, men ikke avspeilet i PrettyWSL. PrettyWSL i NAT-modus støtter ikke IPv6.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyLoopbackV6SettingsDropped" xml:space="preserve">
-    <value>En IPv6-proxy-konfigurasjon for localhost ble oppdaget, men er ikke avspeilet i WSL. WSL støtter ikke IPv6-proxyer for localhost.</value>
+    <value>En IPv6-proxy-konfigurasjon for localhost ble oppdaget, men er ikke avspeilet i PrettyWSL. PrettyWSL støtter ikke IPv6-proxyer for localhost.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageProxyUnexpectedSettingsDropped" xml:space="preserve">
-    <value>Det oppstod en uventet feil under forsøk på å løse proxy-innstillinger. Proxy-innstillinger ble ikke speilet til WSL.</value>
+    <value>Det oppstod en uventet feil under forsøk på å løse proxy-innstillinger. Proxy-innstillinger ble ikke speilet til PrettyWSL.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="MessageRegistryError" xml:space="preserve">
@@ -970,7 +970,7 @@ Faller tilbake til NAT-nettverk.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessagePluginRequiresUpdate" xml:space="preserve">
-    <value>Programtillegget {} krever en nyere versjon av WSL. Kjør wsl.exe --update</value>
+    <value>Programtillegget {} krever en nyere versjon av PrettyWSL. Kjør wsl.exe --update</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--update"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSettingOverriddenByPolicy" xml:space="preserve">
@@ -988,7 +988,7 @@ Faller tilbake til NAT-nettverk.</value>
     <value>WSL1 er deaktivert av datamaskinpolicyen.</value>
   </data>
   <data name="MessageWSLContainerDisabled" xml:space="preserve">
-    <value>WSL-beholderen er deaktivert av datamaskinpolicyen.</value>
+    <value>PrettyWSL-beholderen er deaktivert av datamaskinpolicyen.</value>
   </data>
   <data name="MessageRegistryBlockedByPolicy" xml:space="preserve">
     <value>Beholderbilderegisteret «{}» er blokkert av datamaskinpolicyen.</value>
@@ -1002,7 +1002,7 @@ Faller tilbake til NAT-nettverk.</value>
     <comment>{FixedPlaceholder="{}"}{Locked="--set-version "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageFinishMsiInstallation" xml:space="preserve">
-    <value>WSL fullfører en oppgradering ...</value>
+    <value>PrettyWSL fullfører en oppgradering ...</value>
   </data>
   <data name="MessageUpdateFailed" xml:space="preserve">
     <value>Oppdateringen mislyktes (feilkode: {}).</value>
@@ -1029,7 +1029,7 @@ Faller tilbake til NAT-nettverk.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageMissingOptionalComponents" xml:space="preserve">
-    <value>Valgfrie komponenter som kreves for å kjøre WSL, er ikke installert.</value>
+    <value>Valgfrie komponenter som kreves for å kjøre PrettyWSL, er ikke installert.</value>
   </data>
   <data name="MessageInstallMissingOptionalComponents" xml:space="preserve">
     <value>Installer manglende komponenter.</value>
@@ -1054,7 +1054,7 @@ Faller tilbake til NAT-nettverk.</value>
     <value>Vis dokumenter</value>
   </data>
   <data name="MessageVhdInUse" xml:space="preserve">
-    <value>Operasjonen kan ikke fullføres fordi VHD-en er i bruk. Slik tvinger du WSL til å stoppe: wsl.exe --shutdown</value>
+    <value>Operasjonen kan ikke fullføres fordi VHD-en er i bruk. Slik tvinger du PrettyWSL til å stoppe: wsl.exe --shutdown</value>
     <comment>{Locked="--shutdown"}Command line arguments, file names and string inserts should not be translated. {Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="MessageInvalidBoolean" xml:space="preserve">
@@ -1066,7 +1066,7 @@ Faller tilbake til NAT-nettverk.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated. "sparse" is a technical storage term meaning the file only uses disk space for written data. Use the technical term in your locale.</comment>
   </data>
   <data name="MessageLocalSystemNotSupported" xml:space="preserve">
-    <value>Kjøring av WSL som lokalt system støttes ikke.</value>
+    <value>Kjøring av PrettyWSL som lokalt system støttes ikke.</value>
   </data>
   <data name="MessagePerformanceTip" xml:space="preserve">
     <value>Ytelsestips:</value>
@@ -1131,12 +1131,12 @@ Forsøker å laste ned...</value>
     <comment>{Locked="wsl2.virtio"}{Locked="VirtioProxy"}{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="MessageSwiotlbKernelUnsupported" xml:space="preserve">
-    <value>Den kjørende kjernen mangler en oppdatering som forbedrer ytelsen virtio enheten betydelig. Oppdater til en nyere WSL-kjerne for å aktivere denne optimaliseringen.</value>
+    <value>Den kjørende kjernen mangler en oppdatering som forbedrer ytelsen virtio enheten betydelig. Oppdater til en nyere PrettyWSL-kjerne for å aktivere denne optimaliseringen.</value>
     <comment>{Locked="virtio"}</comment>
   </data>
   <data name="MessageInstallationCorrupted" xml:space="preserve">
-    <value>WSL-installasjonen ser ut til å være skadet (feilkode: {}).
-Trykk en tast for å reparere WSL, eller CTRL-C for å avbryte.
+    <value>PrettyWSL-installasjonen ser ut til å være skadet (feilkode: {}).
+Trykk en tast for å reparere PrettyWSL, eller CTRL-C for å avbryte.
 Denne meldingen blir tidsavbrutt om 60 sekunder.</value>
     <comment>{FixedPlaceholder="{}"}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
@@ -1230,7 +1230,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxy.Description" xml:space="preserve">
-    <value>Gjør det mulig for WSL å bruke HTTP-proxyinformasjon for Windows.</value>
+    <value>Gjør det mulig for PrettyWSL å bruke HTTP-proxyinformasjon for Windows.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1238,7 +1238,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_AutoProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Gjør det mulig for WSL å bruke HTTP-proxyinformasjon for Windows.</value>
+    <value>Gjør det mulig for PrettyWSL å bruke HTTP-proxyinformasjon for Windows.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_BestEffortDNS.Header" xml:space="preserve">
@@ -1296,7 +1296,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <value>Bla gjennom distroer</value>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.Text" xml:space="preserve">
-    <value>Angi en bane til en VHD som lastes inn som en egendefinert systemdeaktivering, først og fremst brukt til å drive GUI-apper i WSL. [Mer informasjon om systemdespsjoner her].</value>
+    <value>Angi en bane til en VHD som lastes inn som en egendefinert systemdeaktivering, først og fremst brukt til å drive GUI-apper i PrettyWSL. [Mer informasjon om systemdespsjoner her].</value>
     <comment>{Locked="["}{Locked="]"}{Locked="VHD"}The text in between the delimiters [ ] is made into a hyperlink in code, and the delimiters are removed. "VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_CustomSystemDistroPathDescription.NavigateUri" xml:space="preserve">
@@ -1307,7 +1307,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <value>Egendefinert systemdeaktivering</value>
   </data>
   <data name="Settings_CustomSystemDistroPathTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Angi en bane til en VHD som lastes inn som en egendefinert systemdistro, hovedsakelig brukt til å drive GUI-apper i WSL.</value>
+    <value>Angi en bane til en VHD som lastes inn som en egendefinert systemdistro, hovedsakelig brukt til å drive GUI-apper i PrettyWSL.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DebugConsole.Header" xml:space="preserve">
@@ -1327,7 +1327,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSize.Description" xml:space="preserve">
-    <value>Standard maksimal størrelse for den utvidbare virtuelle WSL-harddisken (VHD) bare for nyopprettede distribusjoner.</value>
+    <value>Standard maksimal størrelse for den utvidbare virtuelle PrettyWSL-harddisken (VHD) bare for nyopprettede distribusjoner.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeResetButton.Content" xml:space="preserve">
@@ -1338,7 +1338,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DefaultVHDSizeTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Standard maksimal størrelse, angitt i megabyte, bare for den utvidbare virtuelle WSL-harddisken (VHD) for nylig opprettede distribusjoner.</value>
+    <value>Standard maksimal størrelse, angitt i megabyte, bare for den utvidbare virtuelle PrettyWSL-harddisken (VHD) for nylig opprettede distribusjoner.</value>
     <comment>{Locked="VHD"}"VHD" (Virtual Hard Disk) is a technical format name and should not be translated.</comment>
   </data>
   <data name="Settings_DeveloperPageTitle.Text" xml:space="preserve">
@@ -1349,20 +1349,20 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
   </data>
   <data name="Settings_DocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to Microsoft WSL documentation</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL documentation</comment>
   </data>
   <data name="Settings_DrvFSMode.Header" xml:space="preserve">
     <value>Endre DrvFS-modus</value>
   </data>
   <data name="Settings_DrvFSMode.Description" xml:space="preserve">
-    <value>Endrer implementering av filtilgang på tvers av operativsystemer i WSL.</value>
+    <value>Endrer implementering av filtilgang på tvers av operativsystemer i PrettyWSL.</value>
   </data>
   <data name="Settings_DNSProxy.Header" xml:space="preserve">
     <value>DNS-proxy aktivert</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxy.Description" xml:space="preserve">
-    <value>Gjelder bare når wsl2.networkingMode er satt til NAT. Boolsk for å informere WSL om å konfigurere DNS-serveren i Linux til NAT på verten. Hvis du setter til Usann, speiler dette DNS-servere fra Windows til Linux.</value>
+    <value>Gjelder bare når wsl2.networkingMode er satt til NAT. Boolsk for å informere PrettyWSL om å konfigurere DNS-serveren i Linux til NAT på verten. Hvis du setter til Usann, speiler dette DNS-servere fra Windows til Linux.</value>
     <comment>{Locked="wsl2.networkingMode"}{Locked="DNS"}.wslconfig property key names should not be translated. "DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1370,7 +1370,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_DNSProxyToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Gjelder bare når wsl2.networkingMode er satt til NAT. Boolean for å informere WSL om å konfigurere DNS-serveren i Linux til NAT på verten. Hvis du setter til Usann, speiler dette DNS-servere fra Windows til Linux.</value>
+    <value>Gjelder bare når wsl2.networkingMode er satt til NAT. Boolean for å informere PrettyWSL om å konfigurere DNS-serveren i Linux til NAT på verten. Hvis du setter til Usann, speiler dette DNS-servere fra Windows til Linux.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Header" xml:space="preserve">
@@ -1378,7 +1378,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunneling.Description" xml:space="preserve">
-    <value>Endrer hvordan DNS-forespørsler er proxy fra WSL til Windows.</value>
+    <value>Endrer hvordan DNS-forespørsler er proxy fra PrettyWSL til Windows.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1386,7 +1386,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_DNSTunnelingToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Endrer hvordan DNS-forespørsler er proxy fra WSL til Windows.</value>
+    <value>Endrer hvordan DNS-forespørsler er proxy fra PrettyWSL til Windows.</value>
     <comment>{Locked="DNS"}"DNS" (Domain Name System) should not be translated.</comment>
   </data>
   <data name="Settings_FileSystemPageTitle.Text" xml:space="preserve">
@@ -1396,7 +1396,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <value>Aktiver GUI-programmer</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.Text" xml:space="preserve">
-    <value>Boolsk for å aktivere eller deaktivere støtte for GUI-programmer ([WSLg]) i WSL.</value>
+    <value>Boolsk for å aktivere eller deaktivere støtte for GUI-programmer ([WSLg]) i PrettyWSL.</value>
   </data>
   <data name="Settings_GUIApplicationsDescription.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgproject</value>
@@ -1406,7 +1406,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <value>Aktiver GUI-programmer.</value>
   </data>
   <data name="Settings_GUIApplicationsToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Boolsk for å aktivere eller deaktivere støtte for GUI-programmer (kjent som WSL g) i WSL.</value>
+    <value>Boolsk for å aktivere eller deaktivere støtte for GUI-programmer (kjent som PrettyWSL g) i PrettyWSL.</value>
   </data>
   <data name="Settings_HWPerfCounters.Header" xml:space="preserve">
     <value>Aktiver ytelsestellere for maskinvare</value>
@@ -1424,13 +1424,13 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <value>Hyper-V-brannmur aktivert</value>
   </data>
   <data name="Settings_HyperVFirewall.Description" xml:space="preserve">
-    <value>Aktiverer Hyper-V-brannmur som tillater reglene for Windows-brannmur, i tillegg til regler som er spesifikke for Hyper-V-trafikk, for å filtrere WSL-nettverkstrafikk.</value>
+    <value>Aktiverer Hyper-V-brannmur som tillater reglene for Windows-brannmur, i tillegg til regler som er spesifikke for Hyper-V-trafikk, for å filtrere PrettyWSL-nettverkstrafikk.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.Name" xml:space="preserve">
     <value>Hyper-V-brannmur aktivert.</value>
   </data>
   <data name="Settings_HyperVFirewallToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Aktiverer Hyper-V-brannmur som tillater reglene for Windows-brannmur, i tillegg til regler som er spesifikke for Hyper-V-trafikk, for å filtrere WSL-nettverkstrafikk.</value>
+    <value>Aktiverer Hyper-V-brannmur som tillater reglene for Windows-brannmur, i tillegg til regler som er spesifikke for Hyper-V-trafikk, for å filtrere PrettyWSL-nettverkstrafikk.</value>
   </data>
   <data name="Settings_HostAddressLoopback.Header" xml:space="preserve">
     <value>Tilbakekobling for vertsadresse</value>
@@ -1466,7 +1466,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeout.Description" xml:space="preserve">
-    <value>Gjelder bare når wsl2.autoProxy er satt til sann. Konfigurerer hvor lenge (i millisekunder) WSL skal vente på henting av HTTP-proxyinformasjon når du starter en WSL-beholder. Hvis proxy-innstillingene løses etter dette tidspunktet, må WSL-forekomsten startes på nytt for å bruke de hentede proxy-innstillingene.</value>
+    <value>Gjelder bare når wsl2.autoProxy er satt til sann. Konfigurerer hvor lenge (i millisekunder) PrettyWSL skal vente på henting av HTTP-proxyinformasjon når du starter en PrettyWSL-beholder. Hvis proxy-innstillingene løses etter dette tidspunktet, må PrettyWSL-forekomsten startes på nytt for å bruke de hentede proxy-innstillingene.</value>
     <comment>{Locked="wsl2.autoProxy"}.wslconfig property key names should not be translated. "proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutResetButton.Content" xml:space="preserve">
@@ -1477,7 +1477,7 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_InitialAutoProxyTimeoutTextBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Gjelder bare når wsl2.autoProxy er satt til sann. Konfigurerer hvor lenge WSL i millisekunder venter på å hente HTTP-proxyinformasjon når en WSL-beholder startes. Hvis proxy-innstillingene løses etter dette tidspunktet, må WSL-forekomsten startes på nytt for å bruke de hentede proxy-innstillingene.</value>
+    <value>Gjelder bare når wsl2.autoProxy er satt til sann. Konfigurerer hvor lenge PrettyWSL i millisekunder venter på å hente HTTP-proxyinformasjon når en PrettyWSL-beholder startes. Hvis proxy-innstillingene løses etter dette tidspunktet, må PrettyWSL-forekomsten startes på nytt for å bruke de hentede proxy-innstillingene.</value>
     <comment>"proxy" refers to a network proxy server. Use the standard networking term in your locale.</comment>
   </data>
   <data name="Settings_KernelCommandLine.Header" xml:space="preserve">
@@ -1538,13 +1538,13 @@ Se gjenopprettingsinstruksjoner om: https://aka.ms/wsldiskmountrecovery</value>
     <value>Nettverksmodus</value>
   </data>
   <data name="Settings_NetworkingMode.Description" xml:space="preserve">
-    <value>Angir nettverksmodus for WSL.</value>
+    <value>Angir nettverksmodus for PrettyWSL.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.Name" xml:space="preserve">
     <value>Nettverksmodus.</value>
   </data>
   <data name="Settings_NetworkingModeComboBox.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Angir nettverksmodus for WSL.</value>
+    <value>Angir nettverksmodus for PrettyWSL.</value>
   </data>
   <data name="Settings_NetworkingPageTitle.Text" xml:space="preserve">
     <value>Nettverk</value>
@@ -1571,10 +1571,10 @@ cd /mnt/c</value>
     <comment>{Locked="\\wsl.localhost\"}Url addresses should not be translated.</comment>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLTitle.Text" xml:space="preserve">
-    <value>Start Windows-filer og -programmer fra WSL</value>
+    <value>Start Windows-filer og -programmer fra PrettyWSL</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_LaunchWindowsFromWSLSample.Text" xml:space="preserve">
-    <value>Selv når du bruker WSL, kan du kjøre filer som kan kjøres i Windows direkte fra feilsøk. Prøv å kjøre
+    <value>Selv når du bruker PrettyWSL, kan du kjøre filer som kan kjøres i Windows direkte fra feilsøk. Prøv å kjøre
 powershell.exe /c start . for å åpne Filutforsker i gjeldende mappe.</value>
     <comment>{Locked="/c start ."}Command line arguments and file names should not be translated</comment>
   </data>
@@ -1593,7 +1593,7 @@ powershell.exe /c start . for å åpne Filutforsker i gjeldende mappe.</value>
     <value>Nettverk med avspeilet modus</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccess_MirroredModeNetworkingSample.Text" xml:space="preserve">
-    <value>WSL inkluderer også en ny nettverksmodus, kalt avspeilet modus som legger til avanserte funksjoner som IPv6-støtte og muligheten til å få tilgang til nettverksprogrammer i lokalnettet.</value>
+    <value>PrettyWSL inkluderer også en ny nettverksmodus, kalt avspeilet modus som legger til avanserte funksjoner som IPv6-støtte og muligheten til å få tilgang til nettverksprogrammer i lokalnettet.</value>
   </data>
   <data name="Settings_OOBECrossOSFileAccessLink.Content" xml:space="preserve">
     <value>Mer informasjon om filtilgang på tvers av operativsystemer</value>
@@ -1606,73 +1606,73 @@ powershell.exe /c start . for å åpne Filutforsker i gjeldende mappe.</value>
     <value>Velkommen til Windows-undersystem for Linux</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Description" xml:space="preserve">
-   <value>WSL er en flott måte å prøve ut forskjellige Linux-distribusjoner på.</value>
+   <value>PrettyWSL er en flott måte å prøve ut forskjellige Linux-distribusjoner på.</value>
   </data>
   <data name="Settings_OOBEDistroManagement.Title" xml:space="preserve">
     <value>Distro-behandling</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.Content" xml:space="preserve">
-    <value>Mer informasjon om grunnleggende WSL-kommandoer</value>
+    <value>Mer informasjon om grunnleggende PrettyWSL-kommandoer</value>
   </data>
   <data name="Settings_OOBEDistroManagementBasicWSLCommandsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcommands</value>
-    <comment>{Locked}Uri to the basic WSL commands documentation</comment>
+    <comment>{Locked}Uri to the basic PrettyWSL commands documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.Content" xml:space="preserve">
     <value>Mer informasjon om import av Linux-distribusjoner</value>
   </data>
   <data name="Settings_OOBEDistroManagementImportCustomDistroLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslcustomdistro</value>
-    <comment>{Locked}Uri to the import any linux distribution to use with WSL documentation</comment>
+    <comment>{Locked}Uri to the import any linux distribution to use with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosTitle.Text" xml:space="preserve">
-    <value>Vis kommando for installerbare WSL-distroer</value>
+    <value>Vis kommando for installerbare PrettyWSL-distroer</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallableDistrosSample.Text" xml:space="preserve">
     <value>wsl.exe -l -o</value>
     <comment>{Locked="-l -o"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosTitle.Text" xml:space="preserve">
-    <value>Installer en navngitt WSL Distro-kommando</value>
+    <value>Installer en navngitt PrettyWSL Distro-kommando</value>
   </data>
   <data name="Settings_OOBEDistroManagement_InstallNamedDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe --install &lt;DistroName&gt;'</value>
     <comment>{Locked="--install "}Command line arguments, file names and string inserts should not be translated</comment>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosTitle.Text" xml:space="preserve">
-    <value>Vis kommando for tilgjengelige WSL-distroer</value>
+    <value>Vis kommando for tilgjengelige PrettyWSL-distroer</value>
   </data>
   <data name="Settings_OOBEDistroManagement_AvailableDistrosSample.Text" xml:space="preserve">
     <value>'wsl.exe -l'</value>
     <comment>{Locked="-l"}Command line arguments and file names should not be translated</comment>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Description" xml:space="preserve">
-    <value>Docker Desktop fungerer bra med WSL for å hjelpe deg med å utvikle Linux-beholdere.
+    <value>Docker Desktop fungerer bra med PrettyWSL for å hjelpe deg med å utvikle Linux-beholdere.
 
-Noen av fordelene med å bruke Docker Desktop med WSL er:
+Noen av fordelene med å bruke Docker Desktop med PrettyWSL er:
 
-• Du kan kjøpe Docker-kommandoer i WSL eller i Windows med samme Docker-daemon og -bilder.
-• Du kan dele filer og mapper mellom Windows og Linux sømløst med automatisk montering av Windows-stasjoner i WSL.
-• Du kan bruke dine foretrukne Windows-verktøy og -redigeringsprogrammer til å jobbe på Linux-kode og -filer og omvendt, takket være interoperabiliteten til WSL.</value>
+• Du kan kjøpe Docker-kommandoer i PrettyWSL eller i Windows med samme Docker-daemon og -bilder.
+• Du kan dele filer og mapper mellom Windows og Linux sømløst med automatisk montering av Windows-stasjoner i PrettyWSL.
+• Du kan bruke dine foretrukne Windows-verktøy og -redigeringsprogrammer til å jobbe på Linux-kode og -filer og omvendt, takket være interoperabiliteten til PrettyWSL.</value>
     <comment>"mount" is a technical term meaning to make a disk/filesystem accessible. Use the standard technical term in your locale, or keep "mount" if commonly used.</comment>
  </data>
   <data name="Settings_OOBEDockerDesktopIntegration.Title" xml:space="preserve">
     <value>Docker Desktop-integrasjon</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.Content" xml:space="preserve">
-    <value>Mer informasjon om hvordan du bruker WSL med Docker</value>
+    <value>Mer informasjon om hvordan du bruker PrettyWSL med Docker</value>
   </data>
   <data name="Settings_OOBEDockerDesktopIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocker</value>
     <comment>{Locked}Uri to the Docker remote containers on WSL 2 documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral.Description" xml:space="preserve">
-    <value>Med Windows-undersystemet for Linux (WSL) kan du kjøre favorittverktøyene, -programmene og -arbeidsflytene i Linux direkte på Windows.
+    <value>Med Windows-undersystemet for Linux (PrettyWSL) kan du kjøre favorittverktøyene, -programmene og -arbeidsflytene i Linux direkte på Windows.
 
 Bruk litt tid på å forhåndsvise noen av fellesskapets favorittfunksjoner, eller se på den omfattende dokumentasjonen.</value>
   </data>
   <data name="Settings_OOBEGeneral.Title" xml:space="preserve">
-    <value>Velkommen til WSL</value>
+    <value>Velkommen til PrettyWSL</value>
   </data>
   <data name="Settings_OOBEGeneral_BestPracticesSetupLink.Content" xml:space="preserve">
     <value>Anbefalte fremgangsmåter for oppsett</value>
@@ -1689,11 +1689,11 @@ Bruk litt tid på å forhåndsvise noen av fellesskapets favorittfunksjoner, ell
     <comment>{Locked}Uri to the Getting Started with Linux Documentation</comment>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.Content" xml:space="preserve">
-    <value>Dokumentasjon for Windows-undersystem for Linux (WSL)</value>
+    <value>Dokumentasjon for Windows-undersystem for Linux (PrettyWSL)</value>
   </data>
   <data name="Settings_OOBEGeneral_WSLDocumentationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wsldocs</value>
-    <comment>{Locked}Uri to the Microsoft WSL Documentation</comment>
+    <comment>{Locked}Uri to the Microsoft PrettyWSL Documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps.Description" xml:space="preserve">
     <value>Du kan bruke grafikkbaserte Linux-programmer med opprinnelige Windows-samhandlinger som alt-tab, starte startmeny, feste oppgavelinje og støtte for klipp ut og lim inn.</value>
@@ -1702,9 +1702,9 @@ Bruk litt tid på å forhåndsvise noen av fellesskapets favorittfunksjoner, ell
     <value>GUI-apper</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Description" xml:space="preserve">
-    <value>WSL kan utnytte Windows GPU for maskinlæringsarbeidsflyter
+    <value>PrettyWSL kan utnytte Windows GPU for maskinlæringsarbeidsflyter
 
-Linux-binærfiler som kjører i WSL, kan automatisk bruke GPU i Windows for å øke hastigheten til ytelsen. Du trenger bare å installere og kjøre disse arbeidsflytene på samme måte som på en vanlig Linux-maskin. Det finnes mange ulike måter å komme i gang fra å kjøre CUDA i en docker-beholder hvis du har et NVIDIA-grafikkort, til å kjøre PyTorch eller TensorFlow med DirectML på AMD-, Intel- eller NVIDIA-grafikkortet. Se Komme i gang-guiden nedenfor for mer informasjon.</value>
+Linux-binærfiler som kjører i PrettyWSL, kan automatisk bruke GPU i Windows for å øke hastigheten til ytelsen. Du trenger bare å installere og kjøre disse arbeidsflytene på samme måte som på en vanlig Linux-maskin. Det finnes mange ulike måter å komme i gang fra å kjøre CUDA i en docker-beholder hvis du har et NVIDIA-grafikkort, til å kjøre PyTorch eller TensorFlow med DirectML på AMD-, Intel- eller NVIDIA-grafikkortet. Se Komme i gang-guiden nedenfor for mer informasjon.</value>
   </data>
   <data name="Settings_OOBEGPUAcceleration.Title" xml:space="preserve">
     <value>GPU-akselerasjon</value>
@@ -1714,14 +1714,14 @@ Linux-binærfiler som kjører i WSL, kan automatisk bruke GPU i Windows for å �
   </data>
   <data name="Settings_OOBEGPUAccelerationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslgpu</value>
-    <comment>{Locked}Uri to the GPU acceleration for ML in WSL documentation</comment>
+    <comment>{Locked}Uri to the GPU acceleration for ML in PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIAppsLink.Content" xml:space="preserve">
-    <value>Mer informasjon om GUI-apper i WSL</value>
+    <value>Mer informasjon om GUI-apper i PrettyWSL</value>
   </data>
   <data name="Settings_OOBEGUIAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslguiapps</value>
-    <comment>{Locked}Uri to the Run GUI apps on the WSL documentation</comment>
+    <comment>{Locked}Uri to the Run GUI apps on the PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEGUIApps_AppsListDescription.Text" xml:space="preserve">
     <value>Her er en liste over apper du kan prøve (Du kan installere alle disse i Ubuntu ved å skrive inn sudo apt install &lt;Navnet på appen&gt;)
@@ -1744,43 +1744,43 @@ Linux-binærfiler som kjører i WSL, kan automatisk bruke GPU i Windows for å �
   </data>
   <data name="Settings_OOBENetworkingIntegrationLinuxNetworkingAppsLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslnetworking</value>
-    <comment>{Locked}Uri to the Accessing network applications with WSL documentation</comment>
+    <comment>{Locked}Uri to the Accessing network applications with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.Content" xml:space="preserve">
     <value>Mer informasjon om nettverk med avspeilet modus</value>
   </data>
   <data name="Settings_OOBENetworkingIntegrationMirroredModeLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslmirroredmode</value>
-    <comment>{Locked}Uri to the WSL Mirrored Mode networking documentation</comment>
+    <comment>{Locked}Uri to the PrettyWSL Mirrored Mode networking documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Description" xml:space="preserve">
-   <value>Du kan bruke WSL som utviklingsmiljø på heltid direkte fra VS Code.</value>
+   <value>Du kan bruke PrettyWSL som utviklingsmiljø på heltid direkte fra VS Code.</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration.Title" xml:space="preserve">
     <value>VS Code-integrasjon</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.Content" xml:space="preserve">
-    <value>Mer informasjon om hvordan du bruker WSL med VS Code</value>
+    <value>Mer informasjon om hvordan du bruker PrettyWSL med VS Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegrationLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslvscode</value>
-    <comment>{Locked}Uri to the using Visual Studio Code with WSL documentation</comment>
+    <comment>{Locked}Uri to the using Visual Studio Code with PrettyWSL documentation</comment>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallTitle.Text" xml:space="preserve">
     <value>Slik installerer du</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeInstallSample.Text" xml:space="preserve">
-    <value>Etter at du har installert VS Code, kan du installere den eksterne WSL-utvidelsen fra Windows Terminal:
+    <value>Etter at du har installert VS Code, kan du installere den eksterne PrettyWSL-utvidelsen fra Windows Terminal:
 
 code –install-extension ms-vscode-remote.remote-wsl</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectTitle.Text" xml:space="preserve">
-    <value>Åpne et WSL-prosjekt i Visual Studio Code</value>
+    <value>Åpne et PrettyWSL-prosjekt i Visual Studio Code</value>
   </data>
   <data name="Settings_OOBEVSCodeIntegration_VSCodeOpenProjectSample.Text" xml:space="preserve">
-    <value>For å åpne et prosjekt i VS Code WSL-distribusjonen, åpner du distribusjonens kommandolinje og kjører code . for å åpne en prosjektfil.
+    <value>For å åpne et prosjekt i VS Code PrettyWSL-distribusjonen, åpner du distribusjonens kommandolinje og kjører code . for å åpne en prosjektfil.
 
-Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopaletten i selve VS Code. Trykk på Skift+Ctrl+P på tastaturet for å åpne kommandopaletten, og skriv inn «Remote-WSL» for å se en liste over de eksterne alternativene for VS Code, slik at du kan åpne mappen på nytt i en ekstern økt, angi hvilken distribusjon du vil åpne, og mer.</value>
+Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopaletten i selve VS Code. Trykk på Skift+Ctrl+P på tastaturet for å åpne kommandopaletten, og skriv inn «Remote-PrettyWSL» for å se en liste over de eksterne alternativene for VS Code, slik at du kan åpne mappen på nytt i en ekstern økt, angi hvilken distribusjon du vil åpne, og mer.</value>
   </data>
   <data name="Settings_OOBE_HowToUse.Text" xml:space="preserve">
     <value>Brukerveiledning</value>
@@ -1818,14 +1818,14 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
   </data>
   <data name="Settings_ReleaseNotesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslreleases</value>
-    <comment>{Locked}Uri to Microsoft WSL release notes</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL release notes</comment>
   </data>
   <data name="Settings_SafeMode.Header" xml:space="preserve">
     <value>Aktiver Sikker modus</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeMode.Description" xml:space="preserve">
-    <value>Kjør WSL i Sikkermodus som deaktiverer mange funksjoner og er ment å brukes til å gjenopprette distribusjoner som er i ugyldige tilstander.</value>
+    <value>Kjør PrettyWSL i Sikkermodus som deaktiverer mange funksjoner og er ment å brukes til å gjenopprette distribusjoner som er i ugyldige tilstander.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.Name" xml:space="preserve">
@@ -1833,7 +1833,7 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_SafeModeToggleSwitch.AutomationProperties.HelpText" xml:space="preserve">
-    <value>Kjør WSL i Sikkermodus som deaktiverer mange funksjoner og er ment å brukes til å gjenopprette distribusjoner som er i ugyldige tilstander.</value>
+    <value>Kjør PrettyWSL i Sikkermodus som deaktiverer mange funksjoner og er ment å brukes til å gjenopprette distribusjoner som er i ugyldige tilstander.</value>
     <comment>"safe mode" refers to a minimal/diagnostic startup mode. Use the standard OS term for safe mode in your locale.</comment>
   </data>
   <data name="Settings_Shell_About.Content" xml:space="preserve">
@@ -1873,7 +1873,7 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
     <value>Nettverksintegrasjon</value>
   </data>
   <data name="Settings_Shell_OOBE.Content" xml:space="preserve">
-    <value>Velkommen til WSL</value>
+    <value>Velkommen til PrettyWSL</value>
   </data>
   <data name="Settings_Shell_OptionalFeatures.Content" xml:space="preserve">
     <value>Valgfrie funksjoner</value>
@@ -1895,7 +1895,7 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
   </data>
   <data name="Settings_IssuesLink.NavigateUri" xml:space="preserve">
     <value>https://aka.ms/wslproject</value>
-    <comment>{Locked}Uri to Microsoft WSL issues</comment>
+    <comment>{Locked}Uri to Microsoft PrettyWSL issues</comment>
   </data>
   <data name="Settings_SparseVHD.Header" xml:space="preserve">
     <value>Aktiver sparsommelig VHD som standard</value>
@@ -1984,13 +1984,13 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
     <value>Bruk endringer</value>
   </data>
   <data name="Settings_ApplyChangesDialogTitle" xml:space="preserve">
-    <value>WSL-avslutning kreves</value>
+    <value>PrettyWSL-avslutning kreves</value>
   </data>
   <data name="Settings_ApplyChangesDialogDescription" xml:space="preserve">
-    <value>Endrede WSL-innstillinger krever WSL-avslutning og omstart for å fullføre. Hvis du avslutter, avsluttes alle aktive WSL-økter.</value>
+    <value>Endrede PrettyWSL-innstillinger krever PrettyWSL-avslutning og omstart for å fullføre. Hvis du avslutter, avsluttes alle aktive PrettyWSL-økter.</value>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownButton" xml:space="preserve">
-    <value>Avslutt WSL nå</value>
+    <value>Avslutt PrettyWSL nå</value>
   </data>
   <data name="Settings_ApplyChangesDialogLaterButton" xml:space="preserve">
     <value>Senere</value>
@@ -2006,7 +2006,7 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
     <comment>{Locked="{0}"}Format placeholder for Win32 error code</comment>
   </data>
   <data name="Settings_ApplyChangesDialogShutdownFailed" xml:space="preserve">
-    <value>Innstillingene ble lagret, men avslutning av WSL mislyktes: {0}</value>
+    <value>Innstillingene ble lagret, men avslutning av PrettyWSL mislyktes: {0}</value>
     <comment>{Locked="{0}"}Format placeholder for exception message</comment>
   </data>
   <data name="Settings_BooleanTrueText" xml:space="preserve">
@@ -2016,27 +2016,27 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
     <value>Av</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Title" xml:space="preserve">
-    <value>Bygg, kjør, feilsøk og profiler apper som kjører på WSL fra Visual Studio</value>
+    <value>Bygg, kjør, feilsøk og profiler apper som kjører på PrettyWSL fra Visual Studio</value>
   </data>
   <data name="Settings_OOBEVSIntegration.Description" xml:space="preserve">
-    <value>Kjør og feilsøk apper på WSL fra Visual Studio</value>
+    <value>Kjør og feilsøk apper på PrettyWSL fra Visual Studio</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.Content" xml:space="preserve">
-    <value>Mer informasjon om WSL i Visual Studio for .NET-utviklere</value>
+    <value>Mer informasjon om PrettyWSL i Visual Studio for .NET-utviklere</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForDotNetLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/visualstudio/debugger/debug-dotnet-core-in-wsl-2</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.Content" xml:space="preserve">
-    <value>Mer informasjon om Visual Studio og WSL for C++-utviklere</value>
+    <value>Mer informasjon om Visual Studio og PrettyWSL for C++-utviklere</value>
   </data>
   <data name="Settings_OOBEVSIntegration_VSForCppLink.NavigateUri" xml:space="preserve">
     <value>https://learn.microsoft.com/cpp/linux/?view=msvc-170</value>
     <comment>{locked}Uri should redirect to the correct locale for the browser</comment>
   </data>
   <data name="Settings_OOBEVSIntegration_Description.Text" xml:space="preserve">
-    <value>Du kan enkelt kjøre og feilsøke .NET Core- og tverrplattform C++-apper i Linux uten å forlate Visual Studio ved hjelp av Windows-undersystem for Linux (WSL). Som tverrplattformutvikler kan du bruke denne metoden som en enkel måte å teste flere av målmiljøene på.</value>
+    <value>Du kan enkelt kjøre og feilsøke .NET Core- og tverrplattform C++-apper i Linux uten å forlate Visual Studio ved hjelp av Windows-undersystem for Linux (PrettyWSL). Som tverrplattformutvikler kan du bruke denne metoden som en enkel måte å teste flere av målmiljøene på.</value>
   </data>
   <data name="Settings_OOBEVSIntegration_Title.Text" xml:space="preserve">
     <value>Visual Studio-integrasjon</value>
@@ -2045,7 +2045,7 @@ Du kan også åpne flere eksterne alternativer for VS Code gjennom kommandopalet
     <value>Visual Studio-integrasjon</value>
   </data>
   <data name="MessageWslcUsage" xml:space="preserve">
-    <value>wslc – WSL-beholder-CLI
+    <value>wslc – PrettyWSL-beholder-CLI
 Bruk:
   wslc --help</value>
     <comment>{Locked="--help"}Command line arguments, file names and string inserts should not be translated</comment>
@@ -2376,15 +2376,15 @@ For personverninformasjon om dette produktet kan du gå til https://aka.ms/priva
     <comment>{Locked="WSLC"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_RootCommandLongDesc" xml:space="preserve">
-    <value>WSLC er beholder-CLI-verktøyet for Windows-undersystemet for Linux. Den gjør det mulig å administrere og samhandle med WSL-beholdere fra kommandolinjen.</value>
-    <comment>{Locked="WSLC"}{Locked="WSL"}Product names should not be translated</comment>
+    <value>WSLC er beholder-CLI-verktøyet for Windows-undersystemet for Linux. Den gjør det mulig å administrere og samhandle med PrettyWSL-beholdere fra kommandolinjen.</value>
+    <comment>{Locked="WSLC"}{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerCommandDesc" xml:space="preserve">
     <value>Administrer beholdere.</value>
   </data>
   <data name="WSLCCLI_ContainerCommandLongDesc" xml:space="preserve">
-    <value>Administrer livssyklusen til WSL beholdere, inkludert oppretting, start, stopp og fjerning av dem.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Administrer livssyklusen til PrettyWSL beholdere, inkludert oppretting, start, stopp og fjerning av dem.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_ContainerAttachDesc" xml:space="preserve">
     <value>Legg ved en beholder.</value>
@@ -2635,8 +2635,8 @@ For personverninformasjon om dette produktet kan du gå til https://aka.ms/priva
     <value>Administrer økter.</value>
   </data>
   <data name="WSLCCLI_SessionCommandLongDesc" xml:space="preserve">
-    <value>Administrer WSL-beholderøkter, inkludert opplisting av aktive økter og start av interaktive shell.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Administrer PrettyWSL-beholderøkter, inkludert opplisting av aktive økter og start av interaktive shell.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_SessionListDesc" xml:space="preserve">
     <value>Vis økter.</value>
@@ -2968,8 +2968,8 @@ Ved første kjøring opprettes filen med alle innstillinger kommentert ut som st
     <value>Administrer volumer.</value>
   </data>
   <data name="WSLCCLI_VolumeCommandLongDesc" xml:space="preserve">
-    <value>Administrer livssyklusen til WSL volumer, inkludert oppretting, inspeksjon, oppføring og sletting av dem.</value>
-    <comment>{Locked="WSL"}Product names should not be translated</comment>
+    <value>Administrer livssyklusen til PrettyWSL volumer, inkludert oppretting, inspeksjon, oppføring og sletting av dem.</value>
+    <comment>{Locked="PrettyWSL"}Product names should not be translated</comment>
   </data>
   <data name="WSLCCLI_VolumeCreateDesc" xml:space="preserve">
     <value>Opprett et volum.</value>

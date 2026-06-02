@@ -16,13 +16,13 @@ Abstract:
 #include "resource.h"
 #include "wslversioninfo.h"
 
-#define VER_INTERNALNAME_STR "wslservice.exe"
-#define VER_ORIGINALFILENAME_STR "wslservice.exe"
+#define VER_INTERNALNAME_STR "pwslservice.exe"
+#define VER_ORIGINALFILENAME_STR "pwslservice.exe"
 
 #define VER_FILETYPE VFT_APP
 #define VER_FILESUBTYPE VFT2_UNKNOWN
-#define VER_FILEDESCRIPTION_STR "Windows Subsystem for Linux Service"
-ID_ICON ICON PRELOAD DISCARDABLE "..\..\..\Images\wsl.ico"
+#define VER_FILEDESCRIPTION_STR "PrettyWSL Service"
+ID_ICON ICON PRELOAD DISCARDABLE "..\..\..\Images\pwsl.ico"
 
 
 #include <common.ver>

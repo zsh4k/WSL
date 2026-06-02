@@ -26,7 +26,7 @@ jobs:
           $wingetx64URL = $wingetRelevantAssetx64.browser_download_url
           $wingetARM64URL = $wingetRelevantAssetARM64.browser_download_url
 
-          $wingetPackageId = "Microsoft.WSL"
+          $wingetPackageId = "PrettyWSL.PrettyWSL"
 
           & curl.exe -JLO https://aka.ms/wingetcreate/latest
           & .\wingetcreate.exe update $wingetPackageId -s -v $version -u "$wingetx64URL|x64" "$wingetARM64URL|arm64" -t "${{ secrets.WINGET_TOKEN }}"

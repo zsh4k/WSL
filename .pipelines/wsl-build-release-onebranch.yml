@@ -63,8 +63,8 @@ extends:
         packageVersion: ${{ iif(eq(parameters.testVersion, ''), variables['Build.SourceBranchName'], parameters.testVersion) }}
         nugetSuffix: ${{ parameters.nugetSuffix }}
         traceLoggingConfig: $(ReleaseTraceLoggingConfig)
-        vsoOrg: microsoft
-        vsoProject: Microsoft.WSL
+        vsoOrg: prettywsl
+        vsoProject: PrettyWSL
 
     - template: test-stage.yml@self
       parameters:

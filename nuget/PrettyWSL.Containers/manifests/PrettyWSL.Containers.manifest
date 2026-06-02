@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <file name="wslcsdk.dll">
+    <activatableClass name="PrettyWSL.Containers.Container"           threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ContainerNamedVolume" threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ContainerPortMapping" threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ContainerSettings"   threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ContainerVolume"     threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ImageInfo"           threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ImageProgress"       threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.InstallProgress"     threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.Process"             threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ProcessSettings"     threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.PullImageOptions"    threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.PushImageOptions"    threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.ServiceVersion"      threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.Session"             threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.SessionSettings"     threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.TagImageOptions"     threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.VhdOptions"          threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+    <activatableClass name="PrettyWSL.Containers.WslcService"         threadingModel="both" xmlns="urn:schemas-microsoft-com:winrt.v1" />
+  </file>
+</assembly>
