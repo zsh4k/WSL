@@ -67,25 +67,38 @@ function generateEntry
         [string]$Name,
         [hashtable]$AllStrings)
 
-    $content = $AllStrings[$defaultLanguage][$Name]
-    $map = "static const std::vector<std::pair<TString, const TChar*>> strings {`r`n              {TEXT(`"$defaultLanguage`"), TEXT(R`"($content)`")}"
+    function escapeEntry
+    {
+        param([string]$s)
+        $MAX_CHUNK = 8000
+        if ($s.Length -le $MAX_CHUNK) {
+            return "TEXT(R`"($s)`")"
+        }
+        $chunks = @()
+        $pos = 0
+        while ($pos -lt $s.Length) {
+            $end = [Math]::Min($pos + $MAX_CHUNK, $s.Length)
+            $chunks += "TEXT(R`"($($s.Substring($pos, $end - $pos)))`")"
+            $pos = $end
+        }
+        return $chunks -join ' '
+    }
 
+    $content = $AllStrings[$defaultLanguage][$Name]
+    $map = "static const std::vector<std::pair<TString, const TChar*>> strings {`r`n              {TEXT(`"$defaultLanguage`"), $(escapeEntry $content)}"
     foreach ($language in $AllStrings.Keys)
     {
         if ($language -eq $defaultLanguage)
         {
             continue
         }
-
         $strings = $AllStrings[$language]
-
         if (!$strings.ContainsKey($Name))
         {
             Write-Host "Warning: string $Name not found in language: $language"
             continue
         }
-        
-        $map += ",`r`n              {TEXT(`"$language`"), TEXT(R`"($($strings[$Name]))`")}"
+        $map += ",`r`n              {TEXT(`"$language`"), $(escapeEntry $strings[$Name])}"
     }
 
     $map += "}"
