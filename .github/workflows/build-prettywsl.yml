@@ -62,7 +62,9 @@ jobs:
             -DTARGET_PLATFORM=x64 `
             -DWSL_BUILD_WSL_SETTINGS=true `
             -DSKIP_PACKAGE_SIGNING=true `
-            -DWSL_DEV_BINARY_PATH=""
+            -DWSL_DEV_BINARY_PATH="" `
+            -DPACKAGE_VERSION=2026.6.2.0 `
+            -DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001
         shell: powershell
 
       - name: Build
@@ -115,7 +117,9 @@ jobs:
             -DTARGET_PLATFORM=arm64 `
             -DWSL_BUILD_WSL_SETTINGS=true `
             -DSKIP_PACKAGE_SIGNING=true `
-            -DWSL_DEV_BINARY_PATH=""
+            -DWSL_DEV_BINARY_PATH="" `
+            -DPACKAGE_VERSION=2026.6.2.0 `
+            -DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001
         shell: powershell
 
       - name: Build
