@@ -72,44 +72,4 @@ jobs:
           path: build/bin/x64/${{ env.BUILD_TYPE }}/
           retention-days: 7
 
-  build-arm64:
-    name: Build Windows arm64
-    runs-on: windows-arm64
-    env:
-      BUILD_TYPE: Release
 
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 1
-
-      - name: Setup VS2022
-        uses: microsoft/setup-msbuild@v2
-        with:
-          vs-version: 17.11
-
-      - uses: seanmiddleditch/gha-setup-ninja@v5
-
-      - name: Install Visual Studio workloads
-        run: |
-          & "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" modify `
-            --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" `
-            --add Microsoft.VisualStudio.Component.VC.Llvm.Clang `
-            --add Microsoft.VisualStudio.Component.VC.Llvm.ClangToolSet `
-            --quiet --norestart --wait
-        shell: powershell
-
-      - name: Configure CMake
-        run: cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} -DTARGET_PLATFORM=arm64 -DWSL_BUILD_WSL_SETTINGS=true -DSKIP_PACKAGE_SIGNING=true "-DWSL_DEV_BINARY_PATH=" "-DPACKAGE_VERSION=2026.6.2.0" "-DWSL_NUGET_PACKAGE_VERSION=2026.6.2-build001"
-        shell: powershell
-
-      - name: Build
-        run: cmake --build build --config ${{ env.BUILD_TYPE }}
-        shell: powershell
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: prettywsl-arm64-${{ env.BUILD_TYPE }}
-          path: build/bin/arm64/${{ env.BUILD_TYPE }}/
-          retention-days: 7
