@@ -21,4 +21,5 @@ target_link_libraries(wslinstaller
                       legacy_stdio_definitions)
 
 target_precompile_headers(wslinstaller REUSE_FROM common)
+set_target_properties(wslinstaller PROPERTIES OUTPUT_NAME pwslinstaller)
 set_target_properties(wslinstaller PROPERTIES FOLDER windows)

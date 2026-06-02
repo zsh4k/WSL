@@ -77,4 +77,5 @@ target_link_libraries(wslservice
                       yaml-cpp)
 
 target_precompile_headers(wslservice REUSE_FROM common)
+set_target_properties(wslservice PROPERTIES OUTPUT_NAME pwslservice)
 set_target_properties(wslservice PROPERTIES FOLDER windows)

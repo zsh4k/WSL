@@ -16,4 +16,5 @@ target_link_libraries(wslrelay
                       common)
 
 target_precompile_headers(wslrelay REUSE_FROM common)
+set_target_properties(wslrelay PROPERTIES OUTPUT_NAME pwslrelay)
 set_target_properties(wslrelay PROPERTIES FOLDER windows)

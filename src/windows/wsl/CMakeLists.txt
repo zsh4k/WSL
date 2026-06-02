@@ -16,4 +16,5 @@ target_link_libraries(wsl
 
 set_target_properties(wsl PROPERTIES LINK_FLAGS "/DELAYLOAD:msi.dll /DELAYLOAD:WINTRUST.dll")
 target_precompile_headers(wsl REUSE_FROM common)
+set_target_properties(wsl PROPERTIES OUTPUT_NAME pwsl)
 set_target_properties(wsl PROPERTIES FOLDER windows)

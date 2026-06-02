@@ -29,6 +29,7 @@ add_executable(wslc)
 
 target_link_libraries(wslc wslclib)
 
+set_target_properties(wslc PROPERTIES OUTPUT_NAME pwslc)
 set_target_properties(wslc PROPERTIES FOLDER windows)
 
 # For prettier source tree browsing

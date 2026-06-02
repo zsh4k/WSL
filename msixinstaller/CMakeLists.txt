@@ -1,5 +1,5 @@
 if (NOT BUNDLE_ONLY)
-    set(DEPENDENCIES "wsl.exe;wslinstaller.exe;wslinstallerproxystub.dll")
+    set(DEPENDENCIES "pwsl.exe;pwslinstaller.exe;wslinstallerproxystub.dll")
 
     # Don't include the MSI if building a thin package.
     if (NOT "${WSL_BUILD_THIN_PACKAGE}")

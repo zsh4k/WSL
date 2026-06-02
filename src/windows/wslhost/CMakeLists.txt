@@ -15,4 +15,5 @@ target_link_libraries(wslhost
                       runtimeobject.lib)
 
 target_precompile_headers(wslhost REUSE_FROM common)
+set_target_properties(wslhost PROPERTIES OUTPUT_NAME pwslhost)
 set_target_properties(wslhost PROPERTIES FOLDER windows)

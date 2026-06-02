@@ -63,4 +63,5 @@ target_link_libraries(wslcsession
                       Crypt32.lib)
 
 target_precompile_headers(wslcsession REUSE_FROM common)
+set_target_properties(wslcsession PROPERTIES OUTPUT_NAME pwslcsession)
 set_target_properties(wslcsession PROPERTIES FOLDER windows)
