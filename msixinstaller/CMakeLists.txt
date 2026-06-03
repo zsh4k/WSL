@@ -3,7 +3,7 @@ if (NOT BUNDLE_ONLY)
 
     # Don't include the MSI if building a thin package.
     if (NOT "${WSL_BUILD_THIN_PACKAGE}")
-        list(APPEND DEPENDENCIES "wsl.msi")
+        list(APPEND DEPENDENCIES "prettywsl.msi")
     endif()
 
     add_appx_target(msixinstallerpackage
