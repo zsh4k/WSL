@@ -32,7 +32,7 @@
                 <File Id="pwslhost.exe" Name="pwslhost.exe" Source="${PACKAGE_INPUT_DIR}/pwslhost.exe" />
                 <File Id="pwslrelay.exe" Name="pwslrelay.exe" Source="${PACKAGE_INPUT_DIR}/pwslrelay.exe" />
                 <File Id="pwslserviceproxystub.dll" Name="pwslserviceproxystub.dll" Source="${PACKAGE_INPUT_DIR}/pwslserviceproxystub.dll" />
-                <File Id="pwsldeps.dll" Name="pwsldeps.dll" Source="${PACKAGE_INPUT_DIR}/pwsldeps.dll" />
+                <File Id="wsldeps.dll" Name="wsldeps.dll" Source="${PACKAGE_INPUT_DIR}/wsldeps.dll" />
 
                 <?if "${WSL_BUILD_WSL_SETTINGS}" = "true" ?>
                     <File Id="libpwsl.dll" Name="libpwsl.dll" Source="${PACKAGE_INPUT_DIR}/libpwsl.dll" />
@@ -177,7 +177,7 @@
                     <RegistryValue Value='"[INSTALLDIR]pwslhost.exe"' Type="string" />
                 </RegistryKey>
 
-                <!-- pwsldevicehost.dll -->
+                <!-- wsldevicehost.dll -->
                 <RegistryKey Root="HKCR" Key="AppID\{17696EAC-9568-4CF5-BB8C-82515AAD6C09}">
                     <RegistryValue Name="DllSurrogate" Value="" Type="string" />
                     <RegistryValue Name="AppIDFlags" Value="2048" Type="integer" />
@@ -193,7 +193,7 @@
                     <RegistryValue Name="AppId" Value="{17696EAC-9568-4CF5-BB8C-82515AAD6C09}" Type="string"/>
 
                     <RegistryKey Key="InProcServer32">
-                        <RegistryValue Value="[INSTALLDIR]pwsldevicehost.dll" Type="string" />
+                        <RegistryValue Value="[INSTALLDIR]wsldevicehost.dll" Type="string" />
                         <RegistryValue Name="ThreadingModel" Value="Both" Type="string" />
                     </RegistryKey>
                 </RegistryKey>
@@ -204,7 +204,7 @@
                     <RegistryValue Name="AppId" Value="{17696EAC-9568-4CF5-BB8C-82515AAD6C09}" Type="string"/>
 
                     <RegistryKey Key="InProcServer32">
-                        <RegistryValue Value="[INSTALLDIR]pwsldevicehost.dll" Type="string"/>
+                        <RegistryValue Value="[INSTALLDIR]wsldevicehost.dll" Type="string"/>
                         <RegistryValue Name="ThreadingModel" Value="Both" Type="string"/>
                     </RegistryKey>
                 </RegistryKey>
@@ -215,7 +215,7 @@
                     <RegistryValue Name="AppId" Value="{17696EAC-9568-4CF5-BB8C-82515AAD6C09}" Type="string" />
 
                     <RegistryKey Key="InProcServer32">
-                        <RegistryValue Value="[INSTALLDIR]pwsldevicehost.dll" Type="string" />
+                        <RegistryValue Value="[INSTALLDIR]wsldevicehost.dll" Type="string" />
                         <RegistryValue Name="ThreadingModel" Value="Both" Type="string" />
                     </RegistryKey>
                 </RegistryKey>
@@ -226,7 +226,7 @@
                     <RegistryValue Name="AppId" Value="{17696EAC-9568-4CF5-BB8C-82515AAD6C09}" Type="string" />
 
                     <RegistryKey Key="InProcServer32">
-                        <RegistryValue Value="[INSTALLDIR]pwsldevicehost.dll" Type="string" />
+                        <RegistryValue Value="[INSTALLDIR]wsldevicehost.dll" Type="string" />
                         <RegistryValue Name="ThreadingModel" Value="Both" Type="string" />
                     </RegistryKey>
                 </RegistryKey>
@@ -240,7 +240,7 @@
                      which would fail the install. -->
                 <ServiceControl Id="StopService" Stop="both" Remove="uninstall" Name="PrettyWSLService" Wait="yes" />
 
-                <File Id="pwsldevicehost.dll" Source="${WSL_DEVICE_HOST_SOURCE_DIR}/bin/${TARGET_PLATFORM}/pwsldevicehost.dll" />
+                <File Id="wsldevicehost.dll" Source="${WSL_DEVICE_HOST_SOURCE_DIR}/bin/${TARGET_PLATFORM}/wsldevicehost.dll" />
 
                 <!-- WSLC COM app - activated through WSLService -->
                 <RegistryKey Root="HKCR" Key="AppID\{E9B79997-57E3-4201-AECC-6A464E530DD2}">
