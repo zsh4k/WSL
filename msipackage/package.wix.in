@@ -367,8 +367,8 @@
             <Component Id="wslg" Guid="F0C8D6BA-1502-41E7-BF72-D93DFA134731" UninstallWhenSuperseded="yes" DisableRegistryReflection="yes" Bitness="always64">
                 <?if "${WSL_DEV_BINARY_PATH}" = "" ?>
                     <File Id="msrdc.exe" Source="${MSRDC_SOURCE_DIR}/${TARGET_PLATFORM}/msrdc.exe" />
-                    <File Id="pwslg.rdp" Source="${WSLG_SOURCE_DIR}/pwslg.rdp" />
-                    <File Id="pwslg_desktop.rdp" Source="${WSLG_SOURCE_DIR}/pwslg_desktop.rdp" />
+                    <File Id="wslg.rdp" Source="${WSLG_SOURCE_DIR}/wslg.rdp" />
+                    <File Id="wslg_desktop.rdp" Source="${WSLG_SOURCE_DIR}/wslg_desktop.rdp" />
                     <File Id="rdclientax.dll" Source="${MSRDC_SOURCE_DIR}/${TARGET_PLATFORM}/rdclientax.dll" />
                     <File Id="rdpnanoTransport.dll" Source="${MSRDC_SOURCE_DIR}/${TARGET_PLATFORM}/rdpnanoTransport.dll" />
                     <File Id="RdpWinStlHelper.dll" Source="${MSRDC_SOURCE_DIR}/${TARGET_PLATFORM}/RdpWinStlHelper.dll" />
@@ -383,7 +383,7 @@
 
             <?if "${WSL_DEV_BINARY_PATH}" = "" ?>
                 <Component Id="msal" Guid="F0C8D6BA-1502-41E7-BF72-D93DFA134734" UninstallWhenSuperseded="yes" DisableRegistryReflection="yes" Bitness="always64">
-                    <File Id="msal.pwsl.proxy.exe" Source="${MSAL_SOURCE_DIR}/${TARGET_PLATFORM}/msal.pwsl.proxy.exe" />
+                    <File Id="msal.wsl.proxy.exe" Source="${MSAL_SOURCE_DIR}/${TARGET_PLATFORM}/msal.wsl.proxy.exe" />
                 </Component>
             <?endif?>
         </DirectoryRef>
@@ -423,7 +423,7 @@
             <ComponentGroup Id="wslsettings" Directory="WSLSETTINGS" Source="${BIN}/wslsettings">
                 <Component Id="wslsettingsnonserver" Guid="AB166073-8855-492B-95C8-C6E5939B66A5" Bitness="always64" DisableRegistryReflection="yes" UninstallWhenSuperseded="yes" Condition="MsiNTProductType = 1">
                     <RemoveFile Id="CleanUpWSLSettingsShortCutNonServer" Directory="ProgramMenuFolder" Name="PrettyWSLSettings" On="uninstall"/>
-                    <File Id="wslsettings.exe_nonserver" Source="${PACKAGE_INPUT_DIR}/wslsettings/pwslsettings.exe" KeyPath="yes" ShortName="kyk8fs6a.exe">
+                    <File Id="wslsettings.exe_nonserver" Source="${PACKAGE_INPUT_DIR}/wslsettings/wslsettings.exe" KeyPath="yes" ShortName="kyk8fs6a.exe">
                         <Shortcut Id="WSLSettingsShortcutNonServer" Name="PrettyWSL Settings" Description="PrettyWSL Subsystem for Linux Settings" Directory="ProgramMenuFolder" Icon="pwsl.ico"/>
                     </File>
                     <!-- Protocol registration -->
@@ -438,7 +438,7 @@
                                     <RegistryValue Name="ApplicationName" Value="PrettyWSL Settings" Type="string" />
                                 </RegistryKey>
                                 <RegistryKey Key="shell\open\command">
-                                    <RegistryValue Value='"[WSLSETTINGS]pwslsettings.exe" "----ms-protocol:%1"' Type="string" />
+                                    <RegistryValue Value='"[WSLSETTINGS]wslsettings.exe" "----ms-protocol:%1"' Type="string" />
                                 </RegistryKey>
                             </RegistryKey>
                         </RegistryKey>
@@ -452,7 +452,7 @@
                 </Component>
                 <Component Id="wslsettingsserver" Guid="EE2D69A0-4F55-4EC5-9576-4FAD70BC798E" Bitness="always64" DisableRegistryReflection="yes" UninstallWhenSuperseded="yes" Condition="MsiNTProductType &gt; 1">
                     <RemoveFile Id="CleanUpWSLSettingsShortCutServer" Directory="ProgramMenuFolder" Name="PrettyWSLSettings" On="uninstall"/>
-                    <File Id="wslsettings.exe_server" Source="${PACKAGE_INPUT_DIR}/wslsettings/pwslsettings.exe" KeyPath="yes" ShortName="kyk8fs6b.exe">
+                    <File Id="wslsettings.exe_server" Source="${PACKAGE_INPUT_DIR}/wslsettings/wslsettings.exe" KeyPath="yes" ShortName="kyk8fs6b.exe">
                         <Shortcut Id="WSLSettingsShortcutServer" Name="PrettyWSL Settings" Description="PrettyWSL Subsystem for Linux Settings" Directory="ProgramMenuFolder" Icon="pwsl.ico"/>
                     </File>
                     <!-- Protocol registration -->
@@ -467,7 +467,7 @@
                                     <RegistryValue Name="ApplicationName" Value="PrettyWSL Settings" Type="string" />
                                 </RegistryKey>
                                 <RegistryKey Key="shell\open\command">
-                                    <RegistryValue Value='"[WSLSETTINGS]pwslsettings.exe" "----ms-protocol:%1"' Type="string" />
+                                    <RegistryValue Value='"[WSLSETTINGS]wslsettings.exe" "----ms-protocol:%1"' Type="string" />
                                 </RegistryKey>
                             </RegistryKey>
                         </RegistryKey>
@@ -479,12 +479,12 @@
                         </RegistryKey>
                     </RegistryKey>
                 </Component>
-                <File Id="wslsettings.dll" Source="${PACKAGE_INPUT_DIR}/wslsettings/pwslsettings.dll"/>
+                <File Id="wslsettings.dll" Source="${PACKAGE_INPUT_DIR}/wslsettings/wslsettings.dll"/>
                 <Files Include="*.dll">
-                    <Exclude Files="pwslsettings.dll" />
+                    <Exclude Files="wslsettings.dll" />
                 </Files>
                 <Files Include="*.exe">
-                    <Exclude Files="pwslsettings.exe" />
+                    <Exclude Files="wslsettings.exe" />
                 </Files>
                 <Files Include="**/*.gif"/>
                 <Files Include="**/*.ico"/>
@@ -517,12 +517,12 @@
 
         </Feature>
 
-        <Binary Id="pwslinstall.dll" SourceFile="${PACKAGE_INPUT_DIR}/pwslinstall.dll" />
+        <Binary Id="wslinstall.dll" SourceFile="${PACKAGE_INPUT_DIR}/wslinstall.dll" />
         <Binary Id="msixpackage" SourceFile="${PACKAGE_INPUT_DIR}/gluepackage.msix"/>
 
         <CustomAction Id="ValidateInstall"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="WslValidateInstallation"
             Return="check"
             Execute="deferred"
@@ -530,7 +530,7 @@
 
         <CustomAction Id="FinalizeInstall"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="WslFinalizeInstallation"
             Return="check"
             Execute="deferred"
@@ -538,7 +538,7 @@
 
         <CustomAction Id="DeprovisionMsix"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="DeprovisionMsix"
             Return="check"
             Execute="deferred"
@@ -546,7 +546,7 @@
 
         <CustomAction Id="RemoveMsixAsSystem"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="RemoveMsixAsSystem"
             Return="check"
             Execute="deferred"
@@ -554,7 +554,7 @@
 
         <CustomAction Id="RemoveMsixAsUser"
             Impersonate="yes"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="RemoveMsixAsUser"
             Return="check"
             Execute="deferred"
@@ -562,7 +562,7 @@
 
         <CustomAction Id="InstallMsix"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="InstallMsix"
             Return="check"
             Execute="deferred"
@@ -570,7 +570,7 @@
 
         <CustomAction Id="InstallMsixAsUser"
             Impersonate="yes"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="InstallMsixAsUser"
             Return="check"
             Execute="deferred"
@@ -578,7 +578,7 @@
 
         <CustomAction Id="CleanExplorerState"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="CleanExplorerState"
             Return="check"
             Execute="deferred"
@@ -586,7 +586,7 @@
 
         <CustomAction Id="CleanMsixState"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="CleanMsixState"
             Return="check"
             Execute="deferred"
@@ -594,7 +594,7 @@
 
         <CustomAction Id="RegisterLspCategories"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="RegisterLspCategories"
             Return="check"
             Execute="deferred"
@@ -603,7 +603,7 @@
 
         <CustomAction Id="RemoveRegistryKeyProtections"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="RemoveRegistryKeyProtections"
             Return="check"
             Execute="deferred"
@@ -611,19 +611,19 @@
 
         <CustomAction Id="UnregisterLspCategories"
             Impersonate="no"
-            BinaryRef="pwslinstall.dll"
+            BinaryRef="wslinstall.dll"
             DllEntry="UnregisterLspCategories"
             Return="check"
             Execute="deferred"
          />
 
         <CustomAction Id="InstallMsix.SetProperty" Return="check" Property="InstallMsix" Value='[DATABASE]' Execute='immediate' />
-        <CustomAction Id="CalculateWslSettingsProtocolIds" Impersonate="no" BinaryRef="pwslinstall.dll" DllEntry="CalculateWslSettingsProtocolIds" Return="check" Execute='immediate' />
+        <CustomAction Id="CalculateWslSettingsProtocolIds" Impersonate="no" BinaryRef="wslinstall.dll" DllEntry="CalculateWslSettingsProtocolIds" Return="check" Execute='immediate' />
 
         <!-- Disable WSLService before StopServices so SCM rejects activation attempts
              from COM clients while it is being stopped on uninstall. -->
-        <CustomAction Id="DisableWslService" Impersonate="no" BinaryRef="pwslinstall.dll" DllEntry="DisableWslService" Return="ignore" Execute="deferred" />
-        <CustomAction Id="EnableWslService" Impersonate="no" BinaryRef="pwslinstall.dll" DllEntry="EnableWslService" Return="ignore" Execute="rollback" />
+        <CustomAction Id="DisableWslService" Impersonate="no" BinaryRef="wslinstall.dll" DllEntry="DisableWslService" Return="ignore" Execute="deferred" />
+        <CustomAction Id="EnableWslService" Impersonate="no" BinaryRef="wslinstall.dll" DllEntry="EnableWslService" Return="ignore" Execute="rollback" />
 
         <!-- See https://learn.microsoft.com/en-us/windows/win32/msi/examples-of-conditional-statement-syntax -->
         <InstallExecuteSequence>
